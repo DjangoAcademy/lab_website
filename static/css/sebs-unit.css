@@ -1306,7 +1306,6 @@ html, body {
 html,
 body {
 	font-size: 100%; }
-
 body {
 	background: #f3f3f0 /*off-white*/;
 	color: #222222;
@@ -6714,7 +6713,7 @@ a#main-logo {
 }
 
 @media only screen and (min-width: 46.26em) { /*large - xx-large*/
-	a#main-logo { background: url("../../images/ru/icons-sebs-unit.png") no-repeat scroll 0 -29px #d21034 /*red*/ /*red*/ /*red*/ /*red*/ /*red*/ /*red*/ /*red*/ /*red*/; color: #fff /*white*/; height: 126px; padding: 10px; top: 0; width: 200px; }
+	a#main-logo { background: url("../images/icons-sebs-unit.png") no-repeat scroll 0 -29px #d21034 /*red*/ /*red*/ /*red*/ /*red*/ /*red*/ /*red*/ /*red*/ /*red*/; color: #fff /*white*/; height: 126px; padding: 10px; top: 0; width: 200px; }
 }
 
 .top-bar-section .left { margin-left: 1rem; }
