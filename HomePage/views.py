@@ -4,7 +4,7 @@ from django.shortcuts import render
 def HomePage(request):
     # return HttpResponse(render, 'index_dummy.html')
     # template directory must be on path in settings.py
-    return render(request, 'home_dummy.html')
+    return render(request, 'home.html')
 
 def BasePage(request):
-    return render(request, 'base_dummy.html')
+    return render(request, 'base.html')
