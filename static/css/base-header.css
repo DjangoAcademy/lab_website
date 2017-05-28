@@ -638,8 +638,9 @@ select {
 	height: 39px;
 	line-height: 39px;
 	position: relative;
-	background: #fff; /* -BB- needs to be ODU white */
-	margin-bottom: 0; }
+	background: #f3f3f0 ; /* -BB- */
+	margin-bottom: 0;
+ }
 
 .top-bar ul {
 	margin-bottom: 0;
@@ -754,7 +755,7 @@ a#main-logo {
 
 /* #### UBERNAV #### */
 
-#uber-nav.top-bar { height: 1.5rem; line-height: 1.5rem; }
+#uber-nav.top-bar { height: 1.5rem; line-height: 1.5rem;  }
 #uber-nav .top-bar-section ul { margin-left: 0.65rem; }
 #uber-nav .top-bar-section ul,
 #uber-nav .top-bar-section li:not(.has-form),
@@ -780,7 +781,12 @@ a#main-logo {
 #uber-nav .top-bar-section ul li:not(.has-form) > a:not(.button):active { background: #d21034 /*red*/; color: #fff /*white*/; }
 
 #uber-nav .top-bar-section li:not(.has-form) a:not(.button),
-#uber-nav .top-bar-section .has-form {padding: 0 1rem; }
+#uber-nav .top-bar-section .has-form {padding: 0 1rem;
+                                     font-family:"Open Sans", sans-serif;
+                                     font-weight:600;
+                                     font-size:13.25px;
+                                     /* -BB- uppermost font settings match ODU */
+                                      }
 
 @media only screen and (min-width: 46.26em) { /*large*/
 	#uber-nav .top-bar-section li:not(.has-form) a:not(.button),
@@ -811,9 +817,12 @@ a#main-logo {
 #unit-bar .title-area {	position: relative;	margin: 0; }
 #unit-bar .name { margin: 0 0 0 1rem; position: relative; z-index: 10; }
 #unit-bar .name,
-#unit-bar .name h1,
+/*#unit-bar .name h1,*/
 #unit-bar .name a { color: #fff /*white*/ !important; font-size: 0.75rem; height: 2rem; line-height: 2rem/*34px*/; }
-#unit-bar .name h1 { margin-bottom: 0; margin-top: 0; }
+#unit-bar .name h1 { font-family:"Open Sans", sans-serif;
+                     font-weight:600;
+                     font-size:10px;
+                     margin-bottom: 0; margin-top: 0; }
 
 @media only screen and (min-width: 31.26em) { /*medium*/
 	#unit-bar .name,
@@ -833,8 +842,11 @@ a#main-logo {
 	#unit-bar.top-bar,
 	#unit-bar .name,
 	#unit-bar .name h1,
-	#unit-bar .name a { font-size: 1.5rem; height: 3.5rem; line-height: 3.5rem; }
-}
+	#unit-bar .name a { font-family:"Open Sans", sans-serif;
+                      font-weight:600;
+                      font-size:25px;
+                      margin-bottom: 3.5; margin-top: 10.25; }
+                     }
 
 @media only screen and (min-width: 75.01em) { /*xx-large*/
 	#unit-bar.top-bar,
