@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	background: #f3f3f0;
+	/*background: #222222;*/
+}
+
+.container{
+	background-color: #f3f3f0;
+  	margin-top:34px;
+}
+a.mega.first.haschild.active{
+  box-shadow: none !important;
+}
+a.mega.first.haschild{
+  box-shadow: none !important;
+}
+
+
+.pannels {
+	position: relative;
+	display: block;
+	padding-left: 15px;
+	padding-top: 15px;
+	
+}
+
+.feature {
+	position: relative;
+	display: block;
+	padding-top: 15px;
+}
+.col-sm-3 {
+	background-color: #dfd2b3;
+}
+
+.lower {
+	position: relative;
+	display: block;
+/*	background-color: #c1bbab;*/
+/*	background-color: #dfd2b3;*/
+	margin: 15px;
+
+}
+
+.paper {
+	padding-left: 20px;
+  	text-indent: -20px;
+}
+
+.search-module{
+	float: right;
+/*	padding-right: 10px;*/
+	padding-top: 2px;
+	border-radius: 10px;
+	position: relative;
+	top: -267px;
+	right: 10px;
+}
+
+#chem-oc{
+	position: relative;
+	right: -30px;	
+}
+
+@media only screen and (min-width: 992px){
+	
+}
+
+
+@media only screen and (max-width: 1200px){
+	
+	
+}
+@media only screen and (max-width: 1200px) and (min-width: 993px) {
+  .mega {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width: 991px) and (min-width: 768px;){
+	#navbar{
+		top: -130px;
+}
+}
+
+@media only screen and (max-width: 740px){
+ 	
+}
+
+@media only screen and (max-width: 46.26em){
+	
+	body{
+	background-color: #f3f3f0 !important;}
+	
+}
+@media only screen and (max-width: 500px){
+  
+}

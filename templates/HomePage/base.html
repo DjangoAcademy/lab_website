@@ -4,31 +4,59 @@ https://css-tricks.com/why-use-classes-or-ids-on-the-html-element/ -->
 <html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="" style=""><!--<![endif]-->
 
 <head>
-	<title>ORSG - Home</title>
-        <!-- <link rel="stylesheet" href="{% static 'css/sebs-header.css' %}"> -->
-        <link rel="stylesheet" href="{% static 'css/base-header.css' %}">
-</head>
-<body>
- <div id="main-logo-wrapper" class="row">
-  <!-- for small, large-12, for different devices -->
-     <div class="large-12 columns">
-       <a href="http://www.odu.edu/" id="main-logo"><span class="hide-for-small-up">Old Dominion University</span></a>
-     </div>
-   </div>
+  <!-- STYLESHEETS -->
 
-<div id="uber-nav-wrapper" class="contain-to-grid hide-for-small">
+  <!-- <link rel="stylesheet" href="{% static 'css/sebs-unit.css' %}"> -->
+  <!-- <link rel="stylesheet" href="{% static 'css/sebs-main.css' %}"> -->
+  <!-- <link rel="stylesheet" href="{% static 'css/sebs-lightbox.css' %}"> -->
+  <!-- <link rel="stylesheet" href="{% static 'css/sebs-bootstrap.min.css' %}"> -->
+  <!-- <link rel="stylesheet" href="{% static 'css/sebs-bootstrap-theme.min.css' %}"> -->
+  <link rel="stylesheet" href="{% static 'css/base-header.css' %}">
+  <link rel="stylesheet" href="{% static 'css/sebs-mega_css3.css' %}">
+
+  <!-- JAVASCRIPT -->
+
+  <script src="{% static 'js/sebs-mega2.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/sebs-jquery-2.1.4.min.js' %}" type="text/javascript"></script>
+  <!-- <script src="{% static 'js/sebs-hammer.js' %}" type="text/javascript"></script> -->
+
+  <script type="text/javascript">
+    jQuery(window).on('load',  function() {
+    				new JCaption('img.caption');
+    			});
+
+    				window.addEventListener('load', function() {
+    					SL_SFMegaMenu('nav', 'container');
+    				}, false);
+  </script>
+
+
+
+  <title>ORSG - Home</title>
+</head>
+<body style>
+  <div id="main-logo-wrapper" class="row">
+    <!-- for small, large-12, for different devices -->
+    <div class="large-12 columns">
+      <a href="http://www.odu.edu/" id="main-logo">
+        <span class="hide-for-small-up">Old Dominion University</span>
+      </a>
+    </div>
+  </div>
+
+  <div id="uber-nav-wrapper" class="contain-to-grid hide-for-small">
     <nav class="top-bar" id="uber-nav" data-topbar="">
-      <section class="top-bar-section">
-        <ul class="left">
-          <li><a href="http://www.ccpo.odu.edu">Center for Physical Oceanography</a></li>
-          <li><a href="http://www.odu.edu/oeas">Ocean, Earth, Atmospheric Sciences</a></li>
-          <li><a href="http://www.odu.edu/sci">College of Sciences</a></li>
-        </ul>
-      </section>
+    <section class="top-bar-section">
+      <ul class="left">
+        <li><a href="http://www.ccpo.odu.edu">Center for Physical Oceanography</a></li>
+        <li><a href="http://www.odu.edu/oeas">Ocean, Earth, Atmospheric Sciences</a></li>
+        <li><a href="http://www.odu.edu/sci">College of Sciences</a></li>
+      </ul>
+    </section>
     </nav>
   </div>
 
-<div id="unit-bar-wrapper" class="contain-to-grid">
+  <div id="unit-bar-wrapper" class="contain-to-grid">
     <nav id="unit-bar" class="top-bar">
       <ul class="title-area">
         <li class="name"><h1><a href="#">Ocean Remote Sensing Group</a></h1></li>
@@ -37,6 +65,86 @@ https://css-tricks.com/why-use-classes-or-ids-on-the-html-element/ -->
   </div>
 
 
+  <div>
+    <div class="sl-megamenu mega_css3 clearfix" id="nav">
+      <label for="nav-check" class="menubar">
+        <span>Menu</span>
+      </label>
+      <!-- checkbox for mobile I think -->
+      <input type="checkbox" class="menubar-check" id="nav-check">
+      <ul class="megamenu level0">
+        <li class="mega first active">
+          <a href="https://adams.marine.rutgers.edu/" class="mega first active" id="menu101" title="Home">
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        <li class="mega">
+          <a href="/research" class="mega" id="menu117" title="Research">
+            <span class="menu-title">Research</span>
+          </a>
+        </li>
+        <li class="mega">
+          <a href="/teaching" class="mega" id="menu118" title="Teaching">
+            <span class="menu-title">Teaching</span>
+          </a>
+        </li>
+        <li class="mega haschild">
+          <a href="/people" class="mega haschild" id="menu119" title="People">
+            <span class="menu-title">People</span>
+          </a>
+          <div class="childcontent cols1 ">
+            <div class="childcontent-inner-wrap">
+              <div class="childcontent-inner clearfix" style="width: 200px;">
+                <div class="megacol column1 first" style="width: 200px;">
+                  <ul class="megamenu level1">
+                    <li class="mega first">
+                      <a href="/people/diane-adams" class="mega first" id="menu124" title="Ben Hamlington">
+                        <span class="menu-title">Ben Hamlington</span>
+                      </a>
+                    </li>
+                    <li class="mega">
+                      <a href="/people/post-docs" class="mega" id="menu163" title="Post Docs">
+                        <span class="menu-title">Post Docs</span>
+                      </a>
+                    </li>
+                    <li class="mega">
+                      <a href="/people/students" class="mega" id="menu125" title="Students">
+                        <span class="menu-title">Students</span>
+                      </a>
+                    </li>
+                    <li class="mega last">
+                      <a href="/people/alumni" class="mega last" id="menu162" title="Alumni">
+                        <span class="menu-title">Alumni</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="mega">
+          <a href="/opportunities" class="mega" id="menu120" title="Opportunities">
+            <span class="menu-title">Opportunities</span>
+          </a>
+        </li>
+        <li class="mega">
+          <a href="/publications" class="mega" id="menu121" title="Publications">
+          <span class="menu-title">Publications</span>
+          </a>
+        </li>
+        <!-- <li class="mega">
+          <a href="/photos" class="mega" id="menu122" title="Photo Gallery">
+          <span class="menu-title">Photo Gallery</span>
+          </a>
+        </li> -->
+        <li class="mega last">
+          <a href="/news" class="mega last" id="menu123" title="News">
+            <span class="menu-title">News</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-
- </body>
+</body>

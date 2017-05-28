@@ -1,0 +1,612 @@
+/**
+ * @copyright	Copyright (c) 2013 Skyline (http://extstore.com). All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+@import "https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic";
+@import "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700";
+
+.mega_css3 {
+	margin: 0;
+	padding: 0;
+	border-radius: 3px 3px 3px 3px;
+ z-index: 100; /* -BB- bring to front */
+	position: relative;
+}
+
+.mega_css3 .menubar,
+.mega_css3 ul.megamenu {
+	padding: 5px 0;
+	margin: 0;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+}
+
+.mega_css3 ul.megamenu ul {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 13px;
+	color: #666666;
+}
+
+.mega_css3 ul.megamenu li {
+	overflow: visible;
+	position: relative;
+}
+
+/* lv - 0
+-----------------------------------*/
+/* Styling ---*/
+.mega_css3 ul.level0 {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.mega_css3 ul.level0 li.mega {
+	background: none;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.mega_css3 ul.level0 > li.first {
+	margin-left: 10px;
+}
+
+.mega_css3 ul.level0 li.mega a.mega {
+	display: block;
+	line-height: normal;
+	margin: 0;
+	padding: 12px 25px;;
+	text-decoration: none;
+}
+
+.mega_css3 ul.level0 li.mega .has-image {
+	padding-left: 25px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: left top;
+	cursor: pointer;
+}
+
+.mega_css3 ul.level0 li.mega span.menu-title {
+	display: block;
+	line-height: 1.4;
+}
+
+.mega_css3 ul.level0 li.mega span.menu-desc {
+	display: block;
+	font-weight: normal;
+	font-size: 92%;
+}
+
+.mega_css3 ul.level0 li.mega a img {
+	float: left;
+	padding-right: 5px;
+}
+
+.mega_css3 ul.level0 li.over, ul.level0 li.haschild-over {
+}
+
+.mega_css3 ul.level0 li.haschild a.mega span.menu-title,
+.mega_css3 ul.level0 li.haschild-over a.mega span.menu-title {
+	background: url(../images/arrow3.png) no-repeat left center;
+	padding-left: 16px;
+}
+
+.mega_css3 ul.level0 li.haschild a.mega span.menu-desc,
+.mega_css3 ul.level0 li.haschild-over a.mega span.menu-desc {
+	padding-left: 16px;
+}
+
+.mega_css3 ul.level0 li.active {
+}
+
+/* lv - 1 and below
+-----------------------------------*/
+/* Layout ---*/
+.mega_css3 li.mega .childcontent {
+	display: block;
+	height: auto;
+	position: absolute;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+	margin: 0;
+	top: 130%;
+}
+
+.mega_css3 li.haschild-over li.mega .childcontent,
+.mega_css3 li.mega li.haschild-over li.mega .childcontent,
+.mega_css3 li.mega li.mega li.haschild-over li.mega .childcontent,
+.mega_css3 li.mega li.mega li.mega li.haschild-over li.mega .childcontent,
+.mega_css3 li.mega li.mega li.mega li.mega li.haschild-over li.mega .childcontent {
+	margin: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.mega_css3 li.haschild-over .childcontent,
+.mega_css3 li.mega li.haschild-over .childcontent,
+.mega_css3 li.mega li.mega li.haschild-over .childcontent,
+.mega_css3 li.mega li.mega li.mega li.haschild-over .childcontent,
+.mega_css3 li.mega li.mega li.mega li.mega li.haschild-over .childcontent,
+.mega_css3 li.mega li.mega li.mega li.mega li.mega li.haschild-over .childcontent {
+	margin: 0;
+	visibility: visible;
+	opacity: 1;
+	top: 100%;
+}
+
+.mega_css3 li.mega .right,
+.mega_css3 li.haschild-over li.mega .right,
+.mega_css3 li.mega li.haschild-over li.mega .right,
+.mega_css3 li.mega li.mega li.haschild-over li.mega .right,
+.mega_css3 li.mega li.mega li.mega li.haschild-over li.mega .right,
+.mega_css3 li.mega li.mega li.mega li.mega li.haschild-over li.mega .right {
+	right: auto; /*hide the menu*/
+}
+
+.mega_css3 li.haschild-over .right {
+	right: 0; /*show on parent:hover*/
+}
+
+.mega_css3 li.mega li.haschild-over .right,
+.mega_css3 li.mega li.mega li.haschild-over .right,
+.mega_css3 li.mega li.mega li.mega li.haschild-over .right,
+.mega_css3 li.mega li.mega li.mega li.mega li.haschild-over .right,
+.mega_css3 li.mega li.mega li.mega li.mega li.mega li.haschild-over .right {
+	right: 12em; /*show on parent:hover*/
+}
+
+.mega_css3 ul.level1 li.mega {
+	float: none;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mega_css3 ul.level1 .childcontent {
+	top: 0 !important;
+	left: 130%;
+}
+
+.mega_css3 ul.level1 li.haschild-over .childcontent {
+	left: 100%;
+}
+
+/* Columns ---*/
+.mega_css3 .megacol {
+	float: left;
+}
+
+/* Styling ---*/
+.mega_css3 ul.level1 li.mega a.mega {
+	border: 0;
+	font-weight: normal;
+	padding: 6px 5px;
+}
+
+.mega_css3 ul.level1 li.mega a.mega span.menu-title {
+	background: none;
+	padding: 0;
+}
+
+.mega_css3 ul.level1 li.haschild > a,
+.mega_css3 ul.level1 li.haschild-over > a {
+	background-image: url(../images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	padding: 0;
+}
+
+.mega_css3 ul.level1 li.over, ul.level1 li.haschild-over {
+}
+
+.mega_css3 ul.level1 li.group {
+	background: none;
+}
+
+/* CHILD CONTENT
+-----------------------------------*/
+.mega_css3 .childcontent {
+	z-index: 999;
+}
+
+.mega_css3 .childcontent-inner {
+	background: #fff;
+}
+
+.mega_css3 .level1 .childcontent-inner {
+}
+
+.mega_css3 .childcontent .sl-moduletable {
+	line-height: 1.5;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.mega_css3 .childcontent .sl-moduletable h3 {
+	background: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-indent: 5px;
+	text-transform: none;
+}
+
+.mega_css3 .childcontent .sl-moduletable .sl-box-ct {
+	padding: 0 5px;
+}
+
+.mega_css3 .childcontent .sl-moduletable a {
+	text-decoration: none;
+}
+
+.mega_css3 .childcontent .sl-moduletable a:hover,
+.mega_css3 .childcontent .sl-moduletable a:focus,
+.mega_css3 .childcontent .sl-moduletable a:active {
+	text-decoration: none;
+}
+
+.mega_css3 .childcontent .sl-moduletable ul:first-child {
+	margin-top: 0 !important;
+}
+
+.mega_css3 .childcontent .sl-moduletable li {
+	margin-bottom: 5px;
+}
+
+/* Grouped --- */
+.mega_css3 .group {
+}
+
+.mega_css3 .group-title {
+	overflow: hidden;
+}
+
+.mega_css3 .group-title .menu-title {
+}
+
+.mega_css3 .group-title .menu-desc {
+	padding-left: 0 !important;
+}
+
+.mega_css3 .group-content .sl-moduletable,
+.mega_css3 .group-content ul.megamenu {
+	padding: 10px; /* Group-content's gutter*/
+}
+
+/* reset --- */
+.mega_css3 .childcontent ul.megamenu .sl-moduletable {
+	padding: 0;
+}
+
+.mega_css3 .childcontent ul.megamenu .sl-moduletable h3 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.mega_css3 ul.level0 li.haschild a span.menu-title,
+.mega_css3 ul.level0 li.haschild-over a span.menu-title {
+    background: url("../images/arrow3.png") no-repeat scroll left 50% transparent;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.mega_css3 {
+	padding-bottom: 0px;
+}
+
+.mega_css3 a {
+	color: #666;
+}
+
+.mega_css3 a.over,
+.mega_css3 a.active {
+	color: #fff;
+	background: #444;
+}
+
+.mega_css3 a.active {
+	background: #ec5923;
+}
+
+.mega_css3 ul.level0 a.mega span.menu-title,
+.mega_css3 ul.level0 li.haschild a.mega span.menu-title,
+.mega_css3 ul.level0 li.haschild-over a.mega span.menu-title {
+	background: none;
+	line-height: 20px;
+	padding: 0;
+	margin-right: 10px;
+}
+
+.mega_css3 ul.level1 li.first {
+	border-top: 0;
+}
+
+.mega_css3 ul.level1 li.mega a.mega {
+	border: 0;
+	text-transform: none;
+	color: #bcbcbc;
+}
+
+.mega_css3 .childcontent-inner {
+	background: #444;
+}
+
+/* CHILD CONTENT */
+.mega_css3 .childcontent-inner {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	margin-bottom: 5px;
+}
+
+.mega_css3 .childcontent .sl-moduletable {
+	color: #333;
+}
+
+.mega_css3 .childcontent .sl-moduletable a {
+	color: #333;
+	border-bottom: 1px dotted #fff;
+}
+
+.mega_css3 .childcontent .sl-moduletable h3 {
+	background: none;
+	border-bottom: 1px dotted #666;
+	text-transform: uppercase;
+}
+
+/* Grouped --- */
+.mega_css3 .group-title {
+	border-bottom: 1px solid #666;
+	margin: 0 10px;
+}
+
+.mega_css3 .group-title .menu-title {
+	color: #eee;
+}
+
+.mega_css3 .group-title .menu-desc {
+	color: #bcbcbc;
+	padding-left: 0 !important;
+}
+
+.mega_css3 ul.level1 li.mega a.mega {
+	padding: 7px 8px 7px 18px;
+}
+
+.mega_css3 .megacol ul li .group .group-title a span.menu-title,
+.mega_css3 .megacol ul li .group .group-content a span.menu-title {
+	background: none;
+}
+
+.mega_css3 ul.level1 li.mega a:hover,
+.mega_css3 ul.level1 li.mega a.over {
+	background-color: #ec5923;
+	color: #fff;
+}
+
+.mega_css3 ul.level1 li.mega .group-title a:hover,
+.mega_css3 ul.level1 li.mega .group-title a.over {
+	background: none !important;
+}
+
+.mega_css3 ul.level1 li.mega .group-title a:hover .menu-title,
+.mega_css3 ul.level1 li.mega .group-title a.over .menu-title {
+	color: #fff;
+}
+
+.mega_css3 ul.level0 li a {
+
+}
+
+.mega_css3 ul.level1 li a {
+	text-shadow: none;
+}
+
+.mega_css3 ul.level1 li.mega a.mega.active {
+	color: #fff;
+}
+
+.mega_css3 ul.level1 li.mega .group > .group-title > a.mega {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+}
+
+.mega_css3 li li > a.mega > span.menu-title,
+.mega_css3 li li > a.mega > span.menu-desc {
+	display: inline-block !important;
+}
+
+.mega_css3 li.block > a.mega > span.menu-title,
+.mega_css3 li.block > a.mega > span.menu-desc {
+	display: block !important;
+}
+
+.mega_css3 li.tag > a.mega > span.menu-desc {
+    background: #F5F5F5;
+    border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-left: 14px;
+    padding: 1px 7px !important;
+}
+
+.mega_css3 li.tag.tag-primary > a.mega > span.menu-desc {
+	background: #006DCC;
+}
+
+.mega_css3 li.tag.tag-info > a.mega > span.menu-desc {
+	background: #49AFCD;
+}
+
+.mega_css3 li.tag.tag-success > a.mega > span.menu-desc {
+	background: #5BB75B;
+}
+
+.mega_css3 li.tag.tag-warning > a.mega > span.menu-desc {
+	background: #FAA732;
+}
+
+.mega_css3 li.tag.tag-danger > a.mega > span.menu-desc {
+	background: #DA4F49;
+}
+
+.mega_css3 li.tag.tag-inverse > a.mega > span.menu-desc {
+	background: #363636;
+}
+
+.mega_css3.mega_css3_light .childcontent-inner {
+	background: #fff;
+}
+
+.mega_css3.mega_css3_light ul.level1 li.mega a.mega {
+	color: #666;
+}
+
+.mega_css3.mega_css3_light .group-title .menu-title {
+	color: #666;
+}
+
+.mega_css3.mega_css3_light ul.level1 li.mega .group > .group-title > a.mega:hover,
+.mega_css3.mega_css3_light ul.level1 li.mega .group-title a:hover .menu-title,
+.mega_css3.mega_css3_light ul.level1 li.mega .group-title a.over .menu-title {
+	color: #111;
+}
+
+.mega_css3.mega_css3_light ul.level1 li.mega {
+	border-top: 1px solid rgba(0, 0, 0, 0.05);;
+}
+
+.mega_css3.mega_css3_light ul.level1 li.mega.first {
+	border-top: none;
+}
+
+.mega_css3.mega_css3_light .group-title {
+	border-bottom: 1px dotted #DDDDDD;
+}
+
+.mega_css3 .childcontent-inner {
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mega_css3 ul.level0 > li > a:hover,
+.mega_css3 ul.level0 > li:hover > a,
+.mega_css3 ul.level0 > li.active > a {
+	box-shadow: 2px 0 10px -5px rgba(0, 0, 0, 0.6) inset, -2px 0 10px -5px rgba(0, 0, 0, 0.6) inset;
+}
+
+
+.mega_css3 .menubar {
+	display: block;
+	line-height: normal;
+	margin: 0;
+	padding: 12px 25px;;
+	text-decoration: none;
+}
+
+.mega_css3 .menubar,
+.mega_css3 .menubar-check {
+	display: none;
+}
+
+/**
+ * RESPONSIVE
+ */
+/****************** RESPONSIVE *******************/
+@media screen and (max-width: 767px) {
+	.mega_css3 ul.level0 li.mega {
+		width: 100%;
+	}
+
+	.mega_css3 ul.level0 > li.first {
+		margin: 0;
+	}
+
+	.mega_css3 li.mega div.childcontent {
+		position: static;
+		margin: 0;
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	.mega_css3 li.mega div.childcontent-inner,
+	.mega_css3 li.mega div.megacol {
+		width: 100% !important;
+	}
+
+	.mega_css3 li.haschild-over > div.childcontent {
+		max-height: 9999em;
+	}
+
+	.mega_css3 li.mega ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	.mega_css3 ul.level2 li.mega a.mega {
+		padding-left: 28px;
+	}
+
+	.mega_css3 ul.level3 li.mega a.mega {
+		padding-left: 38px;
+	}
+
+	.mega_css3 ul.level4 li.mega a.mega {
+		padding-left: 48px;
+	}
+
+	.mega_css3 .childcontent-inner {
+		box-shadow: none;
+	}
+
+	.mega_css3.mega_css3 ul.level1 li.mega.first {
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+	}
+
+	.mega_css3.mega_css3_light ul.level1 li.mega.first {
+		border-top: 1px solid rgba(0, 0, 0, 0.05);
+	}
+
+	.mega_css3 ul.level0 >li.haschild > a.mega span.menu-title,
+	.mega_css3 ul.level0 > li.haschild-over > a.mega span.menu-title {
+		background-image: url("../images/sprites_hover.png");
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		display: block;
+	}
+
+	.mega_css3 .menubar {
+		display: block;
+		color: #fff;
+		margin-bottom: 0;
+	}
+
+	.mega_css3 .menubar:before {
+		content: "\2261";
+		display: block;
+		float: left;
+		font-size: 30px;
+		margin: -10px 8px 0 0;
+	}
+
+	.mega_css3 .menubar-check + ul {
+		display: none;
+	}
+
+	.mega_css3 .menubar-check:checked + ul {
+		display: block;
+	}
+}
