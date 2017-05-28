@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>{% block title %}{% endblock %}</title>
+
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" integrity="sha256-VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0=" crossorigin="anonymous">
+		<link media="all" rel="stylesheet" href="{{ STATIC_URL }}css/all{% if not debug %}-min{% endif %}.css?20161023" />
+
+		<meta name="description" content="{% block meta_description %}{% endblock %}" />
+		<meta name="keywords" content="{% block meta_keywords %}{% endblock %}" />
+		{% if HTTP_HOST == "test.govtrack.us" %}<meta name="robots" content="noindex" />{% endif %} {% comment %}moot because site is currently behind authz {% endcomment %}
+
+		{% comment %}<meta property="fb:admins" content="620474" />{% endcomment %}
+		<meta property="fb:app_id" content="119329904748946" />
+		<meta property="og:site_name" content="GovTrack.us" />
+		<meta name="twitter:site" content="@GovTrack">
+		{% block og_image %}
+		<meta property="og:image" content="https://www.govtrack.us/static/images/media_icon.png?20160130" />
+		<meta name="twitter:card" content="summary">
+		{% endblock %}
+
+
+		{% block extra_css %}{% endblock %}
+
+		<script type="text/javascript">
+		window.post_jquery_load_scripts = [];
+
+		{% if not debug %}
+		<!-- Google Analytics -->
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<!-- End Google Analytics -->
+		{% else %}
+			window.ga = function() { };
+		{% endif %}
+		</script>
+
+		{% block head %}{% endblock %}
+	</head>
+ 
+<footer id="footer">
+			<div class="container">
+			<div class="row">
+
+				<nav class="col-xs-6 col-sm-3 col-md-2">
+					<h4><span>site</span> Menu</h4>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/start">Start Tracking</a></li>
+						<li><a href="/about">About GovTrack</a></li>
+						<li><a href="/developers">Data/API</a></li>
+						<li><a href="/legal">Privacy &amp; Legal</a></li>
+						{% if not user.is_authenticated %}
+						<li><a href="/accounts/login">Log in</a></li>
+						{% else %}
+						<li><a href="/accounts/lists">What I&rsquo;m Tracking</a></li>
+						<li><a href="/accounts/profile">Account Settings</a></li>
+						<li><a href="/accounts/logout?next={{request.path|urlencode}}">Log Out</a></li>
+						{% endif %}
+					</ul>
+				</nav>
+
+				<section class="col-xs-6 col-sm-2 social">
+					<h4><span>follow</span> GovTrack</h4>
+					<ul>
+						<li><a href="https://www.facebook.com/govtrack/"><i class="fa fa-facebook fa-fw"></i><span>Facebook</span></a></li>
+						<li><a href="http://twitter.com/govtrack"><i class="fa fa-twitter fa-fw"></i><span>Twitter</span></a></li>
+						<li><a href="https://medium.com/govtrack-insider"><i class="fa fa-medium fa-fw"></i><span>Medium</span></a></li>
+						<li><a href="/blog"><i class="fa fa-quote-right fa-fw"></i><span>Blog</span></a></li>
+						<li><a href="https://github.com/govtrack/govtrack.us-web/commits/master"><i class="fa fa-github fa-fw"></i><span>Code</span></a></li>
+					</ul>
+				</section>
+
+				<section class="col-xs-12 col-md-offset-1 col-sm-6">
+					<p>Launched in 2004, GovTrack helps everyone learn about and track the activities of the United States Congress. This is a project of <a href="http://www.civicimpulse.com">Civic Impulse, LLC</a>. GovTrack.us is not a government website.</p>
+
+					<p><a href="/about">About the Site</a> | <a href="/contact">Contact Us</a></p>
+
+					<p>You are encouraged to reuse any material on this site. GovTrack supports other Congress-tracking websites through our <a href="/developers">open data</a>.</p>
+
+					{% block footer_extra %}{% endblock %}
+				</section>
+
+			</div>
+			</p>
+		</footer>
