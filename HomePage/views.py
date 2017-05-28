@@ -8,3 +8,6 @@ def HomePage(request):
 
 def BasePage(request):
     return render(request, 'base.html')
+
+def ODUHead(request):
+    return render(request, 'ODU_head.html')
