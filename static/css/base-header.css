@@ -718,7 +718,7 @@ h5,
 .panel ol li a { margin-bottom: 0; padding-bottom: 0; }
 
 a#main-logo {
-	background: url("../images/icons-sebs-unit.png") no-repeat scroll 0 -212px #f3f3f0 /*off-white*/ /*off-white*/ /*off-white*/ /*off-white*/ /*off-white*/ /*off-white*/ /*off-white*/ /*off-white*/;
+	background: url("../images/logo-ODU.png") no-repeat scroll #f3f3f0; /*off-white*/
 	color: #222 /*black*/;
 	display: block;
 	height: 34px;
@@ -738,8 +738,12 @@ a#main-logo {
 }
 
 @media only screen and (min-width: 46.26em) { /*large - xx-large*/
-	a#main-logo { background: url("../images/icons-sebs-unit.png") no-repeat scroll 0 -29px #d21034 /*red*/ /*red*/ /*red*/ /*red*/ /*red*/ /*red*/ /*red*/ /*red*/; color: #fff /*white*/; height: 126px; padding: 10px; top: 0; width: 200px; }
-}
+	a#main-logo { background: url("../images/logo-ODU.png") no-repeat scroll  #f3f3f0;
+                                          color: #fff /*white*/;
+                                          padding: 10px; top: 5; height: 126; width:220;
+                                          background-size: 200px 100px;
+                                          background-position: 8px 0px
+                                        }
 
 .top-bar-section .left { margin-left: 1rem; }
 
@@ -814,8 +818,8 @@ a#main-logo {
 	#unit-bar.top-bar { height: 4.5rem; line-height: 4.5rem; }
 }
 
-#unit-bar .title-area {	position: relative;	margin: 0; }
-#unit-bar .name { margin: 0 0 0 1rem; position: relative; z-index: 10; }
+#unit-bar .title-area {	position: relative;	margin: 0 20; }
+#unit-bar .name { margin: 0 0 0 2rem; position: relative; z-index: 10; }
 #unit-bar .name,
 /*#unit-bar .name h1,*/
 #unit-bar .name a { color: #fff /*white*/ !important; font-size: 0.75rem; height: 2rem; line-height: 2rem/*34px*/; }
