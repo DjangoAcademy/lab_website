@@ -41,5 +41,5 @@ Thumbs.db
 
  # Python Cache #
  ################
-./BHLab/__pycache__/*
  *.pyc
+__pycache__
