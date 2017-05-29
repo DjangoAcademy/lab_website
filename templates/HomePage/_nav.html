@@ -13,13 +13,13 @@ https://css-tricks.com/why-use-classes-or-ids-on-the-html-element/ -->
   <!-- order matters; CASCADING ss -->
   <link rel="stylesheet" href="{% static 'css/base-header.css' %}">
   <link rel="stylesheet" href="{% static 'css/sebs-mega_css3.css' %}">
-  <link rel="stylesheet" href="{% static 'css/sebs-main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/nav-main.css' %}">
 
   <!-- JAVASCRIPT -->
 
   <script src="{% static 'js/sebs-mega2.js' %}" type="text/javascript"></script>
-  <script src="{% static 'js/sebs-jquery-2.1.4.min.js' %}" type="text/javascript"></script>
-  <script src="{% static 'js/sebs-hammer.js' %}" type="text/javascript"></script>
+  <!-- <script src="{% static 'js/sebs-jquery-2.1.4.min.js' %}" type="text/javascript"></script> -->
+  <!-- <script src="{% static 'js/sebs-hammer.js' %}" type="text/javascript"></script> -->
 
   <!-- <script type="text/javascript">
     jQuery(window).on('load',  function() {
@@ -36,9 +36,10 @@ https://css-tricks.com/why-use-classes-or-ids-on-the-html-element/ -->
   <title>ORSG - Home</title>
 </head>
 <body style>
+
   <div id="main-logo-wrapper" class="row">
     <!-- for small, large-12, for different devices -->
-    <div class="large-12 columns">
+    <div class="large-6 columns">
       <a href="http://www.odu.edu/" id="main-logo">
         <span class="hide-for-small-up">Old Dominion University</span>
       </a>
@@ -46,9 +47,9 @@ https://css-tricks.com/why-use-classes-or-ids-on-the-html-element/ -->
   </div>
 
   <div id="uber-nav-wrapper" class="contain-to-grid hide-for-small">
-    <nav class="top-bar" id="uber-nav" data-topbar="">
+    <nav class="top-bar col-large-4" id="uber-nav" data-topbar="">
     <section class="top-bar-section">
-      <ul class="left">
+      <ul class=>
         <li><a href="http://www.ccpo.odu.edu">Center for Physical Oceanography</a></li>
         <li><a href="http://www.odu.edu/oeas">Ocean, Earth, Atmospheric Sciences</a></li>
         <li><a href="http://www.odu.edu/sci">College of Sciences</a></li>
@@ -134,11 +135,7 @@ https://css-tricks.com/why-use-classes-or-ids-on-the-html-element/ -->
             <span class="menu-title">Publications</span>
             </a>
           </li>
-          <!-- <li class="mega">
-            <a href="/photos" class="mega" id="menu122" title="Photo Gallery">
-            <span class="menu-title">Photo Gallery</span>
-            </a>
-          </li> -->
+          </li>
           <li class="mega last">
             <a href="/news" class="mega last" id="menu123" title="News">
               <span class="menu-title">News</span>
