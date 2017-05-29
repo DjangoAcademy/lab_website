@@ -11,3 +11,6 @@ def BasePage(request):
 
 def ODUHead(request):
     return render(request, 'ODU_head.html')
+
+def Adams(request):
+    return render(request, 'sebs-adams.html')
