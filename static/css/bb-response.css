@@ -1,10 +1,5 @@
-/* TOP BAR SECTION */
-/*.test .list-inline {
-  font-size: 2000px ;
- }*/
-
 /* control spacing */
-*:before,
+/**:before,
 *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -12,51 +7,35 @@
 /* end control spacing */
 
 body {
-	/*background: #f3f3f0 /*off-white*/;*/
-}
-	/*color: #222222;*/
-	/*padding: 0;*/
-	/*margin: 0;*/
-/*	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;*/
-	/*font-weight: normal;*/
-	/*font-style: normal;*/
-	/*line-height: 1;*/
-	/*position: relative;*/
-	/*cursor: default; }*/
-
-#topbar.list-inline{
- font-family:"Open Sans", sans-serif;
- font-weight:600;
-	color: #003057; /* odu blue */
- background: #f3f3f0; /* off-white */
-margin-bottom: 0px;
- /*height: 39px;*/
+	background: #f3f3f0 /*off-white*/;
 }
 
-/* set all list elements of id topbar, class list-inline */
-#topbar.list-inline>li{
-/*margin-top: 7.5px;*/
-margin-bottom: 0px;
-}
+/* properties of the top most bar */
+#topbar {background:#f3f3f0;
+         margin-bottom: 0px;
+         text-align: right;
+         /*height: 39px;*/
+         }
+
+#topbar.list-inline a { font-family:"Open Sans", sans-serif;
+                        font-weight:600;
+                        color: #003057; /* odu blue */}
+
 
 .titlebar{
  background: #003057
  font-family:"Open Sans", sans-serif;
  font-weight:600;
  margin-top: 0;
+ text-align: center;
+ /*position: relative;*/
 }
 
-.titlebar h2 { /*font-family:"Open Sans", sans-serif;*/
-                     /*font-weight:600;*/
-                     /*font-size:10px;*/
-                     /*margin-bottom: 0;*/
-                     /*margin-top: 0;*/
-                     background: #003057;
-                    }
-
-.titlebar a { color: #fff/*white*/ !important;
-               font-family:"Open Sans", sans-serif;
-               font-weight:600;
-                     /*margin-top: 0;*/
-                /*font-size:10px;*/
+.titlebar h2 { background: #003057;
                }
+
+.titlebar a { color: #fff; /*white*/
+              font-family:"Open Sans", sans-serif;
+              font-weight:600;
+              text-decoration: none;
+              }
