@@ -20,34 +20,31 @@
 
 <!-- Header -->
 <style>
- img {position: absolute; background: #f3f3f0; z-index:100}
+ img { position: absolute; background: #f3f3f0; z-index:100;}
  </style>
 <div class="container-fluid">
   <div class="row">
-   <div class="offset-md-2">
-    <img src="{% static "images/logo-ODU.png" %}">
- </div><!-- col -->
+   <div class="col-4 col-md-2 offset-md-1">
+    <img class="img-fluid rounded" src="{% static "images/logo-ODU.png" %}" >
+    </div><!-- offset-md-1 -->
+
+ <div class="col" >
+   <ul  class="list-inline hidden-sm-down" id="topbar">
+      <li class="list-inline-item">
+        <a href="http://www.ccpo.odu.edu">Center for Physical Oceanography</a></li>
+      <li class="list-inline-item">
+        <a href="http://www.odu.edu/oeas">Ocean, Earth, Atmospheric Sciences</a></li>
+      <li class="list-inline-item">
+        <a href="http://www.odu.edu/sci">College of Sciences</a></li>
+   </ul>
+</div><!-- col -->
  </div><!-- row -->
 </div><!-- container -->
-
-<div class="container-fluid">
-  <div class="row" >
-   <div class="col" >
-		   <ul  class="list-inline hidden-xs-down" id="topbar">
-        <li class="list-inline-item">
-          <a href="http://www.ccpo.odu.edu">Center for Physical Oceanography</a></li>
-        <li class="list-inline-item">
-          <a href="http://www.odu.edu/oeas">Ocean, Earth, Atmospheric Sciences</a></li>
-        <li class="list-inline-item">
-          <a href="http://www.odu.edu/sci">College of Sciences</a></li>
-  </ul>
- </div><!-- col -->
- </div><!-- row -->
-</div><!-- container -->
-
 <div class="container-fluid titlebar">
-   <h2 class="titlebar"><a href="#">Ocean Remote Sensing Group</a></h2>
-</div><!-- container -->
+   <h2 class="titlebar"><a class="offset-md-3" href="#">Ocean Remote Sensing Group</a></h2>
+</div><!-- container
+
+
 
 </body>
 

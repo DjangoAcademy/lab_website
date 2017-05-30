@@ -15,19 +15,23 @@ body {
          margin-bottom: 0px;
          text-align: right;
          /*height: 39px;*/
+         position: relative;
          }
 
 #topbar.list-inline a { font-family:"Open Sans", sans-serif;
-                        font-weight:600;
-                        color: #003057; /* odu blue */}
-
+                        font-weight: 700;
+                        font-size:1vw;
+                        color: #003057; /* odu blue */
+                       }
 
 .titlebar{
  background: #003057
  font-family:"Open Sans", sans-serif;
  font-weight:600;
  margin-top: 0;
- text-align: center;
+ /*text-align: left;*/
+ /*height: 2em;*/
+
  /*position: relative;*/
 }
 
@@ -38,4 +42,6 @@ body {
               font-family:"Open Sans", sans-serif;
               font-weight:600;
               text-decoration: none;
+              font-size:2vw;
+              /*margin-top: 5px;*/
               }
