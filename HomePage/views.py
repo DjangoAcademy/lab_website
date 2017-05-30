@@ -17,3 +17,9 @@ def ODUHead(request):
 
 def Adams(request):
     return render(request, 'sebs-adams.html')
+
+def Garage(request):
+    return render(request, 'index.html')
+
+def Gar_test(request):
+    return render(request, 'gar_test.html')
