@@ -15,9 +15,27 @@ body {
          margin-bottom: 0px;
          text-align: right;
          /*height: 39px;*/
-         position: relative;
+         /*position: relative;*/
+
          }
 
+#topbar.list-group {background: #f3f3f0;;}
+
+#topbar.sm-list {
+         list-style: none;
+         font-family:"Open Sans", sans-serif;
+         font-weight: 700;
+         font-size:2.5vw;
+         color: #003057; /* odu blue */
+         padding: 1px;
+        }
+
+#topbar.sm-list a{
+         font-family:"Open Sans", sans-serif;
+         font-weight: 700;
+         font-size:2.5vw;
+         color: #003057; /* odu blue */
+        }
 #topbar.list-inline a { font-family:"Open Sans", sans-serif;
                         font-weight: 700;
                         font-size:1vw;
@@ -29,13 +47,15 @@ body {
  font-family:"Open Sans", sans-serif;
  font-weight:600;
  margin-top: 0;
- /*text-align: left;*/
- /*height: 2em;*/
-
- /*position: relative;*/
+ /* make bar extend across */
+ padding-right: 0; /*15px in bootstrap.css*/
+ padding-left: 0;  /*idem*/
+ margin-right: auto;
+ margin-left: auto;
 }
 
 .titlebar h2 { background: #003057;
+               padding-left: 20px;
                }
 
 .titlebar a { color: #fff; /*white*/
@@ -44,4 +64,5 @@ body {
               text-decoration: none;
               font-size:2vw;
               /*margin-top: 5px;*/
+
               }

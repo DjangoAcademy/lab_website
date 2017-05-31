@@ -6,6 +6,9 @@ MISC
 - authorizations
 HEADER
 - put a thin line on either side of the BLUE header to separate from the top (maybe light blue, like on ODU sci page)
-- move top links down a bit
+# move top links down a bit
+# make text of title dynamically align with side of image
+- make mobile only Title Header
+
 NAV BAR
-- fix orange color to none
+# fix orange color to none
