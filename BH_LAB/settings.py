@@ -56,8 +56,9 @@ TEMPLATE_ROOT =  os.path.join(BASE_DIR, 'templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_ROOT, os.path.join(TEMPLATE_ROOT, 'HomePage')
-        ],
+        'DIRS': [TEMPLATE_ROOT, os.path.join(TEMPLATE_ROOT, 'HomePage'),
+                os.path.join(TEMPLATE_ROOT, 'Garage'),
+                    ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

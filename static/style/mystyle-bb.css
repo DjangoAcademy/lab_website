@@ -1,0 +1,553 @@
+/*
+ Theme Name: GARAGE
+ Author: Web Domus ITALIA
+ Author URI: http://www.webdomus.net/
+ Description: GARAGE a multi-purpose HTML5 template built with latest Bootstrap framework. It offers flexible solutions, responsive, well documented and comes packed with tons of feature and options which they can be easily customized! It is a perfect solution for all kinds of businesses from small businesses to startups and bloggers.
+ Version: 1.0.0
+ License:  GARAGE template is under Creative Commons Attribution 4.0 International License.
+ Template: GARAGE
+ */
+
+/* FROM SEBS */
+
+/* TOP BAR SECTION */
+.top-bar {
+	overflow: hidden;
+	height: 39px;
+	line-height: 39px;
+	position: relative;
+	background: #f3f3f0 ; /* -BB- */
+	margin-bottom: 0;
+ }
+
+.top-bar ul {
+	margin-bottom: 0;
+	list-style: none; }
+
+.top-bar-section {
+	left: 0 !important;
+	position: relative;
+	width: auto;
+ padding: 0 1rem;
+ font-family:"Open Sans", sans-serif;
+ font-weight:600;
+ font-size:13.25px;
+ /* -BB- font settings match ODU */
+  }
+
+.top-bar-section ul {
+	padding: 0;
+	width: auto;
+	height: auto !important;
+	display: inline;
+	font-size: 1rem;
+	margin: 0; }
+.top-bar-section ul li {
+	float: left; }
+.top-bar-section li:not(.has-form) a:not(.button) {
+	padding: 0 15px;
+	line-height: 39px; }
+.top-bar-section .divider,
+.top-bar-section [role="separator"] {
+	border-top: solid 1px #1a1a1a;
+	clear: both;
+	height: 1px;
+	width: 100%; }
+
+
+#uber-nav.top-bar { height: 1.5rem;
+                    line-height: 1.5rem;
+                    margin-left: 0px;
+	                   background: #f3f3f0 ; /* -BB ADD A BORDER light blue odu maybe- */
+
+                  }
+#uber-nav .top-bar-section ul { margin-left: 0.65rem; }
+#uber-nav .top-bar-section ul,
+#uber-nav .top-bar-section li:not(.has-form),
+#uber-nav .top-bar-section li:not(.has-form) a:not(.button) { font-size: 0.675rem; height: 1.5rem; line-height: 1.5rem; }
+
+#unit-bar .top-bar-section,
+#unit-bar .top-bar-section ul {
+	   background: #d21034 /*red*/;
+    }
+
+/* #### UNIT BAR #### */
+
+#unit-bar-wrapper,
+#unit-bar.top-bar { background: #003057 /* -BB- odublue*/ }
+
+#unit-bar.top-bar { height: 2rem; line-height: 2rem; margin-top: 44px; }
+
+@media only screen and (min-width: 31.26em) { /*med*/
+	#unit-bar.top-bar { height: 2.5rem; line-height: 2.5rem; }
+}
+
+@media only screen and (min-width: 46.26em) { /*large*/
+	#unit-bar.top-bar { height: 3.1rem; line-height: 3.1rem; margin: 2px auto 0 auto; max-width: 1200px; }
+}
+
+@media only screen and (min-width: 61.26em) { /*x-large - xx-large*/
+	#unit-bar.top-bar { height: 4.5rem; line-height: 4.5rem; }
+}
+
+#unit-bar .title-area {	position: relative;	margin: 0 20; }
+#unit-bar .name { margin: 0 0 0 2rem; position: relative; z-index: 10; }
+#unit-bar .name,
+/*#unit-bar .name h1,*/
+#unit-bar .name a { color: #fff /*white*/ !important; font-size: 0.75rem; height: 2rem; line-height: 2rem/*34px*/; }
+#unit-bar .name h1 { font-family:"Open Sans", sans-serif;
+                     font-weight:600;
+                     font-size:10px;
+                     margin-bottom: 0; margin-top: 0; }
+
+@media only screen and (min-width: 31.26em) { /*medium*/
+	#unit-bar .name,
+	#unit-bar .name h1,
+	#unit-bar .name a { font-size: 1.2rem; height: 2.5rem; line-height: 2.5rem/*43px*/; }
+}
+
+@media only screen and (min-width: 46.26em) { /*large*/
+	#unit-bar .name { margin: 0 0 0 230px; /* z-index: 6;*/ }
+	#unit-bar .name,
+	#unit-bar .name h1,
+	#unit-bar .name a { font-size: 1.25rem; height: 3.1rem; line-height: 3.1rem/*58px*/; }
+}
+
+@media only screen and (min-width: 61.26em) { /*x-large*/
+	#unit-bar .name { margin: 0 0 0 240px; }
+	#unit-bar.top-bar,
+	#unit-bar .name,
+	#unit-bar .name h1,
+	#unit-bar .name a { font-family:"Open Sans", sans-serif;
+                      font-weight:600;
+                      font-size:25px;
+                      margin-bottom: 3.5; margin-top: 10.25; }
+                     }
+
+@media only screen and (min-width: 75.01em) { /*xx-large*/
+	#unit-bar.top-bar,
+	#unit-bar .name,
+	#unit-bar .name h1,
+	#unit-bar .name a { font-size: 1.8rem; height: 4rem; line-height: 4rem; }
+}
+
+/* END FROM SEBS */
+/* BEGIN FROM DIANE's LAB */
+body {
+	background: #f3f3f0;
+	/*background: #222222;*/
+}
+
+
+.container{
+	background-color: #f3f3f0;
+  	margin-top:13px;
+ }
+.mega_css3 {
+ background: #ffffff;
+ background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
+ background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+ background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+ background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+ background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%);
+}
+
+.mega_css3 ul.level0 > li.mega > a.mega {
+color: #555555;
+}
+
+.mega_css3 ul.level0 li.mega a.mega:hover,
+.mega_css3 a.over,
+.mega_css3 a.active,
+.mega_css3 ul.level1 li.mega.active > a.mega,
+.mega_css3.mega_css3_light ul.level1 li.mega a.mega.over,
+.mega_css3 ul.level1 li.mega a:hover,
+.mega_css3 ul.level1 li.mega a.over {
+color: #555555;
+background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+.mega_css3 .menubar,
+.mega_css3 ul.level0 > li.mega {
+  background: #ffffff;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%);
+   }
+ }
+/* END sebs-main.css */
+
+.allcontain{
+	max-width: 1366px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header{
+	/*background-color: #191919;*/
+	background-color: #fff;
+
+}
+.header .container{
+	padding: 0px;
+}
+
+.socialicon{
+list-style-type: none;
+display: inline-block;
+margin: 0px;
+padding-left: 11.2%;
+
+}
+.socialicon>li{
+float: left;
+padding-top: 2px;
+
+}
+.socialicon>li>a{
+padding-right: 10px;
+color: #fff;
+text-decoration: none;
+}
+.socialicon>li>a:hover{
+	color: #C59E47;
+
+}
+
+.givusacall{
+	list-style-type: none;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-family: 'BebasNeue Regular';
+	font-size: 12.7px;
+	color: #E7E7E7;
+	margin-bottom: 0px;
+	padding-left: 26.1%;
+}
+.givusacall>li{
+		float: right;
+}
+ .logreg{
+ 	list-style-type: none;
+ 	display: inline-block;
+
+	font-family: 'BebasNeue Regular';
+	font-size: 9pt;
+	color: #E7E7E7;
+	margin-bottom: 0px;
+	padding-left: 23%;
+}
+.logreg>li{
+float: left;
+
+}
+.logreg>li>a{
+	text-decoration: none;
+	color: #E7E7E7;
+	padding-right: 6px;
+}
+.logreg>li>a:hover{
+	color:#C59E47;
+}
+.logreg .register{
+	border-left: 1px solid #E7E7E7;
+	padding-left: 6px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+@media screen and (max-width: 825px) {
+.socialicon{
+padding-left: 5%;
+}
+.givusacall{
+	padding-left: 15%;
+}
+}
+@media screen and (max-width: 555px){
+	.givusacall{
+	padding-left: 10%;
+}
+.logreg{
+		padding-left: 13%;
+}
+}
+@media screen and (max-width: 440px){
+	.givusacall{
+	padding-left: 3%;
+	font-size: 11px;
+}
+.logreg{
+		padding-left: 8%;
+		font-size: 11px;
+}
+.socialicon>li{
+	font-size: 11px;
+}
+.socialicon{
+	padding-left: 0px;
+}
+}
+
+/*----------------------End Header --------------------*/
+
+.logo{
+	position: absolute;
+	float: left;
+	z-index: 999;
+	width:124px;
+	height: 124px;
+	padding-top: 9px;
+
+}
+.topnav{
+	background: none;
+}
+.topnavbar .container{
+	margin-left: 107px !important;
+}
+.toggle-costume{
+	float: left;
+}
+
+#navbarontop{
+	padding-left: 312px;
+	padding-top: 17px;
+	height:69px;
+}
+@font-face {
+  font-family: "BebasNeue Regular";
+    src: url(../source/fonts/BebasNeue-Regular.otf) format("truetype");
+}
+  #navbarontop > li > a {
+  	font-family: 'BebasNeue Regular';
+  	font-size: 17px;
+  	color: #313943;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    margin-bottom: 22px;
+ 	padding-left: 10px;
+    padding-right: 10px!important;
+    margin-left: 34px;
+    border-bottom: 2px solid rgba(0,0,0,.0);
+
+  }
+  #navbarontop > li >a:hover{
+  	background-color: none!important;
+  	background: none!important;
+  	border-bottom: 2px solid #C59E47;
+  }
+
+
+ #navbarontop>button{
+ 	background: none;
+ 	background-color: none;
+ 	border: 2px solid #C59E47;
+ 	font-family: 'BebasNeue Regular';
+ 	margin-left: 60px;
+  	font-size: 16.99px;
+  	color: #313943;
+  	padding-left: 19px;
+  	padding-right: 19px;
+  	padding-top: -2px;
+  	padding-bottom:-2px;
+ }
+ #navbarontop>button:hover{
+ 	background-color: #C59E47;
+ 	color: #fff;
+ }
+ .dropdowncostume{
+ 	margin-left: 0px;
+ }
+ .navbar-default .toggle-costume:hover,
+.navbar-default .toggle-costume:focus {
+  background-color: #000;
+}
+.navbar-default .toggle-costume.icon-bar {
+  background-color: #fff;
+}
+.navbar-default .toggle-costume:hover .icon-bar {
+  background-color: #fff;
+}
+#navbarontop .open > a,
+#navbarontop .open > a:hover,
+#navbarontop .open > a:focus {
+	background-color: none!important;
+  border-color: #C59E47;
+}
+#navbarontop a:focus {
+  outline: none;
+  border-bottom: 2px solid #C59E47;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	font-family: 'BebasNeue Regular';
+	font-size: 13pt;
+	color: #000;
+	background-color: rgba(255,255,255,.5);
+	text-align: center;
+
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+	background-color: #fff;
+}
+.dropdown.open .dropdown-menu {
+    max-height: 200px;
+    opacity: 1;
+}
+
+ /*----------------- Navbar On Top Media screen -------------*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+.dropdowncostume{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.topnavbar .container{
+	margin-left: 10px !important;
+}
+.logo{
+	position: absolute;
+	top:0px;
+	padding-top: 9px;
+	-webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.5); /* FF3.5+ */
+    -ms-transform: scale(0.5); /* IE9 */
+    -o-transform: scale(0.5); /* Opera 10.5+ */
+     transform: scale(0.5);
+}
+.toggle-costume{
+	float: right;
+}
+#navbarontop{
+	 padding-left: 0px;
+	padding-top: 26px;
+	height: 250px;
+}
+#navbarontop>li>a{
+	margin-left: 0px;
+	padding-left: 50px;
+	font-size: 13pt;
+	margin-bottom: 10px;
+
+}
+ #navbarontop>button{
+ 	margin-left:50px;
+
+ }
+.navbar-default .navbar-nav .open .dropdowncostume > li > a {
+	text-align: left;
+	margin-left: 40px;
+}
+#upmenu{
+	margin-bottom: 15px;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+.topnavbar .container{
+	margin-left: 10px !important;
+}
+.toggle-costume{
+float: right;
+}
+ #navbarontop>button{
+ 	margin-left:50px;
+
+ }
+.logo{
+	position: absolute;
+	top:10px;
+	padding-top: 9px;
+	-webkit-transform: scale(0.7); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.7); /* FF3.5+ */
+    -ms-transform: scale(0.7); /* IE9 */
+    -o-transform: scale(0.7); /* Opera 10.5+ */
+     transform: scale(0.7);
+}
+#navbarontop{
+	 padding-left: 0px;
+	padding-top: 40px;
+	height: 250px;
+}
+#navbarontop>li>a{
+	margin-left: 0px;
+	padding-left: 50px;
+	font-size: 13pt;
+	margin-bottom: 10px;
+
+}
+.navbar-default .navbar-nav .open .dropdowncostume > li > a {
+	text-align: left;
+	margin-left: 40px;
+}
+#upmenu{
+	margin-bottom: 15px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+	.topnavbar .container {
+		margin-left: 50px !important;
+	}
+	#navbarontop{
+		padding-left: 25%;
+	}
+	#navbarontop > li > a {
+    padding-bottom: 6px;
+    margin-bottom: 22px;
+ 	padding-left: 0px;
+    padding-right: 0px!important;
+    margin-left: 20px;
+
+  }
+}
+
+
+
+/* ------------------------ End Navbar On Top -----------------*/
+/*------------------------- Start Carousel --------------------*/
+
+
+@font-face{
+	font-family: "OpenSans Semibold";
+	src: url(../source/fonts/OpenSans-Semibold.ttf) format("truetype");
+
+}
+.carousel-caption{
+	z-index: 999;
+}
+.carousel-caption>h2{
+	text-align: left;
+	font-family: 'OpenSans Semibold';
+	font-size: 25.12pt;
+	text-shadow: 0 0px 0px rgba(0, 0, 0, .0);
+
+}
+@font-face{
+	font-family: "OpenSans Regular";
+	src:url(../source/fonts/OpenSans-Regular.ttf) format("truetype");
+}
+.carousel-caption>h2>p{
+font-family: :'OpenSans Regular';
+font-size: 15.88pt;
+}
+.carousel-caption {
+    top: 35%;
+    left:13%;
+    right:auto;
+    bottom: auto;
+}
+
+@media screen and (min-width: 320px) and (max-width:767px){
+.carousel-caption>h2{
+	font-size: 13pt;
+}
+.carousel-caption {
+    top: 15%;
+
+}
+
+.carousel-caption>p{
+font-size: 10pt;
+}
+}

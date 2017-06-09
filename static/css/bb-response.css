@@ -1,0 +1,70 @@
+/* control spacing */
+/**:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; }
+/* end control spacing */
+
+body {
+	background: #f3f3f0 /*off-white*/;
+}
+
+/* properties of the top most bar */
+#topbar {background:#f3f3f0;
+         margin-bottom: 0px;
+         text-align: right;
+         /*height: 39px;*/
+         /*position: relative;*/
+
+         }
+
+#topbar.list-group {background: #f3f3f0;;}
+
+#topbar.sm-list {
+         list-style: none;
+         font-family:"Open Sans", sans-serif;
+         font-weight: 700;
+         font-size:2.5vw;
+         color: #003057; /* odu blue */
+         padding: 1px;
+        }
+
+#topbar.sm-list a{
+         font-family:"Open Sans", sans-serif;
+         font-weight: 700;
+         font-size:2.5vw;
+         color: #003057; /* odu blue */
+        }
+#topbar.list-inline a { font-family:"Open Sans", sans-serif;
+                        font-weight: 700;
+                        font-size:1vw;
+                        color: #003057; /* odu blue */
+                       }
+
+.titlebar{
+ background: #003057
+ font-family:"Open Sans", sans-serif;
+ font-weight:600;
+ margin-top: 0;
+ /* make bar extend across */
+ padding-right: 0; /*15px in bootstrap.css*/
+ padding-left: 0;  /*idem*/
+ margin-right: auto;
+ margin-left: auto;
+}
+
+.titlebar h2 { background: #003057;
+               padding-left: 20px;
+               }
+
+/* 'Ocean Remote Sensing Group' */
+.titlebar a { color: #fff; /*white*/
+              font-family:"Open Sans", sans-serif;
+              font-weight:600;
+              text-decoration: none;
+              font-size:2vw;
+              padding-left: 10px;
+              /*margin-top: 5px;*/
+
+              }
