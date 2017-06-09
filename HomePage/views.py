@@ -22,4 +22,4 @@ def Garage(request):
     return render(request, 'index.html')
 
 def Gar_test(request):
-    return render(request, 'gar_test.html')
+    return render(request, 'index_wrong.html')

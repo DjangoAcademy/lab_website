@@ -68,3 +68,39 @@ body {
               /*margin-top: 5px;*/
 
               }
+
+/* -BB- customize nav bar style */
+.mega_css3 {
+ /* set background of nav bar to white: */
+ background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%);
+}
+
+/*.mega_css3 ul.level0 > li.mega > a.mega {
+color: #555555;
+}*/
+ /*.mega_css3 ul.level0 li.mega a.mega:hover,*/
+ /*.mega_css3 a.over,*/
+ .mega_css3 a.active,
+ /*.mega_css3 ul.level1 li.mega.active > a.mega,*/
+ /*.mega_css3.mega_css3_light ul.level1 li.mega a.mega.over,*/
+
+ /*.mega_css3 ul.level1 li.mega a:hover,*/
+
+/* font color and background of buttons */
+ .mega_css3 ul.level1 li.mega a.over {
+ color: #555555;
+ background-color: #ffffff;
+ }
+
+/*@media screen and (max-width: 767px) {
+.mega_css3 .menubar,
+.mega_css3 ul.level0 > li.mega {
+  background: #ffffff;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%);
+   }
+ }*/
