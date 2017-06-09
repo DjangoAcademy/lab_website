@@ -4,6 +4,7 @@ a # means completed
 # duplication of url regex
 MISC
 - authorizations
+- javascript
 HEADER
 - put a thin line on either side of the BLUE header to separate from the top (maybe light blue, like on ODU sci page)
 # move top links down a bit
