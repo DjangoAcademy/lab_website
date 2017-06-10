@@ -16,16 +16,14 @@ body {
          text-align: right;
          /*height: 39px;*/
          /*position: relative;*/
-
          }
 
-#topbar.list-group {background: #f3f3f0;;}
+#topbar.list-group {background: #f3f3f0;}
 
 #topbar.sm-list {
          list-style: none;
          font-family:"Open Sans", sans-serif;
          font-weight: 700;
-         font-size:2.5vw;
          color: #003057; /* odu blue */
          padding: 1px;
         }
@@ -33,12 +31,11 @@ body {
 #topbar.sm-list a{
          font-family:"Open Sans", sans-serif;
          font-weight: 700;
-         font-size:2.5vw;
          color: #003057; /* odu blue */
         }
+
 #topbar.list-inline a { font-family:"Open Sans", sans-serif;
                         font-weight: 700;
-                        font-size:1vw;
                         color: #003057; /* odu blue */
                        }
 
@@ -72,6 +69,9 @@ body {
               /*margin-right: -15px;*/
               /*margin-top: 5px;*/
               }
+
+
+
 
 /* -BB- customize nav bar style */
 .mega_css3 {
@@ -125,8 +125,12 @@ color: #555555;
     /*color:#fff;*/
     margin-left:130px;
     position:relative;
-    bottom:13px;
+    bottom:15px;
   }
+
+  .fontsize-xxxs a {
+   font-size:2.5vw;
+ }
 }
 
 @media (min-width: 321px) and (max-width: 560px){
@@ -140,27 +144,36 @@ color: #555555;
     }
 
   .titlebar-xxs h2>a{
-    font-size:2.7vw;
+    font-size:3.0vw;
     /*color:#fff;*/
     margin-left:160px;
     position:relative;
     bottom:13px;
   }
+   .fontsize-xxs a {
+    font-size:2.5vw;
+  }
 }
 @media (min-width: 560px) and (max-width: 576px) {
   .titlebar-xs a{
-    font-size:2vw;
+    font-size:2.5vw;
     margin-left:210px;
     position:relative;
     bottom:8px;
     }
+   .fontsize-xs a {
+    font-size:2.1vw;
+    }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .titlebar-sm a{
-    font-size:2vw;
+    font-size:2.5vw;
     margin-left:270px;
     position:relative;
     bottom:6px;
+    }
+   .fontsize-sm a {
+    font-size:1.9vw;
     }
 }
 @media (min-width: 767px) and (max-width: 991px)  {
@@ -169,16 +182,20 @@ color: #555555;
      /*padding:0;*/
      /*padding-left:1px;*/
      height:28px;
-     /*margin-bottom:-30px; /* move button up */*/
+     /*margin-bottom:-30px; /* move button up */
      /*padding-bottom:-30/0px;*/
     }
   .titlebar-md a{
-    font-size:2vw;
+    font-size:2.5vw;
     margin-left:250px;
     position:relative;
     bottom:6px;
     }
+   .fontsize-md a {
+    font-size:1.9vw;
+    }
 }
+
 @media (min-width: 991px) and (max-width: 1199px) {
   .titlebar-lg a{
     font-size:2vw;

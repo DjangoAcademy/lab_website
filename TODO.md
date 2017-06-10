@@ -13,5 +13,6 @@ HEADER
 - use flex-column with a breakpoint to specify stack rather than have 2 diff code sections 7:35 of create basic navigation on Lynda
 - use breadcrumbs on top head
 	- use .breadcrumb-item+ to select all but first
+# - typo somewhere in media -lg
 NAV BAR
 # fix orange color to none
