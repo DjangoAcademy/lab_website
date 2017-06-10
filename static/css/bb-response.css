@@ -69,8 +69,17 @@ body {
               /*margin-right: -15px;*/
               /*margin-top: 5px;*/
               }
+.navbar   {
+           background-color: #222;
+           width: 70%;
+           padding-left:  5px;
+          }
 
-
+#siteMenu a{
+         font-size: 1.5vw;
+         color: #bcbcbc; /* grayed out */
+         /*background-color:#222;*/
+        }
 
 
 /* -BB- customize nav bar style */
@@ -175,6 +184,7 @@ color: #555555;
    .fontsize-sm a {
     font-size:1.9vw;
     }
+
 }
 @media (min-width: 767px) and (max-width: 991px)  {
   .titlebar-md{
@@ -194,6 +204,14 @@ color: #555555;
    .fontsize-md a {
     font-size:1.9vw;
     }
+
+    .siteMenu-loc-md {
+                      margin-left:225px;
+                      margin-top:-8px;}
+
+    #siteMenu.siteMenu-md a{
+     font-size:1.55vw;
+    }
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -203,6 +221,13 @@ color: #555555;
     position:relative;
     bottom:5px;
     }
+   .siteMenu-loc-lg {
+                     margin-left:295px;
+                     margin-top:-8px;}
+
+   #siteMenu.siteMenu-lg a{
+    font-size:1.55vw;
+   }
 }
 @media (min-width: 1199px) and (max-width: 1400px){
   .titlebar-xl a{
