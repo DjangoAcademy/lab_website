@@ -11,14 +11,13 @@ body {
 }
 
 /* properties of the top most bar */
-/*#topbar {background:#f3f3f0;
+#topbar {background:#f3f3f0;
          margin-bottom: 0px;
-         /*text-align: right;*/
-         /*font-size:2.5vw*/
-         /*height: 100px;*/
+         text-align: right;
+         /*height: 39px;*/
          /*position: relative;*/
 
-         }*/
+         }
 
 #topbar.list-group {background: #f3f3f0;;}
 
@@ -26,7 +25,7 @@ body {
          list-style: none;
          font-family:"Open Sans", sans-serif;
          font-weight: 700;
-         /*font-size:2.5vw;*/
+         font-size:2.5vw;
          color: #003057; /* odu blue */
          padding: 1px;
         }
@@ -37,27 +36,30 @@ body {
          font-size:2.5vw;
          color: #003057; /* odu blue */
         }
-
-/*#topbar.list-inline a { font-family:"Open Sans", sans-serif;
+#topbar.list-inline a { font-family:"Open Sans", sans-serif;
                         font-weight: 700;
                         font-size:1vw;
                         color: #003057; /* odu blue */
-                       }*/
+                       }
+
+#titlebar.container-fluid{
+  padding-right: 0; /*15px in bootstrap.css*/
+  padding-left: 0; /*15px in bootstrap.css*/
+  margin-right: auto;
+  margin-left: -15px;
+  width: 250%;
+  padding-left: 0;
+ }
 
 .titlebar{
  background: #003057
  font-family:"Open Sans", sans-serif;
  font-weight:600;
- margin-top: 0;
- /* make bar extend across */
- padding-right: 0; /*15px in bootstrap.css*/
- padding-left: 0;  /*idem*/
- /*margin-right: auto;*/
- /*margin-left: auto;*/
 }
 
 .titlebar h2 { background: #003057;
-               /*padding-left: 20px;*/
+              margin-right: 0px;
+ width: 100%;
                }
 
 /* 'Ocean Remote Sensing Group' */
@@ -65,10 +67,9 @@ body {
               font-family:"Open Sans", sans-serif;
               font-weight:600;
               text-decoration: none;
-              /*font-size:3vw;*/
-              /*padding-left: 10px;*/
+              /*font-size:2vw;*/
+              /*marign-right: -15px;*/
               /*margin-top: 5px;*/
-
               }
 
 /* -BB- customize nav bar style */
@@ -106,168 +107,92 @@ color: #555555;
   background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%);
    }
  }*/
-.text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
-    text-align: left;
+
+
+@media(max-width: 321px){
+  .titlebar-xxxs{
+     margin:0;
+     padding:0;
+     padding-left:1px;
+     height:23px;
+     margin-bottom:-30px; /* move button up */
+     padding-bottom:-300px;
+    }
+
+  .titlebar-xxxs h2>a{
+    font-size:2.7vw;
+    /*color:#fff;*/
+    margin-left:125px;
+    position:relative;
+    bottom:13px;
+  }
 }
-.text-center-not-xs, .text-center-not-sm, .text-center-not-md, .text-center-not-lg {
-    text-align: center;
+
+@media (min-width: 321px) and (max-width: 560px){
+  .titlebar-xxs{
+     margin:0;
+     padding:0;
+     padding-left:1px;
+     height:23px;
+     margin-bottom:-30px; /* move button up */
+     padding-bottom:-300px;
+    }
+
+  .titlebar-xxs h2>a{
+    font-size:2.7vw;
+    /*color:#fff;*/
+    margin-left:155px;
+    position:relative;
+    bottom:13px;
+  }
 }
-.text-right-not-xs, .text-right-not-sm, .text-right-not-md, .text-right-not-lg {
-    text-align: right;
+@media (min-width: 560px) and (max-width: 576px) {
+  .titlebar-xs a{
+    font-size:2vw;
+    margin-left:210px;
+    position:relative;
+    bottom:8px;
+    }
 }
-.text-justify-not-xs, .text-justify-not-sm, .text-justify-not-md, .text-justify-not-lg {
-    text-align: justify;
+@media (min-width: 576px) and (max-width: 767px) {
+  .titlebar-sm a{
+    font-size:2vw;
+    margin-left:260px;
+    position:relative;
+    bottom:6px;
+    }
 }
-
-@media (max-width: 767px) {
-    .text-left-not-xs, .text-center-not-xs, .text-right-not-xs, .text-justify-not-xs {
-        text-align: inherit;
+@media (min-width: 767px) and (max-width: 991px)  {
+  .titlebar-md a{
+    font-size:2vw;
+    margin-left:250px;
+    position:relative;
+    bottom:6px;
     }
-    .text-left-xs {
-        text-align: left;
-    }
-    .text-center-xs {
-        text-align: center;
-    }
-    .text-right-xs {
-        text-align: right;
-    }
-    .text-justify-xs {
-        text-align: justify;
-    }
-
-    .topbar-item-xs{
-         font-size: 5vw;
-         /*list-style: none;*/
-         font-family:"Open Sans", sans-serif;
-         font-weight: 700;
-         /*font-size:2.5vw;*/
-         color: #003057; /* odu blue */
-      }
-
-    .topbar-item-xs a{
-             font-family:"Open Sans", sans-serif;
-             font-weight: 700;
-             color: #003057; /* odu blue */
-         text-align: right;
-      }
-
-    .title-font-xs a{
-      font-size: 4vw;
-      /*margin-left: 725px;*/
-     }
-
 }
-@media (min-width: 768px) and (max-width: 991px) {
-    .text-left-not-sm, .text-center-not-sm, .text-right-not-sm, .text-justify-not-sm {
-        text-align: inherit;
+@media (min-width: 991px) and (max-width: 1199px) {
+  .titlebar-lg a{
+    font-size:2vw;
+    margin-left:300px;
+    position:relative;
+    bottom:5px;
     }
-    .text-left-sm {
-        text-align: left;
-    }
-    .text-center-sm {
-        text-align: center;
-    }
-    .text-right-sm {
-        text-align: right;
-    }
-    .text-justify-sm {
-        text-align: justify;
-    }
-    .topbar-item{
-         font-size: 2px;
-         /*list-style: none;*/
-         font-family:"Open Sans", sans-serif;
-         font-weight: 700;
-         /*font-size:2.5vw;*/
-         color: #003057; /* odu blue */
-      }
-
-    .topbar-item a{
-             font-family:"Open Sans", sans-serif;
-             font-weight: 700;
-             color: #003057; /* odu blue */
-             font-size: 12px;
-    }
-    .title-font-sm a{
-      font-size: 4vw;
-      margin-left: 200px;
-     }
-
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-    .text-left-not-md, .text-center-not-md, .text-right-not-md, .text-justify-not-md {
-        text-align: inherit;
+@media (min-width: 1199px) and (max-width: 1400px){
+  .titlebar-xl a{
+    font-size:3vw;
+    margin-left:360px;
     }
-    .text-left-md {
-        text-align: left;
-    }
-    .text-center-md {
-        text-align: center;
-    }
-    .text-right-md {
-        text-align: right;
-    }
-    .text-justify-md {
-        text-align: justify;
-    }
-    .topbar-item{
-         /*list-style: none;*/
-         font-family:"Open Sans", sans-serif;
-         font-weight: 700;
-         /*font-size:2.5vw;*/
-         color: #003057; /* odu blue */
-      }
-
-    .topbar-item a{
-             font-family:"Open Sans", sans-serif;
-             font-weight: 700;
-             color: #003057; /* odu blue */
-         font-size: 12px;
-         text-align: right;
-      }
-
-     .title-font-md a{
-       font-size: 4vw;
-       margin-left: 100px;
-      }
 }
-@media (min-width: 1200px) {
-    .text-left-not-lg, .text-center-not-lg, .text-right-not-lg, .text-justify-not-lg {
-        text-align: inherit;
-    }
-    .text-left-lg {
-        text-align: left;
-    }
-    .text-center-lg {
-        text-align: center;
-    }
-    .text-right-lg {
-        text-align: right;
-    }
-    .text-justify-lg {
-        text-align: justify;
+@media (min-width: 1400px) {
+  .titlebar-xxl a{
+    font-size:3vw;
+    margin-left:450px;
     }
 
-    .topbar-item-lg{
-         /*list-style: none;*/
-         font-family:"Open Sans", sans-serif;
-         font-weight: 700;
-         /*font-size:2.5vw;*/
-         color: #003057; /* odu blue */
-      }
-
-    .topbar-item-lg a{
-             font-family:"Open Sans", sans-serif;
-             font-weight: 700;
-             color: #003057; /* odu blue */
-             font-size: 2.5vw;
-             padding-left:20px;
-             padding-left:20px;
+@media (min-width: 1700px) {
+  .titlebar-xxxl a{
+    font-size:3vw;
+    margin-left:590px;
     }
-    .title-font-lg a{
-      font-size: 4vw;
-      margin-left: 725px;
-     }
-      }
 }

@@ -15,8 +15,8 @@
 <!-- <link rel="stylesheet" href="{% static "css/sebs-mega_css3_orig.css" %}"> -->
 <link rel="stylesheet" type="text/css" href="{% static "css/bb-response.css" %}">
 
-<script src="https://npmcdn.com/tether@1.3.3/dist/js/tether.min.js"></script>
 <script src="//github.hubspot.com/tether/dist/js/tether.js"></script>
+<script src="{% static "js/jquery-3.2.1.min.js" %}" type="text/javascript"></script>
 <script src="{% static "js/bootstrap.min.js" %}" type="text/javascript"></script>
 <!-- <script src="{% static "js/sebs-mega2.js" %}" type="text/javascript"></script> -->
 
@@ -56,27 +56,32 @@
 </div><!-- col -->
 </div><!-- container -->
 
+<style>
+ img {position: absolute;
+      background: #f3f3f0;
+      z-index:100;
+      margin-top: -20px;
+     }
+ </style>
+
 <div class="container-fluid">
   <div class="row">
    <div class="col col-4 col-md-2 offset-md-1">
     <a href="https://odu.edu">
-      <img class="img-fluid rounded targ" src="{% static "images/logo-ODU.png" %}">
+      <img class="img-fluid rounded" src="{% static "images/logo-ODU.png" %}">
     </a>
    </div><!-- cols -->
    </div><!-- row -->
-   <div class="container-fluid titlebar">
-   <h2 class="titlebar title-font-xs title-font-sm title-font-md title-font-lg">
-      <a class="col-12 offset-md-2 offset-4 tt"
-         href="#">Ocean Remote Sensing Group</a></h2>
+   <div class="container-fluid titlebar titlebar-xxxs titlebar-xxs" id="titlebar">
+   <!-- <h2 class="titlebar fontsizeBB title-font-xs title-font-sm title-font-md title-font-lg"> -->
+      <h2 class="titlebar titlebar-xxxs titlebar-xxs titlebar-xs titlebar-sm titlebar-md titlebar-lg titlebar-xl titlebar-xxl titlebar-xxxl">
+      <a href="#">Ocean Remote Sensing Group</a></h2>
   </div><!-- titlebar -->
  </div><!-- container -->
 
 
 
-<style>
- img {position: absolute; background: #f3f3f0; z-index:100;}
-}
- </style>
+
 
 <!-- NavBar -->
   <div class="container">
@@ -115,18 +120,6 @@
   </div><!-- container -->
 
 <!-- Navigation Bar -->
-<script>
-            new Tether({
-                element: '.tt',
-                target: '.targ',
-                attachment: 'bottom left',
-                targetAttachment: 'bottom left',
-                constraints: [{
-                    to: 'window',
-                    attachment: 'together'
-                }]
-            });
-        </script>
 </body>
 
 
