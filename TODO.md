@@ -10,6 +10,6 @@ HEADER
 # move top links down a bit
 # make text of title dynamically align with side of image
 - make mobile only Title Header
-
+- use flex-column with a breakpoint to specify stack rather than have 2 diff code sections 7:35 of create basic navigation on Lynda
 NAV BAR
 # fix orange color to none
