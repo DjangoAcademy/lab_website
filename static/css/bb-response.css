@@ -5,7 +5,6 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box; }
 /* end control spacing */
-
 body {
 	background: #f3f3f0 /*off-white*/;
 }
@@ -14,7 +13,7 @@ body {
 #topbar {background:#f3f3f0;
          margin-bottom: 0px;
          text-align: right;
-         margin-right: -10px;
+         /*margin-right: -10px;*/
          /*height: 39px;*/
          /*position: relative;*/
          }
@@ -51,7 +50,7 @@ body {
  }
 
 .titlebar{
- background: #003057
+ background: #003057;
  font-family:"Open Sans", sans-serif;
  font-weight:600;
 }
@@ -67,13 +66,12 @@ body {
               font-family:"Open Sans", sans-serif;
               font-weight:600;
               text-decoration: none;
-
               /*font-size:2vw;*/
               /*margin-right: -15px;*/
               /*margin-top: 5px;*/
               }
 .navbar   {
-           background-color: #222;
+           /*background-color: #222;*/
            width: 65%;
            padding-left:  0px;
            margin-top: -8px;
@@ -88,28 +86,63 @@ body {
          margin-bottom: -8px;
         }
 
+
+#menuBtn{
+  background-color: #fff;
+  width: 100%;
+  height: 25px;
+}
+
+#menuBtnTxt {
+  display:flex;
+  justify-content:center;
+  font-size:15px;
+ }
+
+.siteMenu-dropdown{
+  background-color: #fff;
+  /*margin-top:1.5px;*/
+ }
+
+#siteMenu.siteMenu-dropdown a{
+  text-align:center;
+  font-size: 12px;
+  color:#222;
+  padding-top:20px;
+  padding-bottom:20px;
+  }
+
+.nav-item:hover {
+    background:#F5F5F5;
+    /*width: 10%;*/
+    /*height: 10%;*/
+    /*-webkit-border-radius: 4px 4px 4px 4px;*/
+    /*border-radius: 1px 1px 1px 1px;*/
+    border-radius: 5px 5px 5px 5px;
+    /*display: block;*/
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
 /* -BB- customize nav bar style */
 .mega_css3 {
  /* set background of nav bar to white: */
- background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%);
 }
 
 /*.mega_css3 ul.level0 > li.mega > a.mega {
 color: #555555;
 }*/
- /*.mega_css3 ul.level0 li.mega a.mega:hover,*/
- /*.mega_css3 a.over,*/
- .mega_css3 a.active,
  /*.mega_css3 ul.level1 li.mega.active > a.mega,*/
  /*.mega_css3.mega_css3_light ul.level1 li.mega a.mega.over,*/
 
  /*.mega_css3 ul.level1 li.mega a:hover,*/
 
 /* font color and background of buttons */
- .mega_css3 ul.level1 li.mega a.over {
+ /*.mega_css3 ul.level1 li.mega a.over {
  color: #555555;
  background-color: #ffffff;
- }
+ }*/
 
 /*@media screen and (max-width: 767px) {
 .mega_css3 .menubar,
@@ -124,15 +157,13 @@ color: #555555;
    }
  }*/
 
-
-@media(max-width: 321px){
+@media(max-width: 325px){
   .titlebar-xxxs{
      margin:0;
      padding:0;
-     padding-left:0px;
-     height:20px;
-     margin-bottom:-30px; /* move button up */
-     padding-bottom:-300px;
+     height:19px;
+     /*margin-bottom:-30px; /* move button up */*/
+     /*padding-bottom:-300px;*/
     }
 
   .titlebar-xxxs h2>a{
@@ -140,50 +171,85 @@ color: #555555;
     /*color:#fff;*/
     margin-left:130px;
     position:relative;
-    bottom:15px;
+    bottom:16px;
   }
 
   .fontsize-xxxs a {
    font-size:2.5vw;
  }
+
+  .siteMenu-loc-xxxs {
+    /*margin-left:242px;*/
+    margin-top: -8px;
+    /*margin-bottom: 0px;*/
+  }
+
+  /*#siteMenu.siteMenu-xxxs a{
+    background-color:#fff;
+    font-size:3.45vw;
+    margin-top: 1px;
+    text-align: center;
+  }*/
 }
 
-@media (min-width: 321px) and (max-width: 560px){
+@media (min-width: 326px) and (max-width: 559px){
   .titlebar-xxs{
-     margin:0;
-     padding:0;
-     padding-left:1px;
+     /*margin:0;*/
+     /*padding:0;*/
+     /*padding-left:1px;*/
      height:23px;
-     margin-bottom:-30px; /* move button up */
-     padding-bottom:-300px;
+     /*margin-bottom:-30px; /* move button up */
+     /*padding-bottom:-300px;*/
     }
 
-  .titlebar-xxs h2>a{
-    font-size:3.0vw;
+  .titlebar-xxs a{
+    font-size:2.5vw;
     /*color:#fff;*/
-    margin-left:160px;
+    margin-left:210px;
     position:relative;
     bottom:13px;
   }
    .fontsize-xxs a {
     font-size:2.5vw;
   }
+
+
+
+  /*#siteMenu.siteMenu-xxs a{
+    background-color:#fff;
+    font-size:3.45vw;
+    margin-top:1px;
+    text-align: center;
+  }*/
 }
+
 @media (min-width: 560px) and (max-width: 576px) {
   .titlebar-xs a{
     font-size:2.5vw;
-    margin-left:210px;
+    margin-left:215px;
     position:relative;
     bottom:8px;
     }
    .fontsize-xs a {
     font-size:2.1vw;
     }
+
+  .siteMenu-loc-xs {
+    /*margin-top: -12px;*/
+
+  }
+  /*
+  #siteMenu.siteMenu-xs a{
+    font-size:2.4vw;
+    background-color:#fff;
+    margin-top:2px;
+  }*/
 }
-@media (min-width: 576px) and (max-width: 767px) {
+
+@media (min-width: 577px) and (max-width: 767px) {
   .titlebar-sm a{
     font-size:2.5vw;
-    margin-left:270px;
+    margin-left:280px;
     position:relative;
     bottom:6px;
     }
@@ -191,8 +257,20 @@ color: #555555;
     font-size:1.9vw;
     }
 
+  .siteMenu-loc-sm {
+    /*margin-left:242px;*/
+    margin-top: -16px;
+    /*margin-bottom: 0px;*/
+  }
+
+  /*#siteMenu.siteMenu-sm a{
+    font-size:2.4vw;
+    background-color:#fff;
+    margin-top:2px;
+  }*/
 }
-@media (min-width: 767px) and (max-width: 1001px)  {
+
+@media (min-width: 768px) and (max-width: 999px)  {
   .titlebar-md{
      /*margin:0;*/
      /*padding:0;*/
@@ -213,15 +291,16 @@ color: #555555;
 
   .siteMenu-loc-md {
     margin-left:242px;
-    width: 65%;
-  }
+    width: 68%;
 
+  }
+  /*
   #siteMenu.siteMenu-md a{
     font-size:1.45vw;
-  }
+  }*/
 }
 
-@media (min-width: 1001px) and (max-width: 1199px) {
+@media (min-width: 1000px) and (max-width: 1199px) {
   .titlebar-lg a{
     font-size:2vw;
     margin-left:325px;
@@ -236,7 +315,7 @@ color: #555555;
    font-size:1.45vw;
   }
 }
-@media (min-width: 1199px) and (max-width: 1400px){
+@media (min-width: 1200px) and (max-width: 1399px){
   .titlebar-xl a{
     font-size:3vw;
     margin-left:380px;
@@ -244,14 +323,14 @@ color: #555555;
     bottom: 0px;
   }
   .siteMenu-loc-xl {
-   margin-left:342px;
+   margin-left:365px;
    width: 62%
   }
   #siteMenu.siteMenu-xl a{
    font-size:1.45vw;
   }
 }
-@media (min-width: 1400px) and (max-width: 1700px){
+@media (min-width: 1400px) and (max-width: 1699px){
   .titlebar-xxl a{
     font-size:3vw;
     margin-left:455px;
