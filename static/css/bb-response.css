@@ -73,19 +73,17 @@ body {
 .navbar   {
            /*background-color: #222;*/
            width: 65%;
-           padding-left:  0px;
-           margin-top: -8px;
+           margin-top: -15px;
           }
 
-#siteMenu a{
-         font-size: 1.5vw;
-         color: #bcbcbc; /* grayed out */
-         /*background-color:#222;*/
-         /* margins control height of box */
-         margin-top:-8px;
-         margin-bottom: -8px;
-        }
+#siteMenu.siteMenu a{
+  /*margin-top:0px;*/
+  /*margin-bottom: 0px;*/
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /*color:#222;*/
 
+}
 
 #menuBtn{
   background-color: #fff;
@@ -99,32 +97,48 @@ body {
   font-size:15px;
  }
 
+
+#siteMenu.siteMenu-dropdown a{
+  text-align:center;
+  font-size: 12px;
+  padding-top:20px;
+  padding-bottom:20px;
+  /*color: #222;*/
+  }
+
+.nav-item{
+   color: #222
+  }
+.nav-item:hover {
+  background-color: #555555;
+  /*opacity: 0.4;*/
+
+  border-style: solid;
+  /*border-color: #ff0000 #0000ff;*/
+  border-color: #fff #555555;
+  border-width: 1px;
+  color: #fff;
+  border-radius: 100px 100px 100px 100px; /*circlular border
+  /*transform: scale(1, 0.90);*/ /*shrink items and scale */
+}
+
 .siteMenu-dropdown{
   background-color: #fff;
   /*margin-top:1.5px;*/
  }
 
-#siteMenu.siteMenu-dropdown a{
-  text-align:center;
-  font-size: 12px;
-  color:#222;
-  padding-top:20px;
-  padding-bottom:20px;
-  }
-
-.nav-item:hover {
-    background:#F5F5F5;
-    /*width: 10%;*/
-    /*height: 10%;*/
-    /*-webkit-border-radius: 4px 4px 4px 4px;*/
-    /*border-radius: 1px 1px 1px 1px;*/
-    border-radius: 5px 5px 5px 5px;
-    /*display: block;*/
+.dropdown-item{
+ color:#fff;
+ 	color: #bcbcbc;
 }
 
 .dropdown:hover .dropdown-menu {
-display: block;
+  display: block;
+  background-color: #555555;
+  /*color:#fff;*/
+  /*color: yellow;*/
 }
+
 /* -BB- customize nav bar style */
 .mega_css3 {
  /* set background of nav bar to white: */
@@ -156,6 +170,14 @@ color: #555555;
   background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%);
    }
  }*/
+
+.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
 
 @media(max-width: 325px){
   .titlebar-xxxs{
@@ -191,7 +213,6 @@ color: #555555;
     text-align: center;
   }*/
 }
-
 @media (min-width: 326px) and (max-width: 559px){
   .titlebar-xxs{
      /*margin:0;*/
@@ -213,16 +234,10 @@ color: #555555;
     font-size:2.5vw;
   }
 
-
-
-  /*#siteMenu.siteMenu-xxs a{
-    background-color:#fff;
-    font-size:3.45vw;
-    margin-top:1px;
-    text-align: center;
-  }*/
+  #menuBtn{
+   margin-top:8px;
+  }
 }
-
 @media (min-width: 560px) and (max-width: 576px) {
   .titlebar-xs a{
     font-size:2.5vw;
@@ -245,7 +260,6 @@ color: #555555;
     margin-top:2px;
   }*/
 }
-
 @media (min-width: 577px) and (max-width: 767px) {
   .titlebar-sm a{
     font-size:2.5vw;
@@ -269,7 +283,6 @@ color: #555555;
     margin-top:2px;
   }*/
 }
-
 @media (min-width: 768px) and (max-width: 999px)  {
   .titlebar-md{
      /*margin:0;*/
@@ -290,8 +303,9 @@ color: #555555;
   }
 
   .siteMenu-loc-md {
-    margin-left:242px;
-    width: 68%;
+    margin-left:225px;
+    width: 73%;
+    padding-right: 40px;
 
   }
   /*
@@ -299,7 +313,6 @@ color: #555555;
     font-size:1.45vw;
   }*/
 }
-
 @media (min-width: 1000px) and (max-width: 1199px) {
   .titlebar-lg a{
     font-size:2vw;
@@ -309,10 +322,10 @@ color: #555555;
     }
   .siteMenu-loc-lg {
    margin-left:292px;
-   width: 63%
+   width: 67%
   }
   #siteMenu.siteMenu-lg a{
-   font-size:1.45vw;
+   font-size:1.5vw;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px){
@@ -324,10 +337,10 @@ color: #555555;
   }
   .siteMenu-loc-xl {
    margin-left:365px;
-   width: 62%
+   width: 68%
   }
   #siteMenu.siteMenu-xl a{
-   font-size:1.45vw;
+   font-size:1.55vw;
   }
 }
 @media (min-width: 1400px) and (max-width: 1699px){
@@ -338,11 +351,11 @@ color: #555555;
 
   .siteMenu-loc-xxl {
    margin-left:418px;
-   width: 62%;
+   width: 64%;
   }
+
   #siteMenu.siteMenu-xxl a{
    font-size:1.55vw;
-   /*font-size:3vw;*/
   }
 }
 @media (min-width: 1700px) {
@@ -353,7 +366,7 @@ color: #555555;
 
    .siteMenu-loc-xxxl {
     margin-left:510px;
-    width: 62%;
+    width: 63%;
     }
 
    #siteMenu.siteMenu-xxxl a{
