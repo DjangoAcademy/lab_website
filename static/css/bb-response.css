@@ -99,7 +99,7 @@ body {
 
 
 #siteMenu.siteMenu-dropdown a{
-  text-align:center;
+  text-align:left;
   font-size: 12px;
   padding-top:20px;
   padding-bottom:20px;
@@ -109,9 +109,10 @@ body {
 .nav-item{
    color: #222
   }
+
 .nav-item:hover {
   background-color: #555555;
-  /*opacity: 0.4;*/
+  opacity: 0.6;
 
   border-style: solid;
   /*border-color: #ff0000 #0000ff;*/
@@ -127,16 +128,50 @@ body {
   /*margin-top:1.5px;*/
  }
 
-.dropdown-item{
- color:#fff;
- 	color: #bcbcbc;
+
+.dropdown-menu {
+ color: #222;
+ width:40px !important;
+/*margin-right: 500px;*/
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
   background-color: #555555;
-  /*color:#fff;*/
-  /*color: yellow;*/
+  display:block;
+  min-width:100px;
+  /*padding-top:20px;*/
+  /*margin:0px;*/
+  /*margin-top:-15px;*/
+  /*display: inline-flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*padding:20px;*/
+}
+.dropdown:hover{
+ /*margin-left:-20px;*/
+  /*padding-top:20px;*/
+
+}
+
+.dropdown-menu a{
+  /*margin:-20px;*/
+  /*padding-right: 0px;*/
+  /*padding:-250px;*/
+ /*width: 30px !important;*/
+ /*height: 40px !important*/
+ height:20px;
+ margin-top:-20px;
+}
+
+
+.dropdown-item {
+ 	color: #bcbcbc;
+  font-size: 11px !important;
+  /*background-color:#222;*/
+  /*padding: 0px;*/
+  padding-left: 0px;
+  margin:0px;
+  /*width: 50%;*/
 }
 
 /* -BB- customize nav bar style */
@@ -306,7 +341,6 @@ color: #555555;
     margin-left:225px;
     width: 73%;
     padding-right: 40px;
-
   }
   /*
   #siteMenu.siteMenu-md a{
