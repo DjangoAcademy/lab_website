@@ -1,9 +1,20 @@
 /* ************************************* */
 /* --------- BB CSS for BH LAB --------- */
 /* ************************************* */
+body {
+  background-color: #bcbcbc;
+ }
+
+/* ODU Logo */
+#logo {
+  position: absolute;
+  background: #f3f3f0;
+  z-index:100;
+  margin-top: -20px;
+ }
 
 /* properties of the top most bar */
-#topbar {
+#Topbar {
   background:#f3f3f0;
   margin-bottom: 0px;
   text-align: right;
@@ -12,11 +23,11 @@
   /*position: relative;*/
  }
 
-#topbar.list-group {
+#Topbar.list-group {
   background: #f3f3f0;
  }
 
-#topbar.sm-list {
+#Topbar.sm-list {
   list-style: none;
   font-family:"Open Sans", sans-serif;
   font-weight: 700;
@@ -24,19 +35,19 @@
   padding: 1px;
  }
 
-#topbar.sm-list a{
+#Topbar.sm-list a{
   font-family:"Open Sans", sans-serif;
   font-weight: 700;
   color: #003057; /* odu blue */
  }
 
-#topbar.list-inline a {
+#Topbar.list-inline a {
   font-family:"Open Sans", sans-serif;
   font-weight: 700;
   color: #003057; /* odu blue */
  }
 
-#titlebar.container-fluid{
+#Title.container-fluid{
   padding-right: 0px; /*15px in bootstrap.css*/
   padding-left: 0px; /*15px in bootstrap.css*/
   margin-right: -15px;
@@ -70,7 +81,7 @@
  margin-top: -15px;
  }
 
-#siteMenu.siteMenu a{
+#LabMenu.siteMenu a{
   padding-top: 0px;
   padding-bottom: 0px;
    line-height:1px;
@@ -88,7 +99,7 @@
   font-size:15px;
  }
 
-#siteMenu.siteMenu-dropdown a{
+#LabMenu.siteMenu-dropdown a{
   text-align:left;
   font-size: 12px;
   padding-top:20px;
@@ -227,7 +238,7 @@
   .fontsize a {
     font-size:1.9vw;
    }
-  #siteMenu.siteMenu a{
+  #LabMenu.siteMenu a{
     font-size:1.5vw;
   }
   .siteMenu-loc {
@@ -256,7 +267,7 @@
     margin-left:292px;
     width: 67%
    }
-  #siteMenu.siteMenu a{
+  #LabMenu.siteMenu a{
     font-size:1.5vw;
    }
   .dropdown:hover .dropdown-menu {
@@ -279,7 +290,7 @@
     margin-left:365px;
     width: 68%
    }
-  #siteMenu.siteMenu a{
+  #LabMenu.siteMenu a{
     font-size:1.55vw;
    }
   .dropdown:hover .dropdown-menu {
@@ -300,7 +311,7 @@
     margin-left:418px;
     width: 64%;
    }
-  #siteMenu.siteMenu a{
+  #LabMenu.siteMenu a{
     font-size:1.55vw;
    }
   .dropdown:hover .dropdown-menu {
@@ -322,7 +333,7 @@
     margin-left:510px;
     width: 63%;
    }
-  #siteMenu.siteMenu a{
+  #LabMenu.siteMenu a{
     font-size:1.55vw;
    }
   .dropdown:hover .dropdown-menu {
