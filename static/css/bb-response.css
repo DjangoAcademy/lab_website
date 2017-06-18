@@ -1,43 +1,40 @@
-/* control spacing */
-/**:before,
-*:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box; }
-/* end control spacing */
-body {
-	background: #f3f3f0 /*off-white*/;
-}
+/* ************************************* */
+/* --------- BB CSS for BH LAB --------- */
+/* ************************************* */
 
 /* properties of the top most bar */
-#topbar {background:#f3f3f0;
-         margin-bottom: 0px;
-         text-align: right;
-         /*margin-right: -10px;*/
-         /*height: 39px;*/
-         /*position: relative;*/
-         }
+#topbar {
+  background:#f3f3f0;
+  margin-bottom: 0px;
+  text-align: right;
+  /*margin-right: -10px;*/
+  /*height: 39px;*/
+  /*position: relative;*/
+ }
 
-#topbar.list-group {background: #f3f3f0;}
+#topbar.list-group {
+  background: #f3f3f0;
+ }
 
 #topbar.sm-list {
-         list-style: none;
-         font-family:"Open Sans", sans-serif;
-         font-weight: 700;
-         color: #003057; /* odu blue */
-         padding: 1px;
-        }
+  list-style: none;
+  font-family:"Open Sans", sans-serif;
+  font-weight: 700;
+  color: #003057; /* odu blue */
+  padding: 1px;
+ }
 
 #topbar.sm-list a{
-         font-family:"Open Sans", sans-serif;
-         font-weight: 700;
-         color: #003057; /* odu blue */
-        }
+  font-family:"Open Sans", sans-serif;
+  font-weight: 700;
+  color: #003057; /* odu blue */
+ }
 
-#topbar.list-inline a { font-family:"Open Sans", sans-serif;
-                        font-weight: 700;
-                        color: #003057; /* odu blue */
-                       }
+#topbar.list-inline a {
+  font-family:"Open Sans", sans-serif;
+  font-weight: 700;
+  color: #003057; /* odu blue */
+ }
 
 #titlebar.container-fluid{
   padding-right: 0px; /*15px in bootstrap.css*/
@@ -45,51 +42,44 @@ body {
   margin-right: -15px;
   margin-left: -15px;
 
-  /*margin: 0 auto;*/
-  /*width: 100%;*/
  }
 
 .titlebar{
- background: #003057;
- font-family:"Open Sans", sans-serif;
- font-weight:600;
-}
+  background: #003057;
+  font-family:"Open Sans", sans-serif;
+  font-weight:600;
+ }
 
-.titlebar h2 { background: #003057;
-              /*margin-right: -15px;*/
-              /*padding-right: -15px;*/
-              /*width: 100%;*/
-               }
+.titlebar h2 {
+  background: #003057;
+ }
 
 /* 'Ocean Remote Sensing Group' */
-.titlebar a { color: #fff; /*white*/
-              font-family:"Open Sans", sans-serif;
-              font-weight:600;
-              text-decoration: none;
-              /*font-size:2vw;*/
-              /*margin-right: -15px;*/
-              /*margin-top: 5px;*/
-              }
+.titlebar a {
+  color: #fff; /*white*/
+  font-family:"Open Sans", sans-serif;
+  font-weight:600;
+  text-decoration: none;
+  /*font-size:2vw;*/
+  /*margin-right: -15px;*/
+  /*margin-top: 5px;*/
+ }
+
 .navbar   {
-           /*background-color: #222;*/
-           width: 65%;
-           margin-top: -15px;
-          }
+ width: 65%;
+ margin-top: -15px;
+ }
 
 #siteMenu.siteMenu a{
-  /*margin-top:0px;*/
-  /*margin-bottom: 0px;*/
   padding-top: 0px;
   padding-bottom: 0px;
-  /*color:#222;*/
-
-}
+ }
 
 #menuBtn{
   background-color: #fff;
   width: 100%;
   height: 25px;
-}
+ }
 
 #menuBtnTxt {
   display:flex;
@@ -97,204 +87,123 @@ body {
   font-size:15px;
  }
 
-
 #siteMenu.siteMenu-dropdown a{
   text-align:left;
   font-size: 12px;
   padding-top:20px;
   padding-bottom:20px;
-  /*color: #222;*/
-  }
+ }
 
 .nav-item{
-   color: #222
-  }
+  color: #222
+ }
 
 .nav-item:hover {
   background-color: #555555;
   opacity: 0.6;
   border-style: solid;
-  /*border-color: #ff0000 #0000ff;*/
   border-color: #fff #555555;
   border-width: 1px;
   color: #fff;
   border-radius: 100px 100px 100px 100px; /*circlular border
   /*transform: scale(1, 0.90);*/ /*shrink items and scale */
-}
+ }
 
 .siteMenu-dropdown{
   background-color: #fff;
   /*margin-top:1.5px;*/
  }
 
-
 .dropdown-menu {
  /*color: #222;*/
-/*margin-right: 500px;*/
+  /*margin-right: 500px;*/
 }
 
 /* actual dropdown menu */
 .dropdown:hover .dropdown-menu {
   background-color: #555555;
-  /*background-color: #222; */
   display:block;
   min-width:150px;
   width:40px !important;
-  /*padding-top:20px;*/
-  /*margin:0px;*/
   margin-top:-1px;
-  /*display: inline-flex;*/
-  /*flex-direction: column;*/
-  /*align-items: center;*/
   padding-bottom: 0px;
-}
+ }
 
 /* action of menu bar button that hovers */
 .dropdown:hover{
- /*margin-left:-20px;*/
-  /*padding-top:20px;*/
-  /*min-width:200px;*/
- /*padding:10px;*/
-
-}
+ }
 
 .dropdown-menu a{
-  /*margin:-20px;*/
-  /*padding-right: 0px;*/
-  /*padding:-250px;*/
- /*width: 30px !important;*/
- /*height: 40px !important*/
- /*height:20px;*/
- /*margin-top:-20px;*/
- /*margin-bottom: -10px;*/
-}
+ }
 
 /* background and text of dropdown items */
 .dropdown-item {
- 	color: #bcbcbc;
+  color: #bcbcbc;
   font-size: 15px !important;
-  /*background-color:#222;*/
   padding: 0px;
   padding-left: 10px;
   margin:0px;
   width: 100%;
   margin-top:-10px;
-  /*height: 200px;*/
-}
-
-
-
-/* -BB- customize nav bar style */
-.mega_css3 {
- /* set background of nav bar to white: */
-}
-
-/*.mega_css3 ul.level0 > li.mega > a.mega {
-color: #555555;
-}*/
- /*.mega_css3 ul.level1 li.mega.active > a.mega,*/
- /*.mega_css3.mega_css3_light ul.level1 li.mega a.mega.over,*/
-
- /*.mega_css3 ul.level1 li.mega a:hover,*/
-
-/* font color and background of buttons */
- /*.mega_css3 ul.level1 li.mega a.over {
- color: #555555;
- background-color: #ffffff;
- }*/
-
-/*@media screen and (max-width: 767px) {
-.mega_css3 .menubar,
-.mega_css3 ul.level0 > li.mega {
-  background: #ffffff;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 100%);
-   }
- }*/
-
-.tilt:hover {
-  -webkit-transform: rotate(-10deg);
-     -moz-transform: rotate(-10deg);
-       -o-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-}
+ }
 
 @media(max-width: 325px){
-  .titlebar-xxxs{
-     margin:0;
-     padding:0;
-     height:19px;
-     /*margin-bottom:-30px; /* move button up */*/
-     /*padding-bottom:-300px;*/
-    }
+  .titlebar{
+    margin:0;
+    padding:0;
+    height:19px;
+    /*margin-bottom:-30px; /* move button up */
+    /*padding-bottom:-300px;*/
+   }
 
-  .titlebar-xxxs h2>a{
+  .titlebar h2>a{
     font-size:2.7vw;
     /*color:#fff;*/
     margin-left:130px;
     position:relative;
     bottom:16px;
-  }
+   }
 
-  .fontsize-xxxs a {
-   font-size:2.5vw;
- }
-
-  .siteMenu-loc-xxxs {
-    /*margin-left:242px;*/
-    margin-top: -8px;
-    /*margin-bottom: 0px;*/
-  }
-
-  /*#siteMenu.siteMenu-xxxs a{
-    background-color:#fff;
-    font-size:3.45vw;
-    margin-top: 1px;
-    text-align: center;
-  }*/
-}
-@media (min-width: 326px) and (max-width: 559px){
-  .titlebar-xxs{
-     /*margin:0;*/
-     /*padding:0;*/
-     /*padding-left:1px;*/
-     height:23px;
-     /*margin-bottom:-30px; /* move button up */
-     /*padding-bottom:-300px;*/
-    }
-
-  .titlebar-xxs a{
+  .fontsize a {
     font-size:2.5vw;
-    /*color:#fff;*/
+   }
+
+  .siteMenu-loc {
+    margin-top: -8px;
+   }
+ }
+@media (min-width: 326px) and (max-width: 559px){
+  .titlebar{
+    height:23px;
+   }
+  .titlebar a{
+    font-size:2.5vw;
     margin-left:210px;
     position:relative;
     bottom:13px;
-  }
-   .fontsize-xxs a {
+   }
+  .fontsize a {
     font-size:2.5vw;
-  }
+   }
 
   #menuBtn{
-   margin-top:8px;
-  }
-}
+    margin-top:8px;
+   }
+ }
+
 @media (min-width: 560px) and (max-width: 576px) {
-  .titlebar-xs a{
+  .titlebar a{
     font-size:2.5vw;
     margin-left:215px;
     position:relative;
     bottom:8px;
     }
-   .fontsize-xs a {
+
+   .fontsize a {
     font-size:2.1vw;
     }
 
-  .siteMenu-loc-xs {
+  .siteMenu-loc {
     /*margin-top: -12px;*/
 
   }
@@ -306,17 +215,17 @@ color: #555555;
   }*/
 }
 @media (min-width: 577px) and (max-width: 767px) {
-  .titlebar-sm a{
+  .titlebar a{
     font-size:2.5vw;
     margin-left:280px;
     position:relative;
     bottom:6px;
     }
-   .fontsize-sm a {
+   .fontsize a {
     font-size:1.9vw;
     }
 
-  .siteMenu-loc-sm {
+  .siteMenu-loc {
     /*margin-left:242px;*/
     margin-top: -16px;
     /*margin-bottom: 0px;*/
@@ -329,33 +238,24 @@ color: #555555;
   }*/
 }
 @media (min-width: 768px) and (max-width: 999px)  {
-  .titlebar-md{
-     /*margin:0;*/
-     /*padding:0;*/
-     /*padding-left:1px;*/
+  .titlebar{
      height:28px;
-     /*margin-bottom:-30px; /* move button up */
-     /*padding-bottom:-30/0px;*/
     }
-  .titlebar-md a{
+  .titlebar a{
     font-size: 2.5vw;
     margin-left: 275px;
     position:relative;
     bottom:6px;
     }
-  .fontsize-md a {
+  .fontsize a {
    font-size:1.9vw;
   }
 
-  .siteMenu-loc-md {
+  .siteMenu-loc {
     margin-left:225px;
     width: 73%;
     padding-right: 40px;
   }
-  /*
-  #siteMenu.siteMenu-md a{
-    font-size:1.45vw;
-  }*/
   .dropdown:hover .dropdown-menu {
     min-width:150px;
   }
@@ -367,17 +267,17 @@ color: #555555;
 
 }
 @media (min-width: 1000px) and (max-width: 1199px) {
-  .titlebar-lg a{
+  .titlebar a{
     font-size:2vw;
     margin-left:325px;
     position:relative;
     bottom:5px;
     }
-  .siteMenu-loc-lg {
+  .siteMenu-loc {
    margin-left:292px;
    width: 67%
   }
-  #siteMenu.siteMenu-lg a{
+  #siteMenu.siteMenu a{
    font-size:1.5vw;
   }
 
@@ -391,17 +291,17 @@ color: #555555;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px){
-  .titlebar-xl a{
+  .titlebar a{
     font-size:3vw;
     margin-left:380px;
     position:relative;
     bottom: 0px;
   }
-  .siteMenu-loc-xl {
+  .siteMenu-loc {
    margin-left:365px;
    width: 68%
   }
-  #siteMenu.siteMenu-xl a{
+  #siteMenu.siteMenu a{
    font-size:1.55vw;
   }
 
@@ -416,17 +316,17 @@ color: #555555;
 
 }
 @media (min-width: 1400px) and (max-width: 1699px){
-  .titlebar-xxl a{
+  .titlebar a{
     font-size:3vw;
     margin-left:455px;
     }
 
-  .siteMenu-loc-xxl {
+  .siteMenu-loc {
    margin-left:418px;
    width: 64%;
   }
 
-  #siteMenu.siteMenu-xxl a{
+  #siteMenu.siteMenu a{
    font-size:1.55vw;
   }
 
@@ -442,17 +342,17 @@ color: #555555;
 
 }
 @media (min-width: 1700px) {
-  .titlebar-xxxl a{
+  .titlebar a{
     font-size:3vw;
     margin-left:550px;
     }
 
-   .siteMenu-loc-xxxl {
+   .siteMenu-loc {
     margin-left:510px;
     width: 63%;
     }
 
-   #siteMenu.siteMenu-xxxl a{
+   #siteMenu.siteMenu a{
     font-size:1.55vw;
    }
 
