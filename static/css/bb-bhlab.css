@@ -73,6 +73,7 @@
 #siteMenu.siteMenu a{
   padding-top: 0px;
   padding-bottom: 0px;
+   line-height:1px;
  }
 
 #menuBtn{
@@ -152,10 +153,7 @@
     margin:0;
     padding:0;
     height:19px;
-    /*margin-bottom:-30px; /* move button up */
-    /*padding-bottom:-300px;*/
    }
-
   .titlebar h2>a{
     font-size:2.7vw;
     /*color:#fff;*/
@@ -163,15 +161,14 @@
     position:relative;
     bottom:16px;
    }
-
   .fontsize a {
     font-size:2.5vw;
    }
-
   .siteMenu-loc {
     margin-top: -8px;
    }
  }
+
 @media (min-width: 326px) and (max-width: 559px){
   .titlebar{
     height:23px;
@@ -185,7 +182,6 @@
   .fontsize a {
     font-size:2.5vw;
    }
-
   #menuBtn{
     margin-top:8px;
    }
@@ -197,171 +193,143 @@
     margin-left:215px;
     position:relative;
     bottom:8px;
-    }
-
-   .fontsize a {
+   }
+  .fontsize a {
     font-size:2.1vw;
-    }
+   }
+ }
 
-  .siteMenu-loc {
-    /*margin-top: -12px;*/
-
-  }
-  /*
-  #siteMenu.siteMenu-xs a{
-    font-size:2.4vw;
-    background-color:#fff;
-    margin-top:2px;
-  }*/
-}
 @media (min-width: 577px) and (max-width: 767px) {
   .titlebar a{
     font-size:2.5vw;
     margin-left:280px;
     position:relative;
     bottom:6px;
-    }
-   .fontsize a {
+   }
+  .fontsize a {
     font-size:1.9vw;
-    }
-
+   }
   .siteMenu-loc {
-    /*margin-left:242px;*/
     margin-top: -16px;
-    /*margin-bottom: 0px;*/
   }
+ }
 
-  /*#siteMenu.siteMenu-sm a{
-    font-size:2.4vw;
-    background-color:#fff;
-    margin-top:2px;
-  }*/
-}
 @media (min-width: 768px) and (max-width: 999px)  {
   .titlebar{
-     height:28px;
-    }
+    height:28px;
+   }
   .titlebar a{
     font-size: 2.5vw;
     margin-left: 275px;
     position:relative;
     bottom:6px;
-    }
+   }
   .fontsize a {
-   font-size:1.9vw;
+    font-size:1.9vw;
+   }
+  #siteMenu.siteMenu a{
+    font-size:1.5vw;
   }
-
   .siteMenu-loc {
+    margin-top:-7px;
     margin-left:225px;
     width: 73%;
     padding-right: 40px;
-  }
+   }
   .dropdown:hover .dropdown-menu {
     min-width:150px;
-  }
+   }
   .dropdown-item {
     font-size: 11px !important;
     line-height:0px; /*change thickness */
-  }
+   }
+ }
 
-
-}
 @media (min-width: 1000px) and (max-width: 1199px) {
   .titlebar a{
     font-size:2vw;
     margin-left:325px;
     position:relative;
     bottom:5px;
-    }
+   }
   .siteMenu-loc {
-   margin-left:292px;
-   width: 67%
-  }
+    margin-left:292px;
+    width: 67%
+   }
   #siteMenu.siteMenu a{
-   font-size:1.5vw;
-  }
-
+    font-size:1.5vw;
+   }
   .dropdown:hover .dropdown-menu {
     min-width:200px;
-  }
-
+   }
   .dropdown-item {
     font-size: 13px !important;
     line-height: 1px; /*change thickness */
-  }
-}
+   }
+ }
+
 @media (min-width: 1200px) and (max-width: 1399px){
   .titlebar a{
     font-size:3vw;
     margin-left:380px;
     position:relative;
     bottom: 0px;
-  }
+   }
   .siteMenu-loc {
-   margin-left:365px;
-   width: 68%
-  }
+    margin-left:365px;
+    width: 68%
+   }
   #siteMenu.siteMenu a{
-   font-size:1.55vw;
-  }
-
+    font-size:1.55vw;
+   }
   .dropdown:hover .dropdown-menu {
     min-width:225px;
-  }
-
+   }
   .dropdown-item {
     font-size: 15px !important;
     line-height:12px; /*change thickness */
-  }
+   }
+ }
 
-}
 @media (min-width: 1400px) and (max-width: 1699px){
   .titlebar a{
     font-size:3vw;
     margin-left:455px;
-    }
-
+   }
   .siteMenu-loc {
-   margin-left:418px;
-   width: 64%;
-  }
-
+    margin-left:418px;
+    width: 64%;
+   }
   #siteMenu.siteMenu a{
-   font-size:1.55vw;
-  }
-
+    font-size:1.55vw;
+   }
   .dropdown:hover .dropdown-menu {
     min-width:250px;
-  }
-
+   }
   .dropdown-item {
     font-size: 19px !important;
     width: 100%;
     line-height:12px; /*change thickness */
-  }
+   }
+ }
 
-}
 @media (min-width: 1700px) {
   .titlebar a{
     font-size:3vw;
     margin-left:550px;
-    }
-
-   .siteMenu-loc {
+   }
+  .siteMenu-loc {
     margin-left:510px;
     width: 63%;
-    }
-
-   #siteMenu.siteMenu a{
+   }
+  #siteMenu.siteMenu a{
     font-size:1.55vw;
    }
-
   .dropdown:hover .dropdown-menu {
     min-width:350px;
-  }
-
+   }
   .dropdown-item {
     font-size: 21px !important;
     width: 100%;
-
-}
+   }
+ }
