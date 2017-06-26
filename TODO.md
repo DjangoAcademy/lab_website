@@ -16,3 +16,7 @@ HEADER
 # - typo somewhere in media -lg
 NAV BAR
 # fix orange color to none
+
+HOMEPAGE:
+	Skitter:
+		Remove navbar buttons on small screens

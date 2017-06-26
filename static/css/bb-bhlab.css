@@ -2,7 +2,7 @@
 /* --------- BB CSS for BH LAB --------- */
 /* ************************************* */
 body {
-  background-color: #bcbcbc;
+  background-color: #f3f3f0;
  }
 
 /* ODU Logo */
@@ -277,6 +277,10 @@ body {
     font-size: 13px !important;
     line-height: 1px; /*change thickness */
    }
+  #welcome-text {
+   padding-left:175px;
+   padding-right:125px
+  }
  }
 
 @media (min-width: 1200px) and (max-width: 1399px){
