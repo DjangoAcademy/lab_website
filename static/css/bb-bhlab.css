@@ -55,6 +55,10 @@ body {
 
  }
 
+#welcome-text {
+  margin-top: 75px;
+ }
+
 .titlebar{
   background: #003057;
   font-family:"Open Sans", sans-serif;
@@ -178,6 +182,12 @@ body {
   .siteMenu-loc {
     margin-top: -8px;
    }
+
+  #welcome-text {
+   margin-left: 15px;
+   font-size: 1em;
+
+  }
  }
 
 @media (min-width: 326px) and (max-width: 559px){
@@ -196,6 +206,9 @@ body {
   #menuBtn{
     margin-top:8px;
    }
+  #welcome-text {
+   margin-left: 15px;
+   }
  }
 
 @media (min-width: 560px) and (max-width: 576px) {
@@ -207,6 +220,9 @@ body {
    }
   .fontsize a {
     font-size:2.1vw;
+   }
+  #welcome-text {
+   margin-left: 15px;
    }
  }
 
@@ -223,6 +239,10 @@ body {
   .siteMenu-loc {
     margin-top: -16px;
   }
+  #welcome-text {
+   margin-left: 15px;
+   font-size: 1.1em;
+   }
  }
 
 @media (min-width: 768px) and (max-width: 999px)  {
@@ -254,6 +274,10 @@ body {
     font-size: 11px !important;
     line-height:0px; /*change thickness */
    }
+  #welcome-text {
+   margin-left: 15px;
+   font-size:1.75vw;
+   }
  }
 
 @media (min-width: 1000px) and (max-width: 1199px) {
@@ -278,8 +302,10 @@ body {
     line-height: 1px; /*change thickness */
    }
   #welcome-text {
+   margin-top: 50px;
    padding-left:175px;
-   padding-right:125px
+   padding-right:125px;
+   font-size:1.75vw;
   }
  }
 
@@ -304,6 +330,13 @@ body {
     font-size: 15px !important;
     line-height:12px; /*change thickness */
    }
+
+  #welcome-text {
+   margin-top: 50px;
+   padding-left:175px;
+   padding-right:125px;
+   font-size:1.75vw;
+  }
  }
 
 @media (min-width: 1400px) and (max-width: 1699px){
@@ -326,6 +359,13 @@ body {
     width: 100%;
     line-height:12px; /*change thickness */
    }
+
+  #welcome-text {
+   margin-top: 50px;
+   padding-left:175px;
+   padding-right:125px;
+   font-size:1.75vw;
+  }
  }
 
 @media (min-width: 1700px) {
@@ -347,4 +387,10 @@ body {
     font-size: 21px !important;
     width: 100%;
    }
+  #welcome-text {
+   margin-top: 50px;
+   padding-left:175px;
+   padding-right:125px;
+   font-size:1.75vw;
+  }
  }
