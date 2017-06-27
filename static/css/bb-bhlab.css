@@ -1,11 +1,12 @@
 /* ************************************* */
-/* --------- BB CSS for BH LAB --------- */
+/* ------ BB CSS for BASE TEMPLATE ----- */
 /* ************************************* */
+
 body {
   background-color: #f3f3f0;
  }
 
-/* ODU Logo */
+/* :::::::::::::::::::::::::::: UNIVERSITY NAVBAR ::::::::::::::::::::::::::: */
 #logo {
   position: absolute;
   background: #f3f3f0;
@@ -13,14 +14,10 @@ body {
   margin-top: -20px;
  }
 
-/* properties of the top most bar */
 #Topbar {
   background:#f3f3f0;
   margin-bottom: 0px;
   text-align: right;
-  /*margin-right: -10px;*/
-  /*height: 39px;*/
-  /*position: relative;*/
  }
 
 #Topbar.list-group {
@@ -47,6 +44,7 @@ body {
   color: #003057; /* odu blue */
  }
 
+/* :::::::::::::::::::::: 'Ocean Remote Sensing Group' :::::::::::::::::::::: */
 #Title.container-fluid{
   padding-right: 0px; /*15px in bootstrap.css*/
   padding-left: 0px; /*15px in bootstrap.css*/
@@ -54,23 +52,6 @@ body {
   margin-left: -15px;
 
  }
-
-#welcome-text {
-  margin-top: 75px;
-  /*background-color:#fff;*/
-  text-align: left;
- }
-#welcome-text>h3{
-/*font-size:1.75vw;*/
-font-family: 'Enriqueta', arial, serif;
-color:  #003057;
-font-style: italic;
-font-weight: bold;
-font-size: 23px;
- }
-#welcome-text>h6 {
- line-height:20px;
-}
 
 .titlebar{
   background: #003057;
@@ -82,7 +63,6 @@ font-size: 23px;
   background: #003057;
  }
 
-/* 'Ocean Remote Sensing Group' */
 .titlebar a {
   color: #fff; /*white*/
   font-family:"Open Sans", sans-serif;
@@ -97,6 +77,8 @@ font-size: 23px;
  width: 65%;
  margin-top: -15px;
  }
+
+/* :::::::::::::::::::::: SITE NAVIGATION :::::::::::::::::::::: */
 
 #LabMenu.siteMenu a{
   padding-top: 0px;
@@ -143,10 +125,6 @@ font-size: 23px;
   /*margin-top:1.5px;*/
  }
 
-/*body{font-family:"Open Sans",sans-serif;font-size:14px;min-width:320px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none}*/
-/*p{line-height:18px;margin-bottom:9px}*/
-/*p+p{margin-bottom:9px;margin-top:9px}*/
-
 /* actual dropdown menu */
 .dropdown:hover .dropdown-menu {
   background-color: #555555;
@@ -174,6 +152,8 @@ font-size: 23px;
   width: 100%;
   margin-top:-10px;
  }
+
+/* ::::::::::::::::::::::::::::::::: FOOTER ::::::::::::::::::::::::::::::::: */
 .navbar-fixed-bottom{
  padding-top: 85px;
  padding-left: 0px;
@@ -181,6 +161,40 @@ font-size: 23px;
  padding-bottom: 0px;
  width: 100%;
 }
+
+#footer-bar.container-fluid{
+  padding-right: 25px; /*15px in bootstrap.css*/
+  padding-left: 25px; /*15px in bootstrap.css*/
+  margin-right: -15px;
+  margin-left: -15px;
+ }
+
+.constrain{
+  position: relative;
+  font-family:"Open Sans",sans-serif;
+  bottom: 0;
+  padding-top:10px;
+  background-color: #003057;
+ }
+
+#welcome-text {
+  margin-top: 75px;
+  /*background-color:#fff;*/
+  text-align: left;
+ }
+
+#welcome-text>h3{
+  font-family: 'Enriqueta', arial, serif;
+  color:  #003057;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 23px;
+ }
+
+#welcome-text>h6 {
+  line-height:20px;
+ }
+
 #address.parsys>p{
   margin-bottom: 0px;
   font-size:14px;
@@ -191,11 +205,27 @@ font-size: 23px;
   padding-bottom: 10px;
   }
 
+img.cq-dd-image{
+  max-width:100%
+ }
+
 #ODU-Description.parsys>p{
   margin-top: 1px;
   margin-bottom: -4px;
   font-size:13px;
  }
+
+.copyright {
+  background-color:#00223d;
+  font-size:12px
+ }
+
+/* ::: position of text within blue footer ::: */
+hr{background:#fff;border:0;clear:both;color:#fff;float:none;height:1px;margin:0;padding:10px 0 9px;visibility:hidden;width:100%}
+hr.rule{background:#ddd;color:#ddd;margin:15px 0 14px;padding:0;visibility:visible}
+hr.clear-left{clear:left;width:auto}
+hr.clear-right{clear:left;width:auto}
+/* :::::::::::::::::::::::::::: RESPONSIVE DESIGN ::::::::::::::::::::::::::: */
 
 @media(max-width: 325px){
   .titlebar{
@@ -587,7 +617,15 @@ font-size: 23px;
  }
 
  /* :::::::::::::::::: ODU FOOTER :::::::::::::::::: */
-/*.container-16{margin-left:auto;margin-right:auto}*/
+
+/* change layout of footer cols from horizontal to vertical for small screens */
+@media(max-width:767px){
+  [class*="grid-"]{width:96% !important}
+
+}
+
+/* ::::::::::::::::::::::::::::::: FOOTER GRID :::::::::::::::::::::::::::::: */
+
 [class*="grid-"]{display:inline;float:left;overflow-x:hidden;overflow-y:hidden;position:static;margin-left:1.5625%;margin-right:1.5625%}
 [class*="push-"],[class*="pull-"]{position:relative}
 .grid-6{width:34.375%}
@@ -683,61 +721,13 @@ font-size: 23px;
 .clearfix:after{clear:both}
 .clearfix{zoom:1}
 
-/* ::: position of text within blue footer ::: */
-hr{background:#fff;border:0;clear:both;color:#fff;float:none;height:1px;margin:0;padding:10px 0 9px;visibility:hidden;width:100%}
-hr.rule{background:#ddd;color:#ddd;margin:15px 0 14px;padding:0;visibility:visible}
-hr.clear-left{clear:left;width:auto}
-hr.clear-right{clear:left;width:auto}
-
-/* : change layout of columns from horizontal to vertical for small screens : */
-@media(max-width:767px){
-  [class*="grid-"]{width:96% !important}
-
-}
-
 @media all{
   #university-footer {color:#fff}
   #university-footer,#university-footer *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
   #university-footer a,#university-footer a:visited,#university-footer a:active{color:#fff;text-decoration:underline}
-  /*#university-footer .constrain{padding:0 20px}*/
   #university-footer .constrain:after{display:table;content:'';clear:both}
-  /*#university-footer .copyright .constrain{background-color:#00223d;padding:5px 0;font-size:12px}*/
   #university-footer .copyright .statement{margin:0; float:left}
   #university-footer .copyright .links{margin:0;float:right}
   #university-footer .copyright:after{display:table; content:''; clear:both}
   #university-footer:after{display:table; content:''; clear:both}
- }
-
-#footer-bar.container-fluid{
-  padding-right: 25px; /*15px in bootstrap.css*/
-  padding-left: 25px; /*15px in bootstrap.css*/
-  margin-right: -15px;
-  margin-left: -15px;
- }
-
- #university-footer.footer-content{
-   /*background-color: #003057;*/
-   /*padding-top:100px;*/
-   /*margin: 50px;*/
-  }
-
-img.cq-dd-image{
-  max-width:100%
- }
-
-.constrain{
-  position: relative;
-  font-family:"Open Sans",sans-serif;
-  /*position:fixed;*/
-  bottom: 0;
-  padding-top:10px;
-  background-color: #003057;
- }
-
-.copyright {
-  background-color:#00223d;
-  /*background-color:#222;*/
-  /*margins: -15px;*/
-  /*width: 100%;*/
-  font-size:12px
  }
