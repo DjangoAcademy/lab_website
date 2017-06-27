@@ -15,6 +15,7 @@ HEADER
 	- use .breadcrumb-item+ to select all but first
 - make fontsizes a fixed size
 # - typo somewhere in media -lg
+-FIX LARGE SCREENS
 NAV BAR
 # fix orange color to none
 

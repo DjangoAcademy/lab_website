@@ -223,12 +223,15 @@ font-size: 23px;
  }
 
 @media (min-width: 326px) and (max-width: 559px){
+  #Topbar.list-inline{
+   padding-right: 20px;
+  }
   .titlebar{
     height:23px;
    }
   .titlebar a{
     font-size:2.5vw;
-    margin-left:210px;
+    margin-left:150px;
     position:relative;
     bottom:13px;
    }
@@ -248,6 +251,9 @@ font-size: 23px;
  }
 
 @media (min-width: 560px) and (max-width: 576px) {
+  #Topbar.list-inline {
+   padding-right:5px;
+  }
   .titlebar a{
     font-size:2.5vw;
     margin-left:215px;
@@ -266,6 +272,11 @@ font-size: 23px;
  }
 
 @media (min-width: 577px) and (max-width: 767px) {
+
+  #Topbar.list-inline{
+    padding-right: 10px;
+  }
+
   .titlebar a{
     font-size:2.5vw;
     margin-left:280px;
@@ -401,6 +412,11 @@ font-size: 23px;
  }
 
 @media (min-width: 1200px) and (max-width: 1399px){
+
+  #Topbar.list-inline{
+    font-size: 1.5vw;
+   }
+
   .titlebar a{
     font-size:3vw;
     margin-left:380px;
@@ -455,6 +471,11 @@ font-size: 23px;
  }
 
 @media (min-width: 1400px) and (max-width: 1699px){
+
+  #Topbar.list-inline{
+    font-size: 1.5vw;
+   }
+
   .titlebar a{
     font-size:3vw;
     margin-left:455px;
@@ -509,6 +530,11 @@ font-size: 23px;
  }
 
 @media (min-width: 1700px) {
+
+  #Topbar.list-inline{
+    font-size: 1.25vw;
+   }
+
   .titlebar a{
     font-size:3vw;
     margin-left:550px;
@@ -666,7 +692,7 @@ hr.clear-right{clear:left;width:auto}
 /* : change layout of columns from horizontal to vertical for small screens : */
 @media(max-width:767px){
   [class*="grid-"]{width:96% !important}
-  
+
 }
 
 @media all{
