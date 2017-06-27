@@ -101,7 +101,7 @@ font-size: 23px;
 #LabMenu.siteMenu a{
   padding-top: 0px;
   padding-bottom: 0px;
-   line-height:1px;
+  line-height:1px;
  }
 
 #menuBtn{
@@ -143,7 +143,6 @@ font-size: 23px;
   /*margin-top:1.5px;*/
  }
 
-
 /*body{font-family:"Open Sans",sans-serif;font-size:14px;min-width:320px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none}*/
 /*p{line-height:18px;margin-bottom:9px}*/
 /*p+p{margin-bottom:9px;margin-top:9px}*/
@@ -175,6 +174,28 @@ font-size: 23px;
   width: 100%;
   margin-top:-10px;
  }
+.navbar-fixed-bottom{
+ padding-top: 85px;
+ padding-left: 0px;
+ padding-right: 0px;
+ padding-bottom: 0px;
+ width: 100%;
+}
+#address.parsys>p{
+  margin-bottom: 0px;
+  font-size:14px;
+}
+
+#contact.list-group {
+  font-size: 13px;
+  padding-bottom: 10px;
+  }
+
+#ODU-Description.parsys>p{
+  margin-top: 1px;
+  margin-bottom: -4px;
+  font-size:13px;
+ }
 
 @media(max-width: 325px){
   .titlebar{
@@ -198,7 +219,6 @@ font-size: 23px;
   #welcome-text {
    margin-left: 15px;
    font-size: 1em;
-
   }
  }
 
@@ -222,6 +242,9 @@ font-size: 23px;
    margin-left: 15px;
    font-
    }
+  #Connect.parsys>p{
+    font-size:12px;
+   }
  }
 
 @media (min-width: 560px) and (max-width: 576px) {
@@ -236,6 +259,9 @@ font-size: 23px;
    }
   #welcome-text {
    margin-left: 15px;
+   }
+  #Connect.parsys>p{
+    font-size:12px;
    }
  }
 
@@ -255,6 +281,9 @@ font-size: 23px;
   #welcome-text {
    margin-left: 15px;
    font-size: 1.1em;
+   }
+  #Connect.parsys>p{
+    font-size:14px;
    }
  }
 
@@ -296,6 +325,24 @@ font-size: 23px;
    line-height:50px;
    /*text-align: center;*/
   }
+  #address.parsys>p{
+    margin-bottom: 1px;
+    font-size:12px;
+  }
+
+  #contact.list-group {
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height:20px;
+    }
+  #ODU-Description.parsys>p{
+    margin-top: 1px;
+    font-size:14px;
+    margin-bottom: 0px;
+   }
+  #Connect.parsys>p{
+    font-size:16px;
+   }
  }
 
 @media (min-width: 1000px) and (max-width: 1199px) {
@@ -333,6 +380,24 @@ font-size: 23px;
      font-size: 2.0vw;
      line-height: 2.4vw;
     }
+
+  #address.parsys>p{
+    margin-bottom: 0px;
+    font-size:13px;
+   }
+  #contact.list-group {
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height:40px;
+   }
+  #ODU-Description.parsys>p{
+    margin-top: 1px;
+    font-size:16px;
+    margin-bottom: 0px;
+   }
+  #Connect.parsys>p{
+    font-size:18px;
+   }
  }
 
 @media (min-width: 1200px) and (max-width: 1399px){
@@ -370,6 +435,23 @@ font-size: 23px;
    font-size: 2.0vw;
    line-height: 2.0vw;
   }
+
+  #address.parsys>p{
+    margin-bottom: 0px;
+    font-size:15px;
+   }
+  #contact.list-group {
+    font-size: 15px;
+    padding-bottom: 10px;
+    line-height:60px;
+   }
+  #ODU-Description.parsys>p{
+    margin-top: 1px;
+    font-size:18px;
+   }
+  #Connect.parsys>p{
+    font-size:20px;
+   }
  }
 
 @media (min-width: 1400px) and (max-width: 1699px){
@@ -408,6 +490,22 @@ font-size: 23px;
    font-size: 2.0vw;
    line-height: 2.5vw;
   }
+  #address.parsys>p{
+    margin-bottom: 0px;
+    font-size:17px;
+   }
+  #contact.list-group {
+    font-size: 17px;
+    padding-bottom: 10px;
+    line-height:60px;
+   }
+  #ODU-Description.parsys>p{
+    margin-top: 1px;
+    font-size:20px;
+   }
+  #Connect.parsys>p{
+    font-size:20px;
+   }
  }
 
 @media (min-width: 1700px) {
@@ -444,6 +542,22 @@ font-size: 23px;
    font-size: 1.3vw;
    line-height: 2.0vw;
   }
+  #address.parsys>p{
+    margin-bottom: 0px;
+    font-size:19px;
+   }
+  #contact.list-group {
+    font-size: 19px;
+    padding-bottom: 10px;
+    line-height:60px;
+   }
+  #ODU-Description.parsys>p{
+    margin-top: 1px;
+    font-size:22px;
+   }
+  #Connect.parsys>p{
+    font-size:22px;
+   }
  }
 
  /* :::::::::::::::::: ODU FOOTER :::::::::::::::::: */
@@ -550,30 +664,14 @@ hr.clear-left{clear:left;width:auto}
 hr.clear-right{clear:left;width:auto}
 
 /* : change layout of columns from horizontal to vertical for small screens : */
-/*@media(max-width:767px){
-  .container-16{width:96%}
+@media(max-width:767px){
   [class*="grid-"]{width:96% !important}
-}*/
-
-/*if edit paragraphs/body move to welcome-id*/
-
-/*remove these, add list styling to separate a bit later */
-/*ul,ol,li{line-height:18px}
-ol{list-style-type:decimal;margin-left:2em;padding-bottom:3px}
-ol ul,ol ol{padding-bottom:0}
-ol li{background:0;padding:0 0 6px 0}
-ol li ol li{background:0;padding:6px 0 0 0}
-ol ol{list-style-type:lower-alpha}
-ul{list-style:none;list-style-type:none;padding-bottom:3px}
-ul ul,ul ol{padding-bottom:0}
-ul li{background:url(images/disc-1.gif) no-repeat left 6px;padding:0 0 6px 10px}
-ul li ul li{background:url(images/disc-2.gif) no-repeat left 12px;padding:6px 0 0 10px}
-ul li ul li ul li{background:url(images/disc-3.gif) no-repeat left 12px}*/
-/* remove up to here */
+  
+}
 
 @media all{
   #university-footer {color:#fff}
-  /*#university-footer,#university-footer *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*/
+  #university-footer,#university-footer *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
   #university-footer a,#university-footer a:visited,#university-footer a:active{color:#fff;text-decoration:underline}
   /*#university-footer .constrain{padding:0 20px}*/
   #university-footer .constrain:after{display:table;content:'';clear:both}
@@ -583,8 +681,6 @@ ul li ul li ul li{background:url(images/disc-3.gif) no-repeat left 12px}*/
   #university-footer .copyright:after{display:table; content:''; clear:both}
   #university-footer:after{display:table; content:''; clear:both}
  }
-
-
 
 #footer-bar.container-fluid{
   padding-right: 25px; /*15px in bootstrap.css*/
@@ -604,9 +700,9 @@ img.cq-dd-image{
  }
 
 .constrain{
-  /*position: relative;*/
+  position: relative;
   font-family:"Open Sans",sans-serif;
-  position:fixed;
+  /*position:fixed;*/
   bottom: 0;
   padding-top:10px;
   background-color: #003057;
@@ -619,17 +715,3 @@ img.cq-dd-image{
   /*width: 100%;*/
   font-size:12px
  }
-.container-16{width:960px}
- @media(max-width:767px){.container-16{width:96%}
-[class*="grid-"]{width:96% !important}
-[class*="grid-"] [class*="grid-"]{width:100% !important}
-[class*="prefix-"]{padding-left:0 !important}
-[class*="suffix-"]{padding-right:0 !important}
-[class*="push-"]{left:0 !important}
-[class*="pull-"]{right:0 !important}
-.alpha{margin-left:0 !important}
-.omega{margin-right:0 !important}
-[class*="grid-"] [class*="grid-"]{margin-left:0 !important;margin-right:0 !important}
-.col-border{padding-right:0;border-right:0}
-.col-border-both{padding-left:0;padding-right:0;border-left:0;border-right:0}
-}

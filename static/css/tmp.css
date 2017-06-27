@@ -105,10 +105,10 @@ hr.clear-right{clear:left;width:auto}
 [class*="grid-"]{width:96% !important}
 }
 
-body{font-family:"Open Sans",sans-serif;font-size:14px;min-width:320px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none}
+/*body{font-family:"Open Sans",sans-serif;font-size:14px;min-width:320px;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none}*/
 /*if edit paragraphs move to welcome-id*/
-p{line-height:18px;margin-bottom:9px}
-p+p{margin-bottom:9px;margin-top:9px}
+/*p{line-height:18px;margin-bottom:9px}*/
+/*p+p{margin-bottom:9px;margin-top:9px}*/
 /*remove these, add list styling to separate a bit later */
 /*ul,ol,li{line-height:18px}
 ol{list-style-type:decimal;margin-left:2em;padding-bottom:3px}
@@ -124,19 +124,19 @@ ul li ul li ul li{background:url(images/disc-3.gif) no-repeat left 12px}*/
 /* remove up to here */
 
 @media all{#university-footer{color:#fff}
-#university-footer,#university-footer *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-#university-footer a,#university-footer a:visited,#university-footer a:active{color:#fff;text-decoration:underline}
-#university-footer .constrain{padding:0 20px}
-#university-footer .constrain:after{display:table;content:'';clear:both}
-#university-footer .footer-content{background-color:#003057;font-family:"Open Sans",sans-serif;padding:20px 0}
-#university-footer .copyright{background-color:#00223d;padding:5px 0;font-size:12px}
-#university-footer .copyright .statement{margin:0;float:left}
-#university-footer .copyright .links{margin:0;float:right}
-#university-footer .copyright:after{display:table;content:'';clear:both}
-#university-footer:after{display:table;content:'';clear:both}
+/*#university-footer,#university-footer *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*/
+/*#university-footer a,#university-footer a:visited,#university-footer a:active{color:#fff;text-decoration:underline}*/
+/*#university-footer .constrain{padding:0 20px}*/
+/*#university-footer .constrain:after{display:table;content:'';clear:both}*/
+/*#university-footer .footer-content{background-color:#003057;font-family:"Open Sans",sans-serif;padding:20px 0}*/
+/*#university-footer .copyright{background-color:#00223d;padding:5px 0;font-size:12px}*/
+/*#university-footer .copyright .statement{margin:0;float:left}*/
+/*#university-footer .copyright .links{margin:0;float:right}*/
+/*#university-footer .copyright:after{display:table;content:'';clear:both}*/
+/*#university-footer:after{display:table;content:'';clear:both}*/
 }
 
-img.cq-dd-image{max-width:100%}
+/*img.cq-dd-image{max-width:100%}*/
 
 .constrain{position:relative}
 
