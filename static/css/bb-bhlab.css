@@ -154,6 +154,13 @@ body {
  }
 
 /* ::::::::::::::::::::::::::::::::: FOOTER ::::::::::::::::::::::::::::::::: */
+#university-footer {color:#fff}
+#university-footer,#university-footer *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#university-footer a,#university-footer a:visited,#university-footer a:active{color:#fff;text-decoration:underline}
+#university-footer .copyright .statement{margin:0; float:left}
+#university-footer .copyright .links{margin:0;float:right}
+#university-footer .copyright:after{display:table; content:''; clear:both;}
+#university-footer:after{display:table; content:''; clear:both}
 .navbar-fixed-bottom{
  padding-top: 85px;
  padding-left: 0px;
@@ -179,7 +186,6 @@ body {
 
 #welcome-text {
   margin-top: 75px;
-  /*background-color:#fff;*/
   text-align: left;
  }
 
@@ -225,8 +231,8 @@ hr{background:#fff;border:0;clear:both;color:#fff;float:none;height:1px;margin:0
 hr.rule{background:#ddd;color:#ddd;margin:15px 0 14px;padding:0;visibility:visible}
 hr.clear-left{clear:left;width:auto}
 hr.clear-right{clear:left;width:auto}
-/* :::::::::::::::::::::::::::: RESPONSIVE DESIGN ::::::::::::::::::::::::::: */
 
+/* :::::::::::::::::::::::::::: RESPONSIVE DESIGN ::::::::::::::::::::::::::: */
 @media(max-width: 325px){
   .titlebar{
     margin:0;
@@ -720,14 +726,3 @@ hr.clear-right{clear:left;width:auto}
 .clearfix:before,.clearfix:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 .clearfix:after{clear:both}
 .clearfix{zoom:1}
-
-@media all{
-  #university-footer {color:#fff}
-  #university-footer,#university-footer *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-  #university-footer a,#university-footer a:visited,#university-footer a:active{color:#fff;text-decoration:underline}
-  #university-footer .constrain:after{display:table;content:'';clear:both}
-  #university-footer .copyright .statement{margin:0; float:left}
-  #university-footer .copyright .links{margin:0;float:right}
-  #university-footer .copyright:after{display:table; content:''; clear:both}
-  #university-footer:after{display:table; content:''; clear:both}
- }
