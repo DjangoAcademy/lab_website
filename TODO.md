@@ -23,7 +23,9 @@ HOMEPAGE:
 	Skitter:
 		Remove navbar buttons on small screens
 		Make stretch across screen when full screen (>1700)	
+			probably can just make images bigger
 		Images:
 			Get SLR from his paper
 			Get stuff from students
-				
+			More and better images
+			Fix join us image

@@ -51,7 +51,7 @@
           </button>
 
           <div class="collapse navbar-collapse siteMenu siteMenu-dropdown" id="LabMenu">
-          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link active" href="{% url "HomePage" %}">Home</a>
           <a class="nav-item nav-link" href="#">Research</a>
           <a class="nav-item nav-link" href="#">Teaching</a>
           <div class="dropdown">
@@ -65,7 +65,7 @@
                 <li><a class="dropdown-item" href=#>Alumni</a></li>
               </ul><!-- dropdown-menu -->
           </div><!-- dropdown -->
-          <a class="nav-item nav-link" href="#">Publications</a>
+          <a class="nav-item nav-link" href="{% url "Publications" %}">Publications</a>
           <a class="nav-item nav-link" href="#">Opportunities</a>
      </div><!-- collapse -->
    </div><!-- col -->
