@@ -4,25 +4,8 @@ from django.shortcuts import render
 def HomePage(request):
     # return HttpResponse(render, 'index_dummy.html')
     # template directory must be on path in settings.py
-    return render(request, 'home.html')
+    return render(request, 'homepage.html')
 
-def _nav(request):
-    return render(request, '_nav.html')
-
-def BasePage(request):
-    return render(request, 'base.html')
-
-def Header(request):
-    return render(request, '_header.html')
-
-def ODUHead(request):
-    return render(request, 'ODU_head.html')
-
-def Adams(request):
-    return render(request, 'sebs-adams.html')
-
-def Home(request):
+# not needed
+def Full(request):
     return render(request, 'index.html')
-
-def Garage(request):
-    return render(request, 'index-orig.html')
