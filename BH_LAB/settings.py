@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # project apps
     'HomePage',
+    'Publications',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [TEMPLATE_ROOT, os.path.join(TEMPLATE_ROOT, 'HomePage'),
-                os.path.join(TEMPLATE_ROOT, 'Garage'),
+                os.path.join(TEMPLATE_ROOT, 'Publications'),
                     ],
         'APP_DIRS': True,
         'OPTIONS': {
