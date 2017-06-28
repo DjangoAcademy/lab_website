@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Skitter Carousel -->
+<div class="container-fluid">
+  <div class="skitter skitter-large offset-lg-2 offset-xl-3">
+    <ul><li>
+      <a href="#OPPORTUNITIES">
+        <img src="{% static "images/grad-positions.png" %}" class "img-fluid rounded"/>
+      </a>
+      <div class="label_text" >
+        <p style="text-align: right">Join Us</p>
+      </div></li>
+    <li>
+      <a href="#RESEARCH">
+        <img src="{% static "images/earth_and_sun_space.jpg" %}" class "img-fluid rounded"/>
+      </a>
+      <div class="label_text">
+        <p style="text-align: right">Sea Level Rise</p>
+      </div></li>
+   <li>
+     <a href="#TEACHING">
+       <img src="{% static "images/satellite.jpg" %}" class "img-fluid rounded"/>
+     </a>
+     <div class="label_text">
+        <p style="text-align: right">Courses</p>
+     </div> </li>
+   <li>
+     <a href="#PEOPLE">
+       <img src="{% static "images/cliffbeach.jpg" %}" class "img-fluid rounded"/>
+     </a>
+       <div class="label_text">
+          <p style="text-align: right">People</p>
+       </div></li>
+   </ul>
+  </div>
+</div>
+<!-- Skitter JS -->
+<script type="text/javascript">
+  $('.skitter-large').skitter({
+    theme        : "round",
+    interval     : 6000,
+    velocity     : 1.3,
+    navigation   : true,
+    numbers_align: "right",
+    //progressbar: true"
+  });
+</script>
+
+<!-- Welcome Content -->
+<div class="container-fluid">
+  <div class="row">
+   <div class="col">
+   <div id="welcome-text">
+   <h3>Welcome to Ben Hamlington's Ocean Remote Sensing Group</h3>
+     <h6>We are part of the Center for Coastal Physical Oceanography in the Ocean, Earth and Atmospheric Sciences Department at Old Dominion University. </h6>
+     <h6>Our research focus is on past, present and future sea level rise, specializing in the use of satellite observations to improve the understanding of the ocean.</h6>
+     <h6>On this page, we will provide updates on group activities, including recently published papers.
+         Please feel free to get in touch with any questions, or if you are interested in joining our group. </h6>
+  </div>
+ </div>
+</div>
+
+
+{% endblock content %}

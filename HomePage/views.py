@@ -10,7 +10,10 @@ def _nav(request):
     return render(request, '_nav.html')
 
 def BasePage(request):
-    return render(request, '__base.html')
+    return render(request, 'base.html')
+
+def Header(request):
+    return render(request, '_header.html')
 
 def ODUHead(request):
     return render(request, 'ODU_head.html')

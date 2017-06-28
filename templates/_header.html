@@ -1,0 +1,72 @@
+{% load static %}
+<!-- Main List -->
+<div class="col" >
+  <ul  class="list-inline hidden-md-down" id=Topbar>
+    <li class="list-inline-item">
+      <a href="http://www.ccpo.odu.edu">Center for Physical Oceanography // </a></li>
+    <li class="list-inline-item">
+      <a href="http://www.odu.edu/oeas">Ocean, Earth, Atmospheric Science // </a></li>
+    <li class="list-inline-item">
+      <a href="http://www.odu.edu/sci">College of Sciences</a></li>
+  </ul>
+</div><!-- col -->
+
+<!-- Mobile List -->
+<div class="hidden-lg-up">
+  <ul class="list-inline sm-list fontsize" id=Topbar>
+    <li class="list-inline-item">
+      <a href="http://www.ccpo.odu.edu">CCPO // </a></li>
+    <li class="list-inline-item">
+      <a href="http://www.odu.edu/oeas">OEAS // </a></li>
+    <li class="list-inline-item">
+      <a href="http://www.odu.edu/sci">Col. of Sci.</a></li>
+  </ul>
+</div><!-- col -->
+
+<!-- Titlebar/Logo -->
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col col-4 col-md-2 offset-md-1">
+      <a href="https://odu.edu"><img class="img-fluid rounded"  id="logo" src="{% static "images/logo-ODU.png" %}"></a>
+    </div><!-- cols -->
+  </div><!-- row -->
+  <div class="container-fluid titlebar" id="full">
+    <div class="row-fluid">
+      <h2 class="titlebar"><a href="#">Ocean Remote Sensing Group</a></h2>
+    </div><!-- row -->
+  </div><!-- container -->
+</div><!-- container -->
+
+<!-- NavBar -->
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-8 offset-4 col-md-12  offset-md-0">
+      <nav class="navbar navbar-toggleable-sm siteMenu-loc">
+          <button class="navbar-toggler" type="button"
+                  data-toggle="collapse"  data-target="#LabMenu"
+                  aria-controls="LabMenu" aria-expanded="false" aria-label="toggleNav"
+                  id="menuBtn">
+              <span id="menuBtnTxt">Menu</span>
+          </button>
+
+          <div class="collapse navbar-collapse siteMenu siteMenu-dropdown" id="LabMenu">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Research</a>
+          <a class="nav-item nav-link" href="#">Teaching</a>
+          <div class="dropdown">
+            <a class="nav-item nav-link" href="#" id="peopleDrop"
+                  aria-haspopup="true" aria-expanded="false"
+                  data-toggle="dropdown">People</a>
+              <ul class="dropdown-menu"  aria-labeled-by="peopleDrop">
+                <li><a class="dropdown-item" href=#>Ben Hamlington</a></li>
+                <li><a class="dropdown-item" href=#>Post-Docs</a></li>
+                <li><a class="dropdown-item" href=#>Students</a></li>
+                <li><a class="dropdown-item" href=#>Alumni</a></li>
+              </ul><!-- dropdown-menu -->
+          </div><!-- dropdown -->
+          <a class="nav-item nav-link" href="#">Publications</a>
+          <a class="nav-item nav-link" href="#">Opportunities</a>
+     </div><!-- collapse -->
+   </div><!-- col -->
+  </div><!-- row -->
+</div><!-- container -->
