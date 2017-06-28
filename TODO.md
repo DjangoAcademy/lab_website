@@ -19,6 +19,10 @@ HEADER
 NAV BAR
 # fix orange color to none
 
+FOOTER:
+   Properly set up sticky bottom ; almost there
+   Change copyright bar to an line list and get rid of the padding for the links
+	
 HOMEPAGE:
 	Skitter:
 		Remove navbar buttons on small screens
