@@ -253,10 +253,20 @@ hr.clear-right{clear:left;width:auto}
   .siteMenu-loc {
     margin-top: -8px;
    }
+  #university-footer {
+    padding-top: 80px;
+   }
   #welcome-text {
-   margin-left: 15px;
-   font-size: 1em;
-  }
+    margin-left: 15px;
+   }
+  #welcome-text>h3 {
+    margin-bottom: 40px;
+    font-size: 20px;
+   }
+  #welcome-text>h6 {
+    font-size: 14px;
+    line-height: 40px;
+   }
  }
 
 @media (min-width: 326px) and (max-width: 559px){
@@ -278,9 +288,19 @@ hr.clear-right{clear:left;width:auto}
   #menuBtn{
     margin-top:8px;
    }
+  #university-footer {
+    padding-top: 120px;
+   }
   #welcome-text {
-   margin-left: 15px;
-   font-size: 1.1em;
+    margin-left: 15px;
+   }
+  #welcome-text>h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
+   }
+  #welcome-text>h6 {
+    font-size: 16px;
+    line-height: 40px;
    }
   #Connect.parsys>p{
     font-size:12px;
@@ -300,8 +320,20 @@ hr.clear-right{clear:left;width:auto}
   .fontsize a {
     font-size:2.1vw;
    }
+
+  #university-footer {
+    padding-top: 160px;
+   }
   #welcome-text {
-   margin-left: 15px;
+    margin-left: 15px;
+   }
+  #welcome-text>h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
+   }
+  #welcome-text>h6 {
+    font-size: 18px;
+    line-height: 40px;
    }
   #Connect.parsys>p{
     font-size:12px;
@@ -326,14 +358,29 @@ hr.clear-right{clear:left;width:auto}
   .siteMenu-loc {
     margin-top: -16px;
   }
+
+  #university-footer {
+    padding-top: 180px;
+   }
   #welcome-text {
    margin-left: 15px;
    font-size: 1.1em;
+   margin-top: 50px;
    }
+  #welcome-text>h3 {
+   margin-bottom: 40px;
+   font-size: 25px;
+   }
+   #welcome-text>h6 {
+   font-size: 18px;
+   line-height: 40px;
+    }
+
   #Connect.parsys>p{
     font-size:14px;
    }
  }
+
 @media (min-width: 768px) and (max-width: 999px)  {
   .titlebar{
     height:28px;
@@ -370,13 +417,17 @@ hr.clear-right{clear:left;width:auto}
    }
 
   #welcome-text {
-   margin-top: 60px;
+   margin-top: 80px;
    margin-left: 15px;
-   font-size:1.75vw;
    }
   #welcome-text>h3 {
-   line-height:50px;
+   margin-bottom: 40px;
+   font-size: 28px;
    /*text-align: center;*/
+  }
+  #welcome-text>h6 {
+   font-size: 20px;
+   line-height: 30px;
   }
   #address.parsys>p{
     margin-bottom: 1px;
@@ -433,12 +484,13 @@ hr.clear-right{clear:left;width:auto}
     padding-right:125px;
    }
   #welcome-text>h3 {
+    margin-bottom: 40px;
     text-align: left;
-    font-size: 2.3vw;
+    font-size: 28px;
    }
    #welcome-text>h6 {
-     font-size: 2.0vw;
-     line-height: 2.4vw;
+     font-size: 26px;
+     line-height: 30px;
     }
 
   #address.parsys>p{
@@ -494,17 +546,18 @@ hr.clear-right{clear:left;width:auto}
     bottom:0px;
    }
   #welcome-text {
-   margin-top: 60px;
+   margin-top: 80px;
    padding-left:175px;
    padding-right:125px;
   }
   #welcome-text>h3 {
-   font-size: 1.8em;
+   font-size: 30px;
    text-align: left;
+   margin-bottom: 30px;
   }
   #welcome-text>h6 {
-   font-size: 2.0vw;
-   line-height: 2.0vw;
+   font-size: 25px;
+   line-height: 40px;
   }
 
   #address.parsys>p{
@@ -563,14 +616,13 @@ hr.clear-right{clear:left;width:auto}
    padding-right:125px;
   }
   #welcome-text>h3 {
-   font-size: 40px;
+   font-size: 35px;
    text-align: left;
-   line-height: 50px;
-   margin-bottom: 50px;
+   margin-bottom: 40px;
   }
   #welcome-text>h6 {
-   font-size: 35px;
-   line-height: 60px;
+   font-size: 25px;
+   line-height: 40px;
   }
   #address.parsys>p{
     margin-bottom: 0px;
@@ -627,14 +679,13 @@ hr.clear-right{clear:left;width:auto}
    padding-right:125px;
   }
   #welcome-text>h3 {
-   font-size: 50px;
+   font-size: 35px;
    text-align: left;
-   line-height: 50px;
    margin-bottom: 30px;
   }
   #welcome-text>h6 {
-   font-size: 45px;
-   line-height: 65px;
+   font-size: 30px;
+   line-height: 40px;
   }
   #address.parsys>p{
     margin-bottom: 0px;
