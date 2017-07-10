@@ -707,7 +707,14 @@ hr.clear-right{clear:left;width:auto}
  /* :::::::::::::::::: ODU FOOTER :::::::::::::::::: */
 
 /* ---------------------- */
-
+@media (max-width: 480px) {
+  #portraits{
+   width:105px;
+  }
+  .people>p{
+   font-size:13px;
+  }
+}
 @media (max-width: 576px) {
   #gradcomic {
     max-width: 70%;
@@ -839,4 +846,9 @@ hr.clear-right{clear:left;width:auto}
   padding: 20px;
   line-height:30px;
   color:#222;
+ }
+
+#portraits {
+  /*width:60%;*/
+
  }

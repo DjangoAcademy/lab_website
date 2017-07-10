@@ -39,3 +39,9 @@ HOMEPAGE:
 			Get stuff from students
 			More and better images
 			Fix join us image
+PEOPLE:
+	Make text wrap below image
+	Seperate with Names
+	Separate text by research interest hobbies etc...
+	Make a 'see more'
+	CVS

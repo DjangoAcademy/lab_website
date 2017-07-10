@@ -33,7 +33,7 @@
   </div><!-- row -->
   <div class="container-fluid titlebar" id="full">
     <div class="row-fluid">
-      <h2 class="titlebar"><a href="#">Ocean Remote Sensing Group</a></h2>
+      <h2 class="titlebar"><a href="{% url "HomePage" %}">Ocean Remote Sensing Group</a></h2>
     </div><!-- row -->
   </div><!-- container -->
 </div><!-- container -->
@@ -55,14 +55,13 @@
           <a class="nav-item nav-link" href="#">Research</a>
           <a class="nav-item nav-link" href="#">Teaching</a>
           <div class="dropdown">
-            <a class="nav-item nav-link" href="#" id="peopleDrop"
-                  aria-haspopup="true" aria-expanded="false"
-                  data-toggle="dropdown">People</a>
+            <a class="nav-item nav-link" id="peopleDrop"
+                  aria-haspopup="true" aria-expanded="false"href="{% url "People" %}">People</a>
               <ul class="dropdown-menu"  aria-labeled-by="peopleDrop">
-                <li><a class="dropdown-item" href=#>Ben Hamlington</a></li>
-                <li><a class="dropdown-item" href=#>Post-Docs</a></li>
-                <li><a class="dropdown-item" href=#>Students</a></li>
-                <li><a class="dropdown-item" href=#>Alumni</a></li>
+                <li><a class="dropdown-item" href="{% url "People" %}">Ben Hamlington</a></li>
+                <li><a class="dropdown-item" href="{% url "People" %}">Post-Docs</a></li>
+                <li><a class="dropdown-item" href="{% url "People" %}">Students</a></li>
+                <li><a class="dropdown-item" href="{% url "People" %}">Alumni</a></li>
               </ul><!-- dropdown-menu -->
           </div><!-- dropdown -->
           <a class="nav-item nav-link" href="{% url "Publications" %}">Publications</a>
