@@ -19,9 +19,12 @@ HEADER
 
 # - typo somewhere in media -lg
 -FIX LARGE SCREENS
-NAV BAR
 # fix orange color to none
 
+BASE:
+	put everything into better containers so that things stay centered
+	Nav-bar
+	
 FOOTER:
    Properly set up sticky bottom ; almost there
    Change copyright bar to an line list and get rid of the padding for the links

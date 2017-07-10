@@ -817,3 +817,15 @@ hr.clear-right{clear:left;width:auto}
 .clearfix:before,.clearfix:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 .clearfix:after{clear:both}
 .clearfix{zoom:1}
+
+/* ************************************************************************** */
+
+/* JOIN PAGE */
+
+/*#join-text h5 {font-color:#fff;}*/
+
+@media (max-width: 576px) {
+  #gradcomic {
+    max-width: 70%;
+   }
+ }
