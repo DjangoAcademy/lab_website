@@ -1,7 +1,6 @@
 /* ************************************* */
 /* ------ BB CSS for BASE TEMPLATE ----- */
 /* ************************************* */
-
 body {
   background-color: #f3f3f0;
  }
@@ -254,7 +253,7 @@ hr.clear-right{clear:left;width:auto}
     margin-top: -8px;
    }
   #university-footer {
-    padding-top: 80px;
+    /*padding-top: 80px;*/
    }
   #welcome-text {
     margin-left: 15px;
@@ -278,7 +277,7 @@ hr.clear-right{clear:left;width:auto}
    }
   .titlebar a{
     font-size:2.5vw;
-    margin-left:150px;
+    margin-left:175px;
     position:relative;
     bottom:13px;
    }
@@ -289,7 +288,7 @@ hr.clear-right{clear:left;width:auto}
     margin-top:8px;
    }
   #university-footer {
-    padding-top: 120px;
+    /*padding-top: 120px;*/
    }
   #welcome-text {
     margin-left: 15px;
@@ -322,7 +321,7 @@ hr.clear-right{clear:left;width:auto}
    }
 
   #university-footer {
-    padding-top: 160px;
+    /*padding-top: 160px;*/
    }
   #welcome-text {
     margin-left: 15px;
@@ -360,7 +359,7 @@ hr.clear-right{clear:left;width:auto}
   }
 
   #university-footer {
-    padding-top: 180px;
+    /*padding-top: 180px;*/
    }
   #welcome-text {
    margin-left: 15px;

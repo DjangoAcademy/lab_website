@@ -14,6 +14,9 @@ HEADER
 - use breadcrumbs on top head
 	- use .breadcrumb-item+ to select all but first
 - make fontsizes a fixed size
+- Make active link in dropdown (highlight page you’re on)
+- put ODU logo in its own responsive div (lynda vid)
+
 # - typo somewhere in media -lg
 -FIX LARGE SCREENS
 NAV BAR
