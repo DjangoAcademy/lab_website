@@ -706,6 +706,19 @@ hr.clear-right{clear:left;width:auto}
 
  /* :::::::::::::::::: ODU FOOTER :::::::::::::::::: */
 
+/* ---------------------- */
+
+@media (max-width: 576px) {
+  #gradcomic {
+    max-width: 70%;
+   }
+  #joinus-text {
+    font-size: 16px;
+    line-height:25px;
+
+   }
+ }
+
 /* change layout of footer cols from vertical to horiontal for big screens */
 @media(max-width:767px){
   [class*="grid-"]{width:96% !important}
@@ -822,10 +835,8 @@ hr.clear-right{clear:left;width:auto}
 
 /* JOIN PAGE */
 
-/*#join-text h5 {font-color:#fff;}*/
-
-@media (max-width: 576px) {
-  #gradcomic {
-    max-width: 70%;
-   }
+#joinus-text {
+  padding: 20px;
+  line-height:30px;
+  color:#222;
  }
