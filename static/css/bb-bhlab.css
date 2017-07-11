@@ -827,6 +827,7 @@ hr.clear-right{clear:left;width:auto}
   padding: 20px;
   line-height:30px;
   color:#222;
+  text-align: center;
  }
 
 #portraits {
@@ -834,15 +835,17 @@ hr.clear-right{clear:left;width:auto}
   padding: 10px;
   float: left;
  }
-
+.person {
+  background-color:#fff;
+  margin-bottom: 10px;
+ }
 .people {
   margin-left:5px;
-
+  background-color:#fff;
  }
 .people>h5{
   color: #003057;
  }
-
 @media (max-width: 480px) {
   #portraits{
    width:105px;
@@ -864,4 +867,50 @@ hr.clear-right{clear:left;width:auto}
     line-height:25px;
 
    }
+ }
+/* ************************ PUBLICATIONS/RESEARCH *************************** */
+
+#pubdiv dt{
+  font-size:12px;
+  font-weight:bold;
+ }
+
+#pubdiv dl{
+  margin-bottom:15px;
+ }
+#pubdiv dd{
+  padding: 2px 5px 10px 15px;
+ }
+#pubdiv ul{
+  list-style:none;
+  list-style-type:none;
+ }
+#pubdiv li{
+  background:#fff;
+  margin-right: 20px;
+  line-height: 18px;
+  /*padding-right: 5px;*/
+ }
+
+#pubdiv h2{
+  font-size:24px;
+  line-height:22px;
+  padding: 5px;
+ }
+
+#pubdiv h2,h3{page-break-after:avoid}
+
+#pubdiv h1,h2,h3,h4,h5,h6{
+  font-family:"Open Sans",
+  sans-serif;font-weight:600;
+  font-style:normal;
+  color:#003057;
+ }
+
+#pubdiv em{font-style:italic}
+
+/* smaller font size for small screens */
+@media (max-width: 576px) {
+  #pubdiv h2 {font-size:17px;line-height:14px; padding-bottom: 2px;}
+  #pubdiv dd {font-size:14px;line-height:13px}
  }
