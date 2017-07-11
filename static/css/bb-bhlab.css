@@ -707,24 +707,7 @@ hr.clear-right{clear:left;width:auto}
  /* :::::::::::::::::: ODU FOOTER :::::::::::::::::: */
 
 /* ---------------------- */
-@media (max-width: 480px) {
-  #portraits{
-   width:105px;
-  }
-  .people>p{
-   font-size:13px;
-  }
-}
-@media (max-width: 576px) {
-  #gradcomic {
-    max-width: 70%;
-   }
-  #joinus-text {
-    font-size: 16px;
-    line-height:25px;
 
-   }
- }
 
 /* change layout of footer cols from vertical to horiontal for big screens */
 @media(max-width:767px){
@@ -838,9 +821,7 @@ hr.clear-right{clear:left;width:auto}
 .clearfix:after{clear:both}
 .clearfix{zoom:1}
 
-/* ************************************************************************** */
-
-/* JOIN PAGE */
+/* **************************** OTHER PAGES ********************************* */
 
 #joinus-text {
   padding: 20px;
@@ -850,5 +831,37 @@ hr.clear-right{clear:left;width:auto}
 
 #portraits {
   /*width:60%;*/
+  padding: 10px;
+  float: left;
+ }
 
+.people {
+  margin-left:5px;
+
+ }
+.people>h5{
+  color: #003057;
+ }
+
+@media (max-width: 480px) {
+  #portraits{
+   width:105px;
+  }
+  .people>h5{
+   font-size:15px;
+  }
+  .people>p{
+   font-size:13px;
+  }
+}
+
+@media (max-width: 576px) {
+  #gradcomic {
+    max-width: 70%;
+   }
+  #joinus-text {
+    font-size: 16px;
+    line-height:25px;
+
+   }
  }
