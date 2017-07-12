@@ -938,12 +938,16 @@ h2.affiliate-panel{
  }
 
 @media (max-width: 768px) {
-  #affiliates{
-   margin-right: 20px;
- }
-
+  h2.affiliate-panel {
+     font-size:15px;
+     line-height:15px;
+    }
   .affiliate-panel img{
-   width:55%;
+   width:200px;
+   /*margin-top:50px;*/
+   display:flex;
+   justify-content:space-between;
+   padding-left:5px;
   }
  }
 
