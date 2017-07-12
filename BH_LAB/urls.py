@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^people', include('People.urls')),
     url(r'^join', include('Join.urls')),
     url(r'^research', include('Research.urls')),
+    url(r'^teaching', include('Teaching.urls')),
 ]
