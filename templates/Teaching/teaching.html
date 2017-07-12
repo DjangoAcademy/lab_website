@@ -1,0 +1,29 @@
+{% extends "__base.html" %}
+{% load static %}
+{% block content %}
+ <!-- style="display:flex; flex-direction:column; justify-content: space-around align-items:center" -->
+<div class="container-fluid">
+  <div class="row-fluid" style="background-color:#fff">
+    <!-- <div class="col-6" style="background-color:#fff"> -->
+      <!-- <h3 style="text-align:center">Undergraduate Courses</h3> -->
+      <h5>Introduction to Global Climate Change</h5>
+      <img class="img rounded pull-right" src="{% static "images/climate_change.jpg" %}" alt="Global Climate Change">
+      <p>Introduction to global climate change text. DUMMY TEXT The primary focus is on the use of satellite remote sensing to improve our understanding of the ocean in the past, present and future. While the group is part of the Ocean, Earth and Atmospheric Sciences Department at ODU, our expertise extends
+     <!-- </div> -->
+  </div><!-- row -->
+  <div class="row-fluid" style="background-color:#fff">
+      <h5>Introduction to Meteorology</h5>
+      <img class="img rounded pull-right" src="{% static "images/hurricane_ike.jpg" %}" alt="ike">
+      <p>This course is an introduction to the basic principles governing both day-to-day weather and the average of weather, or climate. Specific focus will be given to the tools used to measure weather and the ways in which these tools have impacted our understanding of weather in the past and present. Links will be made between the technology-based improvements of our understanding of weather and the impact on the lives of humans throughout recent history. Students will learn about how weather forecasts are made, and how the quality of these forecasts affects our lives.
+  </div><!-- row -->
+  <div class="row-fluid" style="background-color:#fff" id="">
+      <!-- <h3 style="text-align:center">Graduate Courses</h3> -->
+     <!-- </div> -->
+    <!-- <div class="" style="background-color:#fff"> -->
+      <h5>Time-Series Analysisaasdfassfa</h5>
+      <img class="img rounded course-images pull-right" src="{% static "images/time_series.png" %}" alt="slr">
+      <!-- <p>A study of the basic techniques used to model and analyze time series of oceanographic data. These include temporal spatial and frequency/wave number domain techniques. -->
+  </div><!-- row -->
+</div><!-- container -->
+
+{% endblock content %}

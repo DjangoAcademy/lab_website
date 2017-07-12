@@ -821,52 +821,7 @@ hr.clear-right{clear:left;width:auto}
 .clearfix:after{clear:both}
 .clearfix{zoom:1}
 
-/* **************************** OTHER PAGES ********************************* */
 
-#joinus-text {
-  padding: 20px;
-  line-height:30px;
-  color:#222;
-  text-align: center;
- }
-
-#portraits {
-  /*width:60%;*/
-  padding: 10px;
-  float: left;
- }
-.person {
-  background-color:#fff;
-  margin-bottom: 10px;
- }
-.people {
-  margin-left:5px;
-  background-color:#fff;
- }
-.people>h5{
-  color: #003057;
- }
-@media (max-width: 480px) {
-  #portraits{
-   width:105px;
-  }
-  .people>h5{
-   font-size:15px;
-  }
-  .people>p{
-   font-size:13px;
-  }
-}
-
-@media (max-width: 576px) {
-  #gradcomic {
-    max-width: 70%;
-   }
-  #joinus-text {
-    font-size: 16px;
-    line-height:25px;
-   }
- }
 /* ************************ RESEARCH/PUBLICATIONS*************************** */
 .odu-list {
   margin-top: 10px;
@@ -953,4 +908,81 @@ h2.affiliate-panel{
     font-size:30px;
     line-height:30px;
    }
+ }
+
+/* **************************** OTHER PAGES ********************************* */
+
+#joinus-text {
+  padding: 20px;
+  line-height:30px;
+  color:#222;
+  text-align: center;
+ }
+
+#portraits {
+  /*width:60%;*/
+  padding: 10px;
+  float: left;
+ }
+.person {
+  background-color:#fff;
+  margin-bottom: 10px;
+ }
+.people {
+  margin-left:5px;
+  background-color:#fff;
+ }
+.people>h5{
+  color: #003057;
+ }
+@media (max-width: 480px) {
+  #portraits{
+   width:105px;
+  }
+  .people>h5{
+   font-size:15px;
+  }
+  .people>p{
+   font-size:13px;
+  }
+}
+
+@media (max-width: 576px) {
+  #gradcomic {
+    max-width: 70%;
+   }
+  #joinus-text {
+    font-size: 16px;
+    line-height:25px;
+   }
+ }
+
+ /* ***************************** TEACHING ********************************** */
+
+.course-images{
+  float:right;
+  clear:right;
+  /*width:20%;*/
+  /*text-align:right;*/
+  /*align-vertical: baseline;*/
+  /*display:flex;*/
+  /*justify-content:center;*/
+
+ }
+
+@media (min-width: 3200px) {
+  .course-images{
+    /*width: 300px;*/
+   }
+  .container-fluid.temp{
+    /*width: 1170px;*/
+  }
+ }
+@media (max-width: 480) {
+  .course-images{
+    width: 105px;
+   }
+  .container-fluid.temp{
+    /*width: 1170px;*/
+  }
  }
