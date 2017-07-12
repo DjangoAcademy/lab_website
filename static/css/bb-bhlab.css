@@ -821,52 +821,7 @@ hr.clear-right{clear:left;width:auto}
 .clearfix:after{clear:both}
 .clearfix{zoom:1}
 
-/* **************************** OTHER PAGES ********************************* */
 
-#joinus-text {
-  padding: 20px;
-  line-height:30px;
-  color:#222;
-  text-align: center;
- }
-
-#portraits {
-  /*width:60%;*/
-  padding: 10px;
-  float: left;
- }
-.person {
-  background-color:#fff;
-  margin-bottom: 10px;
- }
-.people {
-  margin-left:5px;
-  background-color:#fff;
- }
-.people>h5{
-  color: #003057;
- }
-@media (max-width: 480px) {
-  #portraits{
-   width:105px;
-  }
-  .people>h5{
-   font-size:15px;
-  }
-  .people>p{
-   font-size:13px;
-  }
-}
-
-@media (max-width: 576px) {
-  #gradcomic {
-    max-width: 70%;
-   }
-  #joinus-text {
-    font-size: 16px;
-    line-height:25px;
-   }
- }
 /* ************************ RESEARCH/PUBLICATIONS*************************** */
 .odu-list {
   margin-top: 10px;
@@ -954,3 +909,103 @@ h2.affiliate-panel{
     line-height:30px;
    }
  }
+
+/* ****************************** JOIN US *********************************** */
+
+#joinus-text {
+  padding: 20px;
+  line-height:30px;
+  color:#222;
+  text-align: center;
+ }
+ @media (max-width: 576px) {
+   #gradcomic {
+     max-width: 70%;
+    }
+   #joinus-text {
+     font-size: 16px;
+     line-height:25px;
+    }
+  }
+
+/* ******************************* PEOPLE *********************************** */
+.portraits {
+  /*width:60%;*/
+  padding: 10px;
+  float: left;
+ }
+
+.people-well {
+  margin-bottom: 10px;
+ }
+.person {
+  margin-left:10px;
+  margin-right:10px;
+  background-color:#fff;
+ }
+.person>h5{
+  margin-top:10px;
+  margin-left:10px;
+  color: #003057;
+ }
+.person>p{
+  margin-right:10px;
+ }
+
+@media (max-width: 480px) {
+  .portraits{
+   width:105px;
+  }
+  .person>h5{
+   font-size:15px;
+  }
+  .person>p{
+   font-size:13px;
+  }
+}
+
+ /* ***************************** TEACHING ********************************** */
+.course-pic {
+  /*width:60%;*/
+  padding: 10px;
+  float: right;
+ }
+.course-well {
+  /*background-color:#fff;*/
+  margin-bottom: 10px;
+  width:100%
+ }
+
+ .course-well>h4 {
+  width: 100%;
+  text-align:right;
+  font-style:italic;
+  line-height:40px;
+ }
+.course {
+  margin-left:10px;
+  background-color:#fff;
+ }
+.course>h5{
+  margin-top:10px;
+  margin-left:10px;
+  color: #003057;
+ }
+.course>p{
+  margin-left:10px;
+ }
+
+.course>h5{
+  color: #003057;
+ }
+@media (max-width: 480px) {
+  .course-pic{
+   width:105px;
+  }
+  .course>h5{
+   font-size:15px;
+  }
+  .course>p{
+   font-size:13px;
+  }
+}
