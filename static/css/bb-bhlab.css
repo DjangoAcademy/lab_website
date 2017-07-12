@@ -910,7 +910,7 @@ h2.affiliate-panel{
    }
  }
 
-/* **************************** OTHER PAGES ********************************* */
+/* ****************************** JOIN US *********************************** */
 
 #joinus-text {
   padding: 20px;
@@ -918,44 +918,51 @@ h2.affiliate-panel{
   color:#222;
   text-align: center;
  }
+ @media (max-width: 576px) {
+   #gradcomic {
+     max-width: 70%;
+    }
+   #joinus-text {
+     font-size: 16px;
+     line-height:25px;
+    }
+  }
 
+/* ******************************* PEOPLE *********************************** */
 .portraits {
   /*width:60%;*/
   padding: 10px;
   float: left;
  }
-.person {
-  background-color:#fff;
+
+.people-well {
   margin-bottom: 10px;
  }
-.people {
-  margin-left:5px;
+.person {
+  margin-left:10px;
+  margin-right:10px;
   background-color:#fff;
  }
-.people>h5{
+.person>h5{
+  margin-top:10px;
+  margin-left:10px;
   color: #003057;
  }
+.person>p{
+  margin-right:10px;
+ }
+
 @media (max-width: 480px) {
   .portraits{
    width:105px;
   }
-  .people>h5{
+  .person>h5{
    font-size:15px;
   }
-  .people>p{
+  .person>p{
    font-size:13px;
   }
 }
-
-@media (max-width: 576px) {
-  #gradcomic {
-    max-width: 70%;
-   }
-  #joinus-text {
-    font-size: 16px;
-    line-height:25px;
-   }
- }
 
  /* ***************************** TEACHING ********************************** */
 .course-pic {
@@ -971,13 +978,21 @@ h2.affiliate-panel{
 
  .course-well>h4 {
   width: 100%;
-  text-align:center;
+  text-align:right;
   font-style:italic;
   line-height:40px;
  }
 .course {
-  margin-left:5px;
+  margin-left:10px;
   background-color:#fff;
+ }
+.course>h5{
+  margin-top:10px;
+  margin-left:10px;
+  color: #003057;
+ }
+.course>p{
+  margin-left:10px;
  }
 
 .course>h5{
