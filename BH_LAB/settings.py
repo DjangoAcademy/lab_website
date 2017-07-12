@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Publications',
     'People',
     'Join',
+    'Research',
 ]
 
 MIDDLEWARE = [
@@ -63,6 +64,7 @@ TEMPLATES = [
                 os.path.join(TEMPLATE_ROOT, 'Publications'),
                 os.path.join(TEMPLATE_ROOT, 'People'),
 		os.path.join(TEMPLATE_ROOT, 'Join'),
+		os.path.join(TEMPLATE_ROOT, 'Research'),
                     ],
         'APP_DIRS': True,
         'OPTIONS': {
