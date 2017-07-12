@@ -919,7 +919,7 @@ h2.affiliate-panel{
   text-align: center;
  }
 
-#portraits {
+.portraits {
   /*width:60%;*/
   padding: 10px;
   float: left;
@@ -936,7 +936,7 @@ h2.affiliate-panel{
   color: #003057;
  }
 @media (max-width: 480px) {
-  #portraits{
+  .portraits{
    width:105px;
   }
   .people>h5{
@@ -958,31 +958,39 @@ h2.affiliate-panel{
  }
 
  /* ***************************** TEACHING ********************************** */
-
-.course-images{
-  float:right;
-  clear:right;
-  /*width:20%;*/
-  /*text-align:right;*/
-  /*align-vertical: baseline;*/
-  /*display:flex;*/
-  /*justify-content:center;*/
-
+.course-pic {
+  /*width:60%;*/
+  padding: 10px;
+  float: right;
+ }
+.course-well {
+  /*background-color:#fff;*/
+  margin-bottom: 10px;
+  width:100%
  }
 
-@media (min-width: 3200px) {
-  .course-images{
-    /*width: 300px;*/
-   }
-  .container-fluid.temp{
-    /*width: 1170px;*/
+ .course-well>h4 {
+  width: 100%;
+  text-align:center;
+  font-style:italic;
+  line-height:40px;
+ }
+.course {
+  margin-left:5px;
+  background-color:#fff;
+ }
+
+.course>h5{
+  color: #003057;
+ }
+@media (max-width: 480px) {
+  .course-pic{
+   width:105px;
   }
- }
-@media (max-width: 480) {
-  .course-images{
-    width: 105px;
-   }
-  .container-fluid.temp{
-    /*width: 1170px;*/
+  .course>h5{
+   font-size:15px;
   }
- }
+  .course>p{
+   font-size:13px;
+  }
+}
