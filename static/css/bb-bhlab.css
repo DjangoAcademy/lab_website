@@ -761,7 +761,6 @@ h2.affiliate-panel{
  /* *************************** NEW HEADER ********************************** */
 
 /* EXTERNAL LINKS ==================== */
-
 .external-links p{
   margin-bottom: 0px;
  }
@@ -784,6 +783,7 @@ h2.affiliate-panel{
   background:#f3f3f0;
   margin-top:-25px;
  }
+
  /* NAVBAR ==================== */
 #labnav {
   padding-left: 0px;
@@ -792,17 +792,6 @@ h2.affiliate-panel{
  }
 #LabMenu.siteMenu a{
   line-height:5px;
- }
-#menuBtn{
-  background-color: #fff;
-  /*width: 100%;*/
-  height: 25px;
- }
-
-#menuBtnTxt {
-  /*display:flex;*/
-  /*justify-content:center;*/
-  /*font-size:15px;*/
  }
 
 #labnav .nav-item{
@@ -818,7 +807,7 @@ h2.affiliate-panel{
  }
 
 /* actual dropdown menu */
-.dropdown:hover .dropdown-menu {
+#labnav .dropdown:hover .dropdown-menu {
   background-color: #555555;
   display:flex;
   flex-direction:column;
@@ -833,14 +822,24 @@ h2.affiliate-panel{
  }
 
 /* background and text of dropdown items */
-.dropdown-item {
+#labnav .dropdown-item {
   color: #bcbcbc;
   font-size: 13px !important;
   padding-top: 15px;
   padding-bottom: 15px;
  }
-
+/* -- menu button for small screens -- */
 .navbar-toggler{
 width:100%;
 /*padding-left:50px;*/
 }
+#menuBtn{
+  background-color: #fff;
+  /*width: 100%;*/
+  height: 25px;
+ }
+#menuBtnTxt {
+  /*display:flex;*/
+  /*justify-content:center;*/
+  /*font-size:15px;*/
+ }
