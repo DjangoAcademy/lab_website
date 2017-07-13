@@ -3,9 +3,9 @@
 <!-- Main List -->
 <div class="container-fluid" >
   <div class="row">
-    <div class="col text-md-right">
+    <div class="col text-md-right hidden-md-down external-links">
       <p>
-         <a href="http://www.ccpo.odu.edu">Center for Physical Oceanography></a> &bull;
+         <a href="http://www.ccpo.odu.edu">Center for Physical Oceanography</a> &bull;
          <a href="http://www.odu.edu/oeas">Ocean, Earth, Atmospheric Science</a> &bull;
          <a href="http://www.odu.edu/sci">College of Sciences</a></a>
       </p>
@@ -15,27 +15,33 @@
 
 <div style="background-color:#003057; height:50px;">
   <div class="container" style="background-color:#003057">
+    <div class="row-fluid">
+    <div class="col">
       <h2 style="color:#fff; line-height:50px; font-weight:500">
         <img class="img rounded logo" style=""src="{% static "images/logo-ODU-3.png" %}" alt="logo">
          Ocean Remote Sensing Group
       </h2>
+       </div><!-- End Col -->
+       </div><!-- End Row -->
    </div><!-- End Container -->
   </div><!-- End Background Color -->
 
   <div class="container">
-        <nav class="navbar navbar-toggleable-sm" style="background-color: #fff;" id="BBNAV">
+    <div class="row-fluid">
+    <div class="col offset-4 offset-md-0">
+        <nav class="navbar navbar-toggleable-sm  " style="background-color: #fff;" id="labnav">
           <button class="navbar-toggler" type="button"
-               data-toggle="collapse"  data-target="#LabMenu1"
+               data-toggle="collapse"  data-target="#LabMenu"
                aria-controls="" aria-expanded="false" aria-label="toggleNav"
                id="">
             <span id="">Menu</span>
           </button>
-          <div class="collapse navbar-collapse siteMenu1 siteMenu-dropdown1" id="LabMenu1">
-            <a class="nav-item nav-link active" href="{% url "HomePage" %}">Home</a>
+          <div class="collapse navbar-collapse siteMenu" id="LabMenu">
+            <a class="nav-item nav-link" href="{% url "HomePage" %}">Home</a>
             <a class="nav-item nav-link" href="{% url "Research" %}">Research</a>
             <a class="nav-item nav-link" href="{% url "Teaching" %}">Teaching</a>
            <div class="dropdown">
-              <a class="nav-item nav-link" id="peopleDrop1"
+              <a class="nav-item nav-link" id="peopleDrop"
                     aria-haspopup="true" aria-expanded="false"href="{% url "People" %}">People</a>
               <ul class="dropdown-menu"  aria-labeled-by="peopleDrop1">
                 <li><a class="dropdown-item" href="{% url "People" %}#ben">Ben Hamlington</a></li>
@@ -48,4 +54,6 @@
             <a class="nav-item nav-link" href="{% url "Join" %}">Opportunities</a>
           </div><!-- collapse -->
         </nav>
+       </div><!-- End Col -->
+       </div><!-- End Row -->
   </div><!-- End Container -->

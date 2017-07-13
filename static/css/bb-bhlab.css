@@ -79,7 +79,7 @@ body {
 
 /* :::::::::::::::::::::: SITE NAVIGATION :::::::::::::::::::::: */
 
-#LabMenu.siteMenu a{
+/*#LabMenu.siteMenu a{
   padding-top: 0px;
   padding-bottom: 0px;
   line-height:1px;
@@ -106,43 +106,44 @@ body {
 
 .nav-item{
   color: #222
- }
+ }*/
 
-.nav-item:hover {
+/*.nav-item:hover {
   background-color: #555555;
   opacity: 0.6;
   border-style: solid;
   border-color: #fff #555555;
   border-width: 1px;
   color: #fff;
-  border-radius: 100px 100px 100px 100px; /*circlular border
+  border-radius: 100px 100px 100px 100px; */
+  /*circlular border
   /*transform: scale(1, 0.90);*/ /*shrink items and scale */
- }
+ /*}*/
 
-.siteMenu-dropdown{
-  background-color: #fff;
+/*.siteMenu-dropdown{*/
+  /*background-color: #fff;*/
   /*margin-top:1.5px;*/
- }
+ /*}*/
 
 /* actual dropdown menu */
-.dropdown:hover .dropdown-menu {
+/*.dropdown:hover .dropdown-menu {
   background-color: #555555;
   display:block;
   min-width:150px;
   width:40px !important;
   margin-top:-1px;
   padding-bottom: 0px;
- }
+ }*/
 
 /* action of menu bar button that hovers */
-.dropdown:hover{
+/*.dropdown:hover{
  }
 
 .dropdown-menu a{
- }
+ }*/
 
 /* background and text of dropdown items */
-.dropdown-item {
+/*.dropdown-item {
   color: #bcbcbc;
   font-size: 15px !important;
   padding: 0px;
@@ -150,7 +151,7 @@ body {
   margin:0px;
   width: 100%;
   margin-top:-10px;
- }
+ }*/
 
 /* ::::::::::::::::::::::::::::::::: FOOTER ::::::::::::::::::::::::::::::::: */
 #university-footer,#university-footer *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
@@ -348,7 +349,7 @@ img.footer-map-img{
     font-size:1.9vw;
    }
   #LabMenu.siteMenu a{
-    font-size:1.5vw;
+    /*font-size:1.5vw;*/
   }
   .siteMenu-loc {
     margin-top:-7px;
@@ -357,11 +358,11 @@ img.footer-map-img{
     padding-right: 40px;
    }
   .dropdown:hover .dropdown-menu {
-    min-width:150px;
+    /*min-width:150px;*/
    }
   .dropdown-item {
-    font-size: 11px !important;
-    line-height:0px; /*change thickness */
+    /*font-size: 11px !important;*/
+    /*line-height:0px; /*change thickness */
    }
   #welcome-text {
    margin-top: 80px;
@@ -390,14 +391,14 @@ img.footer-map-img{
    }
  }
   #LabMenu.siteMenu a{
-    font-size:1.5vw;
+    /*font-size:1.5vw;*/
    }
   .dropdown:hover .dropdown-menu {
-    min-width:200px;
+    /*min-width:200px;*/
    }
   .dropdown-item {
-    font-size: 13px !important;
-    line-height: 1px; /*change thickness */
+    /*font-size: 13px !important;*/
+    /*line-height: 1px; /*change thickness */
    }
   #welcome-text {
     margin-top: 65px;
@@ -432,14 +433,14 @@ img.footer-map-img{
     width: 68%
    }
   #LabMenu.siteMenu a{
-    font-size:1.55vw;
+    /*font-size:1.55vw;*/
    }
   .dropdown:hover .dropdown-menu {
-    min-width:225px;
+    /*min-width:225px;*/
    }
   .dropdown-item {
-    font-size: 15px !important;
-    line-height:12px; /*change thickness */
+    /*font-size: 15px !important;*/
+    /*line-height:12px; /*change thickness */
    }
   #welcome-text {
    margin-top: 80px;
@@ -472,15 +473,15 @@ img.footer-map-img{
     width: 64%;
    }
   #LabMenu.siteMenu a{
-    font-size:1.55vw;
+    /*font-size:1.55vw;*/
    }
   .dropdown:hover .dropdown-menu {
-    min-width:250px;
+    /*min-width:250px;*/
    }
   .dropdown-item {
-    font-size: 19px !important;
-    width: 100%;
-    line-height:12px; /*change thickness */
+    /*font-size: 19px !important;*/
+    /*width: 100%;*/
+    /*line-height:12px; /*change thickness */
    }
   #welcome-text {
    margin-top: 75px;
@@ -513,14 +514,14 @@ img.footer-map-img{
     width: 63%;
    }
   #LabMenu.siteMenu a{
-    font-size:1.55vw;
+    /*font-size:1.55vw;*/
    }
   .dropdown:hover .dropdown-menu {
-    min-width:350px;
+    /*min-width:350px;*/
    }
   .dropdown-item {
-    font-size: 21px !important;
-    width: 100%;
+    /*font-size: 21px !important;*/
+    /*width: 100%;*/
    }
   #welcome-text {
    margin-top: 70px;
@@ -759,84 +760,69 @@ h2.affiliate-panel{
 }
  /* *************************** NEW HEADER ********************************** */
 
- .odu-logo2{
-   float:left;
-   width:175px;
-   background:#f3f3f0;
-   margin-top:-40px;
-   margin-right:10px;
+/* EXTERNAL LINKS ==================== */
+
+.external-links p{
+  margin-bottom: 0px;
+ }
+.external-links a{
+  text-decoration: underline;
+  color: #003057; /* odu blue */
+  font-weight: 400;
+  font-family:"Open Sans", sans-serif;
+  font-size: 15px;
  }
 
+ /* BLUE TITLE BAR ==================== */
  .logo{
   border-style: solid;
   border-color: #fff;
   border-width:1px;
   margin-right:10px;
   float:left;
-  width:150px;
+  width:140px;
   background:#f3f3f0;
-  margin-top:-40px;
+  margin-top:-25px;
  }
-
-/* *************************** NAV BAR */
-
-#BBNAV {
-  /*margin-top:-8px;*/
+ /* NAVBAR ==================== */
+#labnav {
   padding-left: 0px;
   margin-left:-10px;
-  width: 80%;
+  width: 67%;
  }
-
-#LabMenu1.siteMenu1 a{
-  line-height:2px;
+#LabMenu.siteMenu a{
+  line-height:5px;
  }
-
 #menuBtn{
   background-color: #fff;
-  width: 100%;
+  /*width: 100%;*/
   height: 25px;
  }
 
 #menuBtnTxt {
-  display:flex;
-  justify-content:center;
-  font-size:15px;
+  /*display:flex;*/
+  /*justify-content:center;*/
+  /*font-size:15px;*/
  }
 
-#LabMenu1.siteMenu-dropdown1 a{
-  /*font-size: 12px;*/
-  /*padding-top:20px;*/
-  /*padding-bottom:20px;*/
- }
-
-.nav-item{
+#labnav .nav-item{
   color: #222
  }
 
-.nav-item:hover {
+/* do this on mouse-over: */
+#labnav .nav-item:hover {
   background-color: #555555;
   opacity: 0.6;
-  border-style: solid;
-  border-color: #fff #555555;
-  border-width: 1px;
+  border-radius: 100%;
   color: #fff;
-  border-radius: 150px 150px 150px 150px; /*circlular border
-  /*transform: scale(1, 0.90);*/ /*shrink items and scale */
- }
-
-.siteMenu-dropdown1{
-  /*background-color: #fff;*/
-  /*margin-top:1.5px;*/
  }
 
 /* actual dropdown menu */
 .dropdown:hover .dropdown-menu {
   background-color: #555555;
-  display:block;
-  min-width:150px;
-  width:40px !important;
+  display:flex;
+  flex-direction:column;
   margin-top:-1px;
-  padding-bottom: 0px;
  }
 
 /* action of menu bar button that hovers */
@@ -849,18 +835,12 @@ h2.affiliate-panel{
 /* background and text of dropdown items */
 .dropdown-item {
   color: #bcbcbc;
-  font-size: 15px !important;
-  padding: 0px;
-  padding-left: 10px;
-  margin:0px;
-  width: 100%;
-  margin-top:-10px;
+  font-size: 13px !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
  }
 
-  .dropdown:hover .dropdown-menu {
-    min-width:350px;
-   }
-  .dropdown-item {
-    font-size: 21px !important;
-    width: 100%;
-   }
+.navbar-toggler{
+width:100%;
+/*padding-left:50px;*/
+}
