@@ -713,6 +713,10 @@ h2.affiliate-panel{
 }
 
  /* ***************************** TEACHING ********************************** */
+.course {
+  margin-left:10px;
+  background-color:#fff;
+ }
 .course-pic {
   /*width:60%;*/
   padding: 10px;
@@ -726,13 +730,9 @@ h2.affiliate-panel{
 
  .course-well>h4 {
   width: 100%;
-  text-align:right;
+  text-align: center;
   font-style:italic;
   line-height:40px;
- }
-.course {
-  margin-left:10px;
-  background-color:#fff;
  }
 .course>h5{
   margin-top:10px;
@@ -757,3 +757,23 @@ h2.affiliate-panel{
    font-size:13px;
   }
 }
+ /* *************************** NEW HEADER ********************************** */
+
+ .odu-logo2{
+   float:left;
+   width:175px;
+   background:#f3f3f0;
+   margin-top:-40px;
+   margin-right:10px;
+ }
+
+ .logo{
+  border-style: solid;
+  border-color: #fff;
+  border-width:1px;
+  margin-right:10px;
+  float:left;
+  width:150px;
+  background:#f3f3f0;
+  margin-top:-40px;
+ }
