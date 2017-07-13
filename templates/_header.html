@@ -50,22 +50,23 @@
               <span id="menuBtnTxt">Menu</span>
           </button>
           <div class="collapse navbar-collapse siteMenu siteMenu-dropdown" id="LabMenu">
-          <a class="nav-item nav-link active" href="{% url "HomePage" %}">Home</a>
-          <a class="nav-item nav-link" href="{% url "Research" %}">Research</a>
-          <a class="nav-item nav-link" href="{% url "Teaching" %}">Teaching</a>
-          <div class="dropdown">
-            <a class="nav-item nav-link" id="peopleDrop"
-                  aria-haspopup="true" aria-expanded="false"href="{% url "People" %}">People</a>
-              <ul class="dropdown-menu"  aria-labeled-by="peopleDrop">
-                <li><a class="dropdown-item" href="{% url "People" %}#ben">Ben Hamlington</a></li>
-                <li><a class="dropdown-item" href="{% url "People" %}#post-docs">Post-Docs</a></li>
-                <li><a class="dropdown-item" href="{% url "People" %}#students">Students</a></li>
-                <li><a class="dropdown-item" href="{% url "People" %}">Alumni</a></li>
-              </ul><!-- dropdown-menu -->
-          </div><!-- dropdown -->
-          <a class="nav-item nav-link" href="{% url "Publications" %}">Publications</a>
-          <a class="nav-item nav-link" href="{% url "Join" %}">Opportunities</a>
-     </div><!-- collapse -->
+            <a class="nav-item nav-link active" href="{% url "HomePage" %}">Home</a>
+            <a class="nav-item nav-link" href="{% url "Research" %}">Research</a>
+            <a class="nav-item nav-link" href="{% url "Teaching" %}">Teaching</a>
+            <div class="dropdown">
+              <a class="nav-item nav-link" id="peopleDrop"
+                    aria-haspopup="true" aria-expanded="false"href="{% url "People" %}">People</a>
+                <ul class="dropdown-menu"  aria-labeled-by="peopleDrop">
+                  <li><a class="dropdown-item" href="{% url "People" %}#ben">Ben Hamlington</a></li>
+                  <li><a class="dropdown-item" href="{% url "People" %}#post-docs">Post-Docs</a></li>
+                  <li><a class="dropdown-item" href="{% url "People" %}#students">Students</a></li>
+                  <li><a class="dropdown-item" href="{% url "People" %}">Alumni</a></li>
+                </ul><!-- dropdown-menu -->
+            </div><!-- dropdown -->
+            <a class="nav-item nav-link" href="{% url "Publications" %}">Publications</a>
+            <a class="nav-item nav-link" href="{% url "Join" %}">Opportunities</a>
+          </div><!-- collapse -->
+
    </div><!-- col -->
   </div><!-- row -->
 </div><!-- container -->
