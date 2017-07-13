@@ -306,6 +306,173 @@ img.footer-map-img{
     }
  }
 
+@media (min-width: 768px) and (max-width: 999px)  {
+  .titlebar{
+    height:28px;
+   }
+  .titlebar a{
+    font-size: 2.5vw;
+    margin-left: 275px;
+    position:relative;
+    bottom:6px;
+   }
+  .fontsize a {
+    font-size:1.9vw;
+   }
+  #LabMenu.siteMenu a{
+    /*font-size:1.5vw;*/
+  }
+  .siteMenu-loc {
+    margin-top:-7px;
+    margin-left:225px;
+    width: 73%;
+    padding-right: 40px;
+   }
+  .dropdown:hover .dropdown-menu {
+    /*min-width:150px;*/
+   }
+  .dropdown-item {
+    /*font-size: 11px !important;*/
+    /*line-height:0px; /*change thickness */
+   }
+  #welcome-text {
+   margin-top: 80px;
+   margin-left: 15px;
+   }
+  #welcome-text>h3 {
+   margin-bottom: 40px;
+   font-size: 28px;
+   /*text-align: center;*/
+  }
+  #welcome-text>h6 {
+   font-size: 20px;
+   line-height: 30px;
+ }
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .titlebar a{
+    font-size:2vw;
+    margin-left:325px;
+    position:relative;
+    bottom:5px;
+   }
+  .siteMenu-loc {
+    margin-left:292px;
+    width: 67%
+   }
+ }
+  #LabMenu.siteMenu a{
+    /*font-size:1.5vw;*/
+   }
+  .dropdown:hover .dropdown-menu {
+    /*min-width:200px;*/
+   }
+  .dropdown-item {
+    /*font-size: 13px !important;*/
+    /*line-height: 1px; /*change thickness */
+   }
+  #welcome-text {
+    margin-top: 65px;
+    padding-left:175px;
+    padding-right:125px;
+   }
+  #welcome-text>h3 {
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 28px;
+   }
+   #welcome-text>h6 {
+     font-size: 26px;
+     line-height: 30px;
+    }
+ }
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+  #Topbar.list-inline{
+    font-size: 1.5vw;
+   }
+
+  .titlebar a{
+    font-size:3vw;
+    margin-left:380px;
+    position:relative;
+    bottom: 0px;
+   }
+  .siteMenu-loc {
+    margin-left:365px;
+    width: 68%
+   }
+  #LabMenu.siteMenu a{
+    /*font-size:1.55vw;*/
+   }
+  .dropdown:hover .dropdown-menu {
+    /*min-width:225px;*/
+   }
+  .dropdown-item {
+    /*font-size: 15px !important;*/
+    /*line-height:12px; /*change thickness */
+   }
+  #welcome-text {
+   margin-top: 80px;
+   padding-left:175px;
+   padding-right:125px;
+  }
+  #welcome-text>h3 {
+   font-size: 30px;
+   text-align: left;
+   margin-bottom: 30px;
+  }
+  #welcome-text>h6 {
+   font-size: 25px;
+   line-height: 40px;
+  }
+ }
+
+@media (min-width: 1400px) and (max-width: 1699px){
+
+  #Topbar.list-inline{
+    font-size: 1.5vw;
+   }
+
+  .titlebar a{
+    font-size:3vw;
+    margin-left:455px;
+   }
+  .siteMenu-loc {
+    margin-left:418px;
+    width: 64%;
+   }
+  #LabMenu.siteMenu a{
+    /*font-size:1.55vw;*/
+   }
+  .dropdown:hover .dropdown-menu {
+    /*min-width:250px;*/
+   }
+  .dropdown-item {
+    /*font-size: 19px !important;*/
+    /*width: 100%;*/
+    /*line-height:12px; /*change thickness */
+   }
+  #welcome-text {
+   margin-top: 75px;
+   padding-left:175px;
+   padding-right:125px;
+  }
+  #welcome-text>h3 {
+   font-size: 35px;
+   text-align: left;
+   margin-bottom: 40px;
+  }
+  #welcome-text>h6 {
+   font-size: 25px;
+   line-height: 40px;
+  }
+ }
+
+@media (min-width: 1700px) {
+}
+
 /* ::: FOOTER ::: */
 @media (max-width: 767px) {
  .footer-map-img{
