@@ -1,0 +1,695 @@
+/* ************************************* */
+/* ------ BB CSS for BASE TEMPLATE ----- */
+/* ************************************* */
+body {
+  background-color: #f3f3f0;
+ }
+
+/* :::::::::::::::::::::::::::::: EXTERNAL LINKS :::::::::::::::::::::::::::: */
+.external-links p{
+  margin-bottom: 0px;
+ }
+.external-links a{
+  text-decoration: underline;
+  color: #003057; /* odu blue */
+  font-weight: 400;
+  font-family:"Open Sans", sans-serif;
+  font-size: 15px;
+ }
+
+/* :::::::::::::::::::::::::::: ORSG TITLE BAR  ::::::::::::::::::::::::::::: */
+
+.logo{
+ border-style: solid;
+ border-color: #fff;
+ border-width:1px;
+ margin-right:10px;
+ float:left;
+ width:140px;
+ background:#f3f3f0;
+ margin-top:-25px;
+}
+
+
+#Title.container-fluid{
+  padding-right: 0px; /*15px in bootstrap.css*/
+  padding-left: 0px; /*15px in bootstrap.css*/
+  margin-right: -15px;
+  margin-left: -15px;
+ }
+
+.titlebar{
+  background: #003057;
+  font-family:"Open Sans", sans-serif;
+  font-weight:600;
+ }
+
+.titlebar h2 {
+  background: #003057;
+ }
+
+.titlebar a {
+  color: #fff; /*white*/
+  font-family:"Open Sans", sans-serif;
+  font-weight:600;
+  text-decoration: none;
+  /*font-size:2vw;*/
+  /*margin-right: -15px;*/
+  /*margin-top: 5px;*/
+ }
+
+/* :::::::::::::::::::::: SITE NAVIGATION :::::::::::::::::::::: */
+#labnav {
+  padding-left: 0px;
+  margin-left:-10px;
+  width: 67%;
+ }
+#LabMenu.siteMenu a{
+  line-height:5px;
+ }
+
+#labnav .nav-item{
+  color: #222
+ }
+
+/* do this on mouse-over: */
+#labnav .nav-item:hover {
+  background-color: #555555;
+  opacity: 0.6;
+  border-radius: 100%;
+  color: #fff;
+ }
+
+/* actual dropdown menu */
+#labnav .dropdown:hover .dropdown-menu {
+  background-color: #555555;
+  display:flex;
+  flex-direction:column;
+  margin-top:-1px;
+ }
+
+/* action of menu bar button that hovers */
+.dropdown:hover{
+ }
+
+.dropdown-menu a{
+ }
+
+/* background and text of dropdown items */
+.dropdown-item {
+  color: #bcbcbc;
+  font-size: 13px !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+ }
+
+/* -- menu button or small screens -- */
+.navbar-toggler{
+width:100%;
+/*padding-left:50px;*/
+}
+#menuBtn{
+  background-color: #fff;
+  /*width: 100%;*/
+  height: 25px;
+ }
+
+#menuBtnTxt {
+  /*display:flex;*/
+  /*justify-content:center;*/
+  /*font-size:15px;*/
+ }
+
+/* ::::::::::::::::::::::::::::::::: FOOTER ::::::::::::::::::::::::::::::::: */
+#university-footer, #university-footer *{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box
+ }
+#university-footer {
+  color:#fff;
+  padding-top:15px;
+  display:flex;
+  align-content:flex-end;
+ }
+#university-footer a{
+  color:#fff;
+  text-decoration:underline;
+ }
+
+#address{
+  margin-bottom: 0px;
+  font-size:14px;
+}
+#contact li{
+  font-size: 13px;
+  list-style: none;
+  line-height:20px;
+  }
+
+img.footer-map-img{
+  max-width:100%;
+ }
+
+#ODU-Description p{
+  margin-top: 1px;
+  /*margin-bottom: 0px;*/
+  font-size:13px;
+ }
+
+#Connect>p{
+  font-size: 14px;
+ }
+.connect-icons{
+  font-size: 1.2em;
+  line-height: 1.55em;
+}
+
+#copyright-footer{
+  font-size:13px;
+  color: #fff;
+  display:flex;
+  justify-content: space-between;
+ }
+#copyright-footer p{
+   margin-top:2px;
+   margin-bottom:2px;
+}
+#copyright-footer a{
+  color: #fff;
+  text-decoration:underline;
+ }
+
+/* :::::::::::::::::::::::::::: RESPONSIVE DESIGN ::::::::::::::::::::::::::: */
+@media(max-width: 325px){
+  .titlebar{
+    margin:0;
+    padding:0;
+    height:19px;
+   }
+  .titlebar h2>a{
+    font-size:2.7vw;
+    /*color:#fff;*/
+    margin-left:130px;
+    position:relative;
+    bottom:16px;
+   }
+  .fontsize a {
+    font-size:2.5vw;
+   }
+  .siteMenu-loc {
+    margin-top: -8px;
+   }
+  #welcome-text {
+    margin-left: 15px;
+   }
+  #welcome-text>h3 {
+    margin-bottom: 40px;
+    font-size: 20px;
+   }
+  #welcome-text>h6 {
+    font-size: 14px;
+    line-height: 40px;
+   }
+ }
+
+@media (min-width: 326px) and (max-width: 559px){
+  #Topbar.list-inline{
+   padding-right: 20px;
+  }
+  .titlebar{
+    height:23px;
+   }
+  .titlebar a{
+    font-size:2.5vw;
+    margin-left:175px;
+    position:relative;
+    bottom:13px;
+   }
+  .fontsize a {
+    font-size:2.5vw;
+   }
+  #menuBtn{
+    margin-top:8px;
+   }
+  #welcome-text {
+    margin-left: 15px;
+   }
+  #welcome-text>h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
+   }
+  #welcome-text>h6 {
+    font-size: 16px;
+    line-height: 40px;
+   }
+ }
+
+@media (min-width: 560px) and (max-width: 576px) {
+  #Topbar.list-inline {
+   padding-right:5px;
+  }
+  .titlebar a{
+    font-size:2.5vw;
+    margin-left:215px;
+    position:relative;
+    bottom:8px;
+   }
+  .fontsize a {
+    font-size:2.1vw;
+   }
+
+  #welcome-text {
+    margin-left: 15px;
+   }
+  #welcome-text>h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
+   }
+  #welcome-text>h6 {
+    font-size: 18px;
+    line-height: 40px;
+   }
+ }
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+  #Topbar.list-inline{
+    padding-right: 10px;
+  }
+
+  .titlebar a{
+    font-size:2.5vw;
+    margin-left:280px;
+    position:relative;
+    bottom:6px;
+   }
+  .fontsize a {
+    font-size:1.9vw;
+   }
+  .siteMenu-loc {
+    margin-top: -16px;
+  }
+
+  #welcome-text {
+   margin-left: 15px;
+   font-size: 1.1em;
+   margin-top: 50px;
+   }
+  #welcome-text>h3 {
+   margin-bottom: 40px;
+   font-size: 25px;
+   }
+   #welcome-text>h6 {
+   font-size: 18px;
+   line-height: 40px;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 999px)  {
+  .titlebar{
+    height:28px;
+   }
+  .titlebar a{
+    font-size: 2.5vw;
+    margin-left: 275px;
+    position:relative;
+    bottom:6px;
+   }
+  .fontsize a {
+    font-size:1.9vw;
+   }
+  #LabMenu.siteMenu a{
+    /*font-size:1.5vw;*/
+  }
+  .siteMenu-loc {
+    margin-top:-7px;
+    margin-left:225px;
+    width: 73%;
+    padding-right: 40px;
+   }
+  .dropdown:hover .dropdown-menu {
+    /*min-width:150px;*/
+   }
+  .dropdown-item {
+    /*font-size: 11px !important;*/
+    /*line-height:0px; /*change thickness */
+   }
+  #welcome-text {
+   margin-top: 80px;
+   margin-left: 15px;
+   }
+  #welcome-text>h3 {
+   margin-bottom: 40px;
+   font-size: 28px;
+   /*text-align: center;*/
+  }
+  #welcome-text>h6 {
+   font-size: 20px;
+   line-height: 30px;
+ }
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .titlebar a{
+    font-size:2vw;
+    margin-left:325px;
+    position:relative;
+    bottom:5px;
+   }
+  .siteMenu-loc {
+    margin-left:292px;
+    width: 67%
+   }
+ }
+  #LabMenu.siteMenu a{
+    /*font-size:1.5vw;*/
+   }
+  .dropdown:hover .dropdown-menu {
+    /*min-width:200px;*/
+   }
+  .dropdown-item {
+    /*font-size: 13px !important;*/
+    /*line-height: 1px; /*change thickness */
+   }
+  #welcome-text {
+    margin-top: 65px;
+    padding-left:175px;
+    padding-right:125px;
+   }
+  #welcome-text>h3 {
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 28px;
+   }
+   #welcome-text>h6 {
+     font-size: 26px;
+     line-height: 30px;
+    }
+ }
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+  #Topbar.list-inline{
+    font-size: 1.5vw;
+   }
+
+  .titlebar a{
+    font-size:3vw;
+    margin-left:380px;
+    position:relative;
+    bottom: 0px;
+   }
+  .siteMenu-loc {
+    margin-left:365px;
+    width: 68%
+   }
+  #LabMenu.siteMenu a{
+    /*font-size:1.55vw;*/
+   }
+  .dropdown:hover .dropdown-menu {
+    /*min-width:225px;*/
+   }
+  .dropdown-item {
+    /*font-size: 15px !important;*/
+    /*line-height:12px; /*change thickness */
+   }
+  #welcome-text {
+   margin-top: 80px;
+   padding-left:175px;
+   padding-right:125px;
+  }
+  #welcome-text>h3 {
+   font-size: 30px;
+   text-align: left;
+   margin-bottom: 30px;
+  }
+  #welcome-text>h6 {
+   font-size: 25px;
+   line-height: 40px;
+  }
+ }
+
+@media (min-width: 1400px) and (max-width: 1699px){
+
+  #Topbar.list-inline{
+    font-size: 1.5vw;
+   }
+
+  .titlebar a{
+    font-size:3vw;
+    margin-left:455px;
+   }
+  .siteMenu-loc {
+    margin-left:418px;
+    width: 64%;
+   }
+  #LabMenu.siteMenu a{
+    /*font-size:1.55vw;*/
+   }
+  .dropdown:hover .dropdown-menu {
+    /*min-width:250px;*/
+   }
+  .dropdown-item {
+    /*font-size: 19px !important;*/
+    /*width: 100%;*/
+    /*line-height:12px; /*change thickness */
+   }
+  #welcome-text {
+   margin-top: 75px;
+   padding-left:175px;
+   padding-right:125px;
+  }
+  #welcome-text>h3 {
+   font-size: 35px;
+   text-align: left;
+   margin-bottom: 40px;
+  }
+  #welcome-text>h6 {
+   font-size: 25px;
+   line-height: 40px;
+  }
+ }
+
+@media (min-width: 1700px) {
+}
+
+/* ::: FOOTER ::: */
+@media (max-width: 767px) {
+ .footer-map-img{
+    margin-bottom: 15px;
+    margin-top: 15px;
+ }
+}
+@media (max-width: 991px) {
+ .lab-footer{
+  margin-left: 15px;
+ }
+}
+
+/* ****************************** HOMEPAGE ********************************** */
+
+#welcome-text {
+  margin-top: 75px;
+  text-align: left;
+ }
+
+#welcome-text>h3{
+  font-family: 'Enriqueta', arial, serif;
+  color:  #003057;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 23px;
+ }
+
+#welcome-text>h6 {
+  line-height:20px;
+ }
+
+/* ************************ RESEARCH/PUBLICATIONS*************************** */
+.odu-list {
+  margin-top: 10px;
+ }
+.odu-list ul{
+  list-style:none;
+  list-style-type:none;
+ }
+.odu-list li{
+  background:#fff;
+  margin-right: 20px;
+  line-height: 18px;
+  /*padding-right: 5px;*/
+ }
+.odu-list h2{
+  font-size:24px;
+  line-height:22px;
+  padding: 5px;
+ }
+.odu-list dl{
+  margin-bottom:15px;
+  line-height:20px;
+ }
+.odu-list dd{
+  padding: 2px 5px 10px 15px;
+ }
+.odu-list dt{
+  font-size:12px;
+  font-weight:bold;
+ }
+
+.odu-list p{
+  padding: 2px 5px 20px 15px;
+  line-height: 25px;
+ }
+.odu-list h2,h3{page-break-after:avoid}
+
+.odu-list h1,h2,h3,h4,h5,h6{
+  font-family:"Open Sans",
+  sans-serif;font-weight:600;
+  font-style:normal;
+  color:#003057;
+ }
+
+#affiliates {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+ }
+
+.affiliate-panel{
+  background-color:#fff;
+  text-align:center;
+  padding-bottom:5px;
+ }
+ .affiliate-panel img{
+  width:85%;
+  margin-top:20px;
+ }
+h2.affiliate-panel{
+  margin-bottom: 0px;
+  background-color:#fff;
+ }
+/* smaller font size for publications on small screens */
+@media (max-width: 576px) {
+  .odu-list h2 {font-size:17px;line-height:14px; padding-bottom: 2px;}
+  .odu-list dd {font-size:14px;line-height:13px}
+ }
+
+@media (max-width: 768px) {
+  #affiliates{
+   margin-right: 20px;
+ }
+
+  .affiliate-panel img{
+   width:55%;
+  }
+ }
+
+ /* bigger font for Affiliates header on large screens */
+@media (min-width: 1200px) {
+ h2.affiliate-panel {
+    font-size:30px;
+    line-height:30px;
+   }
+ }
+
+/* ****************************** JOIN US *********************************** */
+
+#joinus-text {
+  padding: 20px;
+  line-height:30px;
+  color:#222;
+  text-align: center;
+ }
+ @media (max-width: 576px) {
+   #gradcomic {
+     max-width: 70%;
+    }
+   #joinus-text {
+     font-size: 16px;
+     line-height:25px;
+    }
+  }
+
+/* ******************************* PEOPLE *********************************** */
+.portraits {
+  /*width:60%;*/
+  padding: 10px;
+  float: left;
+ }
+
+.people-well {
+  margin-bottom: 10px;
+ }
+.person {
+  margin-left:10px;
+  margin-right:10px;
+  background-color:#fff;
+ }
+.person>h5{
+  margin-top:10px;
+  margin-left:10px;
+  color: #003057;
+ }
+.person>p{
+  margin-right:10px;
+ }
+
+@media (max-width: 480px) {
+  .portraits{
+   width:105px;
+  }
+  .person>h5{
+   font-size:15px;
+  }
+  .person>p{
+   font-size:13px;
+  }
+}
+
+ /* ***************************** TEACHING ********************************** */
+.course {
+  margin-left:10px;
+  background-color:#fff;
+ }
+.course-pic {
+  /*width:60%;*/
+  padding: 10px;
+  float: right;
+ }
+.course-well {
+  /*background-color:#fff;*/
+  margin-bottom: 10px;
+  width:100%
+ }
+
+ .course-well>h4 {
+  width: 100%;
+  text-align: center;
+  font-style:italic;
+  line-height:40px;
+ }
+.course>h5{
+  margin-top:10px;
+  margin-left:10px;
+  color: #003057;
+ }
+.course>p{
+  margin-left:10px;
+ }
+
+.course>h5{
+  color: #003057;
+ }
+@media (max-width: 480px) {
+  .course-pic{
+   width:105px;
+  }
+  .course>h5{
+   font-size:15px;
+  }
+  .course>p{
+   font-size:13px;
+  }
+}
+ /* *************************** NEW HEADER ********************************** */

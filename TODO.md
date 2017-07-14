@@ -29,9 +29,13 @@ FOOTER:
    Properly set up sticky bottom ; almost there
    Change copyright bar to an line list and get rid of the padding for the links
    Too much vertical font for description on medium screens 
+<<<<<<< HEAD
    Center at width=991?
  
 	
+=======
+ 
+>>>>>>> Header
 HOMEPAGE:
 	Skitter:
 		Remove navbar buttons on small screens
@@ -48,3 +52,6 @@ PEOPLE:
 	Separate text by research interest hobbies etc...
 	Make a 'see more'
 	CVS
+TEACHING:
+	Make white boxes line up with blue ends, probaly just margins of white boxes
+	do this for all pages
