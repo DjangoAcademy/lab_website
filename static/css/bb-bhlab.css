@@ -5,7 +5,8 @@ body {
   background-color: #f3f3f0;
  }
 
-/* :::::::::::::::::::::::::::::: EXTERNAL LINKS :::::::::::::::::::::::::::: */
+/* ::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::: */
+/* --- EXTERNAL LINKS (TOPMOST) --- */
 .external-links p{
   margin-bottom: 0px;
  }
@@ -17,8 +18,7 @@ body {
   font-size: 15px;
  }
 
-/* :::::::::::::::::::::::::::: ORSG TITLE BAR  ::::::::::::::::::::::::::::: */
-
+/* --- ORSG TITLE BLUE BAR (MIDDLE) --- */
 .bluebar{
   background-color:#003057;
   height:50px;
@@ -41,8 +41,7 @@ body {
   line-height:50px;
  }
 
-
-/* :::::::::::::::::::::: SITE NAVIGATION :::::::::::::::::::::: */
+/* --- LAB NAVBAR (BOTTOM) --- */
 #LabNav {
   background-color:#fff;
   padding-left: 0px;
@@ -73,7 +72,7 @@ body {
    padding:15px 0px 15px 10px;
   }
 
-/* -- menu button or small screens -- */
+/*  menu button or small screens  */
 #menuBtn{
   background-color: #fff;
   width: 50%;
@@ -146,8 +145,48 @@ img.footer-map-img{
   text-decoration:underline;
  }
 
-/* :::::::::::::::::::::::::::: RESPONSIVE DESIGN ::::::::::::::::::::::::::: */
+/* ::::::::::::::::::::::::: RESPONSIVE HEADER/FOOTER ::::::::::::::::::::::: */
 
+@media(max-width:992px){
+  #LabNav .nav-item{
+   /*margin-left:0px;*/
+
+    padding-left:5px;
+    padding-right: 5px;
+   }
+  .lab-footer{
+   margin-left: 15px;
+  }
+}
+
+@media(max-width: 767px){
+  .bluebar .container {
+    margin-left:0px;
+   }
+  .logo {
+    width: 91px;
+    margin-top:-10px;
+   }
+  .titlebar {
+    font-size:21.1px;
+   }
+  #navrow {
+    margin-right:-33px;
+   }
+  #LabNav .nav-item{
+    font-size:12.55px;
+   }
+  /* dropdown menu text */
+  #LabNav .dropdown-item {
+     font-size: 12px !important;
+     padding-top: 10px;
+     padding-bottom: 10px;
+    }
+  .footer-map-img{
+     margin-bottom: 15px;
+     margin-top: 15px;
+  }
+}
 
 @media(max-width: 575px){
   #LabNav{
@@ -176,44 +215,6 @@ img.footer-map-img{
     margin-top:1px;
    }
  }
-@media(max-width: 767px){
-  .bluebar .container {
-    margin-left:0px;
-   }
-  .logo {
-    width: 91px;
-    margin-top:-10px;
-   }
-  .titlebar {
-    font-size:21.1px;
-   }
-  #navrow {
-    margin-right:-33px;
-   }
-  #LabNav .nav-item{
-    font-size:12.55px;
-   }
-  /* dropdown menu text */
-  #LabNav .dropdown-item {
-     font-size: 12px !important;
-     padding-top: 10px;
-     padding-bottom: 10px;
-    }
-}
-
-@media(max-width:992px){
-  #LabNav {
-    /*width:75%;*/
-    /*padding-right:100px;*/
-   }
-
-  #LabNav .nav-item{
-   /*margin-left:0px;*/
-
-    padding-left:5px;
-    padding-right: 5px;
-   }
-}
 
 @media(max-width: 400px){
   .external-links>p, .external-links a{
@@ -238,149 +239,6 @@ img.footer-map-img{
    margin-top:-1px;
   }
  }
-
-
-
-
-
-/* OLDDDDDDD ###########################################################*/
-@media(max-width: 325px){
-  /*.titlebar{
-    margin:0;
-    padding:0;
-    height:19px;
-   }*/
-  .titlebar h2>a{
-    /*font-size:2.7vw;*/
-    /*color:#fff;*/
-    /*margin-left:130px;*/
-    /*position:relative;*/
-    /*bottom:16px;*/
-   }
-  .fontsize a {
-    /*font-size:2.5vw;*/
-   }
-  .siteMenu-loc {
-    /*margin-top: -8px;*/
-   }
-  #welcome-text {
-    /*margin-left: 15px;*/
-   }
-  #welcome-text>h3 {
-    /*margin-bottom: 40px;*/
-    /*font-size: 20px;*/
-   }
-  #welcome-text>h6 {
-    /*font-size: 14px;*/
-    /*line-height: 40px;*/
-   }
- }
-
-@media (min-width: 326px) and (max-width: 559px){
-  #Topbar.list-inline{
-   /*padding-right: 20px;*/
-  }
-  .titlebar{
-    /*height:23px;*/
-   }
-  .titlebar a{
-    /*font-size:2.5vw;*/
-    /*margin-left:175px;*/
-    /*position:relative;*/
-    /*bottom:13px;*/
-   }
-  .fontsize a {
-    /*font-size:2.5vw;*/
-   }
-  #menuBtn{
-    /*margin-top:8px;*/
-   }
-  #welcome-text {
-    /*margin-left: 15px;*/
-   }
-  #welcome-text>h3 {
-    /*margin-bottom: 40px;*/
-    /*font-size: 25px;*/
-   }
-  #welcome-text>h6 {
-    /*font-size: 16px;*/
-    /*line-height: 40px;*/
-   }
- }
-
-@media (min-width: 560px) and (max-width: 576px) {
-  #Topbar.list-inline {
-   /*padding-right:5px;*/
-  }
-  .titlebar a{
-    /*font-size:2.5vw;*/
-    /*margin-left:215px;*/
-    /*position:relative;*/
-    /*bottom:8px;*/
-   }
-  .fontsize a {
-    /*font-size:2.1vw;*/
-   }
-
-  #welcome-text {
-    /*margin-left: 15px;*/
-   }
-  #welcome-text>h3 {
-    /*margin-bottom: 40px;*/
-    /*font-size: 25px;*/
-   }
-  #welcome-text>h6 {
-    /*font-size: 18px;*/
-    /*line-height: 40px;*/
-   }
- }
-
-@media (min-width: 577px) and (max-width: 767px) {
-
-  #Topbar.list-inline{
-    /*padding-right: 10px;*/
-  }
-
-  .titlebar a{
-    /*font-size:2.5vw;*/
-    /*margin-left:280px;*/
-    /*position:relative;*/
-    /*bottom:6px;*/
-   }
-  .fontsize a {
-    /*font-size:1.9vw;*/
-   }
-  .siteMenu-loc {
-    /*margin-top: -16px;*/
-  }
-
-  #welcome-text {
-   /*margin-left: 15px;*/
-   /*font-size: 1.1em;*/
-   /*margin-top: 50px;*/
-   }
-  #welcome-text>h3 {
-   /*margin-bottom: 40px;*/
-   /*font-size: 25px;*/
-   }
-   #welcome-text>h6 {
-   /*font-size: 18px;*/
-   /*line-height: 40px;*/
-    }
- }
-
-/* ::: FOOTER ::: */
-@media (max-width: 767px) {
- .footer-map-img{
-    margin-bottom: 15px;
-    margin-top: 15px;
- }
-}
-@media (max-width: 991px) {
- .lab-footer{
-  margin-left: 15px;
- }
-}
 
 /* ****************************** HOMEPAGE ********************************** */
 
