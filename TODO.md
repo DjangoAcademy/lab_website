@@ -46,3 +46,6 @@ PEOPLE:
 	Separate text by research interest hobbies etc...
 	Make a 'see more'
 	CVS
+TEACHING:
+	Make white boxes line up with blue ends, probaly just margins of white boxes
+	do this for all pages
