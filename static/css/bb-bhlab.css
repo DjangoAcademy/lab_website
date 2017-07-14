@@ -43,7 +43,7 @@ body {
 
 
 /* :::::::::::::::::::::: SITE NAVIGATION :::::::::::::::::::::: */
-#labnav {
+#LabNav {
   background-color:#fff;
   padding-left: 0px;
   margin-left:-10px;
@@ -54,12 +54,12 @@ body {
   line-height:7px;
  }
 
-#labnav .nav-item{
+#LabNav .nav-item{
   color: #222
  }
 
  /* do this on mouse-over: */
-#labnav .nav-item:hover {
+#LabNav .nav-item:hover {
   background-color: #555555;
   opacity: 0.6;
   border-radius: 100%;
@@ -67,7 +67,7 @@ body {
  }
 
 /* dropdown menu text */
-#labnav .dropdown-item {
+#LabNav .dropdown-item {
    color:#bcbcbc;
    font-size: 13px !important;
    padding:15px 0px 15px 10px;
@@ -148,28 +148,26 @@ img.footer-map-img{
 
 /* :::::::::::::::::::::::::::: RESPONSIVE DESIGN ::::::::::::::::::::::::::: */
 @media(max-width: 575px){
-  #labnav{
+  #LabNav{
     background-color: #f3f3f0;
    }
-  #labnav .nav-item{
-    /*padding-top:10px;*/
+  #LabNav .nav-item{
+    /*margin-top:10px;*/
     width:30%;
     color: #222;
     font-size: 14px !important;
-   }
-  #labnav .nav-item:hover {
-    width:30%;
-   }
 
-  #labnav .dropdown-item {
-    color: #fff;
-    font-size: 12px !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
    }
-
+  #LabNav .nav-item:hover {
+    width:100px;
+    margin-left:-2px;
+   }
+  #LabMenu {
+    width:50%;
+    background-color: #fff;
+    margin-top:5px;
+   }
  }
-
 @media(max-width: 767px){
   .bluebar .container {
     margin-left:0px;
@@ -184,11 +182,11 @@ img.footer-map-img{
   #navrow {
     margin-right:-33px;
    }
-  #labnav .nav-item{
+  #LabNav .nav-item{
     font-size:12.55px;
    }
   /* dropdown menu text */
-  #labnav .dropdown-item {
+  #LabNav .dropdown-item {
      font-size: 12px !important;
      padding-top: 10px;
      padding-bottom: 10px;
@@ -196,12 +194,12 @@ img.footer-map-img{
 }
 
 @media(max-width:992px){
-  #labnav {
+  #LabNav {
     /*width:75%;*/
     /*padding-right:100px;*/
    }
 
-  #labnav .nav-item{
+  #LabNav .nav-item{
    /*margin-left:0px;*/
 
     padding-left:5px;
@@ -213,7 +211,7 @@ img.footer-map-img{
 @media(min-width:576px){
 
  /* actual dropdown menu */
- #labnav .dropdown:hover .dropdown-menu {
+ #LabNav .dropdown:hover .dropdown-menu {
    background-color: #555555;
    display: flex;
    flex-direction: column;
