@@ -9,7 +9,7 @@ body {
  }
 
 /* make full width for small screens; centered for large */
-@media (max-width: 992px){
+@media (max-width: 991px){
   .container {
     width:100%;
    }
@@ -158,7 +158,7 @@ img.footer-map-img{
 
 /* ::::::::::::::::::::::::: RESPONSIVE HEADER/FOOTER ::::::::::::::::::::::: */
 
-@media(max-width:992px){
+@media(max-width:991px){
   #LabNav .nav-item{
    /*margin-left:0px;*/
     padding-left:5px;
@@ -239,7 +239,7 @@ img.footer-map-img{
 }
 
 /* -------------------- */
-@media(min-width:575px){
+@media(min-width:576px){
 
  /* actual dropdown menu */
  #LabNav .dropdown:hover .dropdown-menu {
@@ -271,7 +271,7 @@ img.footer-map-img{
 
 /* ************************ RESEARCH/PUBLICATIONS*************************** */
 .odu-list {
-  margin-top: 17px;
+  margin-top: 10px;
  }
 .odu-list ul{
   list-style:none;
@@ -284,8 +284,8 @@ img.footer-map-img{
   line-height: 18px;
   /*padding-right: 5px;*/
  }
-.odu-list h2{
-  font-size:24px;
+.odu-list h6{
+  /*font-size:24px;*/
   line-height:22px;
   padding: 5px;
  }
@@ -295,23 +295,25 @@ img.footer-map-img{
  }
 .odu-list dd{
   padding: 2px 5px 10px 15px;
+  font-size: 16px;
  }
-.odu-list dt{
+/*.odu-list dt{
   font-size:12px;
   font-weight:bold;
- }
+ }*/
 
 .odu-list p{
   padding: 2px 5px 20px 15px;
   line-height: 25px;
  }
-.odu-list h2,h3{
+.odu-list h2,h3,h6{
   page-break-after:avoid
  }
 
 .odu-list h1,h2,h3,h4,h5,h6{
   font-family:"Open Sans",
-  sans-serif;font-weight:600;
+  sans-serif;
+  font-weight:600;
   font-style:normal;
   color:#003057;
  }
@@ -338,6 +340,17 @@ h2.affiliate-panel{
  }
 
 /* smaller font size for publications on small screens */
+@media (max-width: 991px){
+
+.odu-list dl{
+  line-height:18px;
+ }
+.odu-list dd{
+  font-size: 13.5px;
+  margin-bottom: 0px;
+ }
+}
+
 @media (max-width: 767px) {
   #affiliates{
     margin-right: 20px;
@@ -352,21 +365,31 @@ h2.affiliate-panel{
     font-size: 14px;
    }
   .odu-list dd {
-    font-size:14px;
-    line-height:13px
+    font-size:13.5px;
+    line-height:17px;
    }
  }
 @media (max-width: 575px) {
-  .odu-list h2 {
-    font-size:17px;
-    line-height:20px;
-    padding-bottom: 2px;
+  .odu-list dl{
+    margin-top: -10px;
   }
   .odu-list dd {
-    font-size:14px;
-    line-height:13px
+
+    font-size:13.5px;
+    line-height:17px
   }
  }
+@media (max-width: 450px) {
+  .odu-list dl{
+    margin-top: -12px;
+  }
+  .odu-list h6{
+   font-size:15px;
+  }
+  .odu-list dd{
+   font-size:12px;
+  }
+}
 
  /* bigger font for Affiliates header on large screens */
 @media (min-width: 1200px) {
@@ -416,7 +439,7 @@ h2.affiliate-panel{
 .person>p{
   margin-right:10px;
  }
-@media (max-width: 992px){
+@media (max-width: 991px){
   .person>p{
     font-size: 13.5px;
    }
