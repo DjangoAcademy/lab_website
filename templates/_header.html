@@ -1,72 +1,74 @@
 {% load static %}
 
-<!-- Main List -->
-<div class="col" >
-  <ul  class="list-inline hidden-md-down" id=Topbar>
-    <li class="list-inline-item">
-      <a href="http://www.ccpo.odu.edu">Center for Physical Oceanography // </a></li>
-    <li class="list-inline-item">
-      <a href="http://www.odu.edu/oeas">Ocean, Earth, Atmospheric Science // </a></li>
-    <li class="list-inline-item">
-      <a href="http://www.odu.edu/sci">College of Sciences</a></li>
-  </ul>
-</div><!-- col -->
+<!-- ##### LINKS ###### -->
 
-<!-- Mobile List -->
-<div class="hidden-lg-up">
-  <ul class="list-inline sm-list fontsize" id=Topbar>
-    <li class="list-inline-item">
-      <a href="http://www.ccpo.odu.edu">CCPO // </a></li>
-    <li class="list-inline-item">
-      <a href="http://www.odu.edu/oeas">OEAS // </a></li>
-    <li class="list-inline-item">
-      <a href="http://www.odu.edu/sci">Col. of Sci.</a></li>
-  </ul>
-</div><!-- col -->
-
-<!-- Titlebar/Logo -->
 <div class="container-fluid">
-  <div class="row-fluid">
-    <div class="col col-4 col-md-2 offset-md-1">
-      <a href="https://odu.edu"><img class="img-fluid rounded"  id="logo" src="{% static "images/logo-ODU.png" %}"></a>
-    </div><!-- cols -->
-  </div><!-- row -->
-  <div class="container-fluid titlebar" id="full">
+  <div class="row">
+    <div class="col text-md-right hidden-md-down external-links">
+      <p>
+         <a href="http://www.ccpo.odu.edu">Center for Physical Oceanography</a> &bull;
+         <a href="http://www.odu.edu/oeas">Ocean, Earth, Atmospheric Science</a> &bull;
+         <a href="http://www.odu.edu/sci">College of Sciences</a></a>
+      </p>
+    </div><!-- End Col -->
+    <div class="col text-right hidden-lg-up external-links" >
+      <p>
+         <a href="http://www.ccpo.odu.edu">CCPO</a> &bull;
+         <a href="http://www.odu.edu/oeas">OEAS</a> &bull;
+         <a href="http://www.odu.edu/sci">Col. of Sci.</a></a>
+      </p>
+  </div><!-- End Row -->
+</div><!-- End Container -->
+
+<!-- ##### TITLEBAR ###### -->
+
+<div class="bluebar">
+  <div class="container">
     <div class="row-fluid">
-      <h2 class="titlebar"><a href="{% url "HomePage" %}">Ocean Remote Sensing Group</a></h2>
-    </div><!-- row -->
-  </div><!-- container -->
-</div><!-- container -->
+      <div class="col">
+        <h2 class="titlebar hidden-xs-down">
+          <img class="img rounded logo " src="{% static "images/logo-ODU-3.png" %}" alt="logo">
+          Ocean Remote Sensing Group
+        </h2>
+        <h2 class="titlebar hidden-sm-up">
+          <img class="img rounded logo" src="{% static "images/logo-ODU-3.png" %}" alt="logo">
+          O.R.S.G.
+        </h2>
+      </div><!-- End Col -->
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+</div><!-- End Background Color -->
 
-<!-- NavBar -->
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="col-8 offset-4 col-md-12  offset-md-0">
-      <nav class="navbar navbar-toggleable-sm siteMenu-loc">
-          <button class="navbar-toggler" type="button"
-                  data-toggle="collapse"  data-target="#LabMenu"
-                  aria-controls="LabMenu" aria-expanded="false" aria-label="toggleNav"
-                  id="menuBtn">
-              <span id="menuBtnTxt">Menu</span>
-          </button>
-          <div class="collapse navbar-collapse siteMenu siteMenu-dropdown" id="LabMenu">
-            <a class="nav-item nav-link active" href="{% url "HomePage" %}">Home</a>
-            <a class="nav-item nav-link" href="{% url "Research" %}">Research</a>
-            <a class="nav-item nav-link" href="{% url "Teaching" %}">Teaching</a>
-            <div class="dropdown">
-              <a class="nav-item nav-link" id="peopleDrop"
-                    aria-haspopup="true" aria-expanded="false"href="{% url "People" %}">People</a>
-                <ul class="dropdown-menu"  aria-labeled-by="peopleDrop">
-                  <li><a class="dropdown-item" href="{% url "People" %}#ben">Ben Hamlington</a></li>
-                  <li><a class="dropdown-item" href="{% url "People" %}#post-docs">Post-Docs</a></li>
-                  <li><a class="dropdown-item" href="{% url "People" %}#students">Students</a></li>
-                  <li><a class="dropdown-item" href="{% url "People" %}">Alumni</a></li>
-                </ul><!-- dropdown-menu -->
-            </div><!-- dropdown -->
-            <a class="nav-item nav-link" href="{% url "Publications" %}">Publications</a>
-            <a class="nav-item nav-link" href="{% url "Join" %}">Opportunities</a>
-          </div><!-- collapse -->
+<!-- ##### NAVBAR ###### "dropdown-toggle" data-toggle="dropdown"-->
 
-   </div><!-- col -->
-  </div><!-- row -->
-</div><!-- container -->
+<div class="container">
+  <div class="row-fluid" id="navrow" >
+    <div class="col" style=>
+      <nav class="navbar navbar-toggleable" id="LabNav">
+        <button class="navbar-toggler" type="button"
+             data-toggle="collapse"  data-target="#LabMenu"
+             aria-controls="" aria-expanded="false" aria-label="toggleNav"
+             id="menuBtn">
+          <span id="menuBtnTxt">Menu</span>
+        </button>
+        <div class="collapse navbar-collapse siteMenu" id="LabMenu">
+          <a class="nav-item nav-link" href="{% url "HomePage" %}">Home</a>
+          <a class="nav-item nav-link" href="{% url "Research" %}">Research</a>
+          <a class="nav-item nav-link" href="{% url "Teaching" %}">Teaching</a>
+        <div class="dropdown">
+          <a class="nav-item nav-link" id="peopleDrop"
+                aria-haspopup="true" aria-expanded="false" href="{% url "People" %}">People</a>
+          <ul class="dropdown-menu"  aria-labeled-by="peopleDrop">
+            <li><a class="dropdown-item" href="{% url "People" %}#ben">Ben Hamlington</a></li>
+            <li><a class="dropdown-item" href="{% url "People" %}#post-docs">Post-Docs</a></li>
+            <li><a class="dropdown-item" href="{% url "People" %}#students">Students</a></li>
+            <li><a class="dropdown-item" href="{% url "People" %}">Alumni</a></li>
+          </ul><!-- dropdown-menu -->
+          </div><!-- dropdown -->
+          <a class="nav-item nav-link" href="{% url "Publications" %}">Publications</a>
+          <a class="nav-item nav-link" href="{% url "Join" %}">Opportunities</a>
+        </div><!-- collapse -->
+      </nav>
+    </div><!-- End Col -->
+  </div><!-- End Row -->
+</div><!-- End Container -->

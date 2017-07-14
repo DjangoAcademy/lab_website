@@ -1,11 +1,22 @@
 /* ************************************* */
 /* ------ BB CSS for BASE TEMPLATE ----- */
 /* ************************************* */
+
+/* ::::::::::::::::::::::::::::::: GLOBALS :::::::::::::::::::::::::::::::::: */
+
 body {
   background-color: #f3f3f0;
  }
 
+/* make full width for small screens; centered for large */
+@media (max-width: 992px){
+  .container {
+    width:100%;
+   }
+  }
+
 /* ::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::: */
+
 /* --- EXTERNAL LINKS (TOPMOST) --- */
 .external-links p{
   margin-bottom: 0px;
@@ -76,13 +87,13 @@ body {
 #menuBtn{
   background-color: #fff;
   width: 50%;
-  height: 20px;
+  height: 30px;
  }
 
 #menuBtnTxt {
   display:flex;
   justify-content:space-around;
-  font-size:15px;
+  font-size:17px;
   margin-top:-3px;
  }
 
@@ -150,7 +161,6 @@ img.footer-map-img{
 @media(max-width:992px){
   #LabNav .nav-item{
    /*margin-left:0px;*/
-
     padding-left:5px;
     padding-right: 5px;
    }
@@ -168,7 +178,7 @@ img.footer-map-img{
     margin-top:-10px;
    }
   .titlebar {
-    font-size:21.1px;
+    font-size:25.5px;
    }
   #navrow {
     margin-right:-33px;
@@ -261,11 +271,12 @@ img.footer-map-img{
 
 /* ************************ RESEARCH/PUBLICATIONS*************************** */
 .odu-list {
-  margin-top: 10px;
+  margin-top: 17px;
  }
 .odu-list ul{
   list-style:none;
   list-style-type:none;
+  padding-left: 0px;
  }
 .odu-list li{
   background:#fff;
@@ -294,7 +305,9 @@ img.footer-map-img{
   padding: 2px 5px 20px 15px;
   line-height: 25px;
  }
-.odu-list h2,h3{page-break-after:avoid}
+.odu-list h2,h3{
+  page-break-after:avoid
+ }
 
 .odu-list h1,h2,h3,h4,h5,h6{
   font-family:"Open Sans",
@@ -323,19 +336,35 @@ h2.affiliate-panel{
   margin-bottom: 0px;
   background-color:#fff;
  }
+
 /* smaller font size for publications on small screens */
-@media (max-width: 576px) {
-  .odu-list h2 {font-size:17px;line-height:14px; padding-bottom: 2px;}
-  .odu-list dd {font-size:14px;line-height:13px}
- }
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #affiliates{
-   margin-right: 20px;
- }
-
+    margin-right: 20px;
+   }
   .affiliate-panel img{
-   width:55%;
+    width:55%;
+   }
+  .research-fonts h2{
+    font-size: 19px;
+   }
+  .research-fonts p{
+    font-size: 14px;
+   }
+  .odu-list dd {
+    font-size:14px;
+    line-height:13px
+   }
+ }
+@media (max-width: 576px) {
+  .odu-list h2 {
+    font-size:17px;
+    line-height:20px;
+    padding-bottom: 2px;
+  }
+  .odu-list dd {
+    font-size:14px;
+    line-height:13px
   }
  }
 
@@ -371,7 +400,6 @@ h2.affiliate-panel{
   padding: 10px;
   float: left;
  }
-
 .people-well {
   margin-bottom: 10px;
  }
@@ -380,7 +408,7 @@ h2.affiliate-panel{
   margin-right:10px;
   background-color:#fff;
  }
-.person>h5{
+.person>h6{
   margin-top:10px;
   margin-left:10px;
   color: #003057;
@@ -388,8 +416,12 @@ h2.affiliate-panel{
 .person>p{
   margin-right:10px;
  }
-
-@media (max-width: 480px) {
+@media (max-width: 992px){
+  .person>p{
+    font-size: 13.5px;
+   }
+ }
+@media (max-width: 576px) {
   .portraits{
    width:105px;
   }
@@ -397,7 +429,7 @@ h2.affiliate-panel{
    font-size:15px;
   }
   .person>p{
-   font-size:13px;
+   font-size:12px;
   }
 }
 

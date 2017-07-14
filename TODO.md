@@ -29,13 +29,7 @@ FOOTER:
    Properly set up sticky bottom ; almost there
    Change copyright bar to an line list and get rid of the padding for the links
    Too much vertical font for description on medium screens 
-<<<<<<< HEAD
-   Center at width=991?
  
-	
-=======
- 
->>>>>>> Header
 HOMEPAGE:
 	Skitter:
 		Remove navbar buttons on small screens
