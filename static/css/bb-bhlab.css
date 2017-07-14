@@ -66,27 +66,12 @@ body {
   color: #fff;
  }
 
-/* actual dropdown menu */
-#labnav .dropdown:hover .dropdown-menu {
-  background-color: #555555;
-  display:flex;
-  flex-direction:column;
-  margin-top:-1px;
- }
-
+/* dropdown menu text */
 #labnav .dropdown-item {
    color:#bcbcbc;
    font-size: 13px !important;
-   padding-top: 15px;
-   padding-bottom: 15px;
+   padding:15px 0px 15px 10px;
   }
-
-/* action of menu bar button that hovers */
-.dropdown:hover{
- }
-
-.dropdown-menu a{
- }
 
 /* -- menu button or small screens -- */
 #menuBtn{
@@ -162,7 +147,7 @@ img.footer-map-img{
  }
 
 /* :::::::::::::::::::::::::::: RESPONSIVE DESIGN ::::::::::::::::::::::::::: */
-@media(max-width: 576px){
+@media(max-width: 575px){
   #labnav{
     background-color: #f3f3f0;
    }
@@ -196,13 +181,18 @@ img.footer-map-img{
   .titlebar {
     font-size:21.1px;
    }
-   #navrow {
-     margin-right:-33px;
+  #navrow {
+    margin-right:-33px;
+   }
+  #labnav .nav-item{
+    font-size:12.55px;
+   }
+  /* dropdown menu text */
+  #labnav .dropdown-item {
+     font-size: 12px !important;
+     padding-top: 10px;
+     padding-bottom: 10px;
     }
-   #labnav .nav-item{
-     font-size:12.55px;
-    }
-
 }
 
 @media(max-width:992px){
@@ -219,17 +209,23 @@ img.footer-map-img{
    }
 }
 
+/* -------------------- */
+@media(min-width:576px){
+
+ /* actual dropdown menu */
+ #labnav .dropdown:hover .dropdown-menu {
+   background-color: #555555;
+   display: flex;
+   flex-direction: column;
+   margin-top:-1px;
+  }
+ }
 
 
 
 
 
-
-
-
-
-
-/* OLDDDDDDD */
+/* OLDDDDDDD ###########################################################*/
 @media(max-width: 325px){
   /*.titlebar{
     margin:0;
