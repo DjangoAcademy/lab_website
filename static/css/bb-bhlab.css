@@ -239,7 +239,7 @@ img.footer-map-img{
 }
 
 /* -------------------- */
-@media(min-width:576px){
+@media(min-width:575px){
 
  /* actual dropdown menu */
  #LabNav .dropdown:hover .dropdown-menu {
@@ -356,7 +356,7 @@ h2.affiliate-panel{
     line-height:13px
    }
  }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .odu-list h2 {
     font-size:17px;
     line-height:20px;
@@ -384,7 +384,7 @@ h2.affiliate-panel{
   color:#222;
   text-align: center;
  }
- @media (max-width: 576px) {
+ @media (max-width: 575px) {
    #gradcomic {
      max-width: 70%;
     }
@@ -421,7 +421,18 @@ h2.affiliate-panel{
     font-size: 13.5px;
    }
  }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
+  .portraits{
+   width:135px;
+  }
+  .person>h5{
+   font-size:17px;
+  }
+  .person>p{
+   font-size:14px;
+  }
+}
+@media (max-width: 450px) {
   .portraits{
    width:105px;
   }
@@ -432,7 +443,6 @@ h2.affiliate-panel{
    font-size:12px;
   }
 }
-
  /* ***************************** TEACHING ********************************** */
 .course {
   margin-left:10px;
@@ -467,9 +477,27 @@ h2.affiliate-panel{
 .course>h5{
   color: #003057;
  }
+
+@media (max-width: 575px) {
+  .course-pic{
+   width:235px;
+  }
+ .course-well>h4 {
+   font-size:22px;
+  }
+  .course>h5{
+   font-size:18px;
+  }
+  .course>p{
+   font-size:16px;
+  }
+
 @media (max-width: 480px) {
   .course-pic{
-   width:105px;
+   width:135px;
+  }
+ .course-well>h4 {
+   font-size:17px;
   }
   .course>h5{
    font-size:15px;
