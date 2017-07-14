@@ -147,25 +147,33 @@ img.footer-map-img{
  }
 
 /* :::::::::::::::::::::::::::: RESPONSIVE DESIGN ::::::::::::::::::::::::::: */
+
+
 @media(max-width: 575px){
   #LabNav{
     background-color: #f3f3f0;
+    width:50%;
    }
   #LabNav .nav-item{
     /*margin-top:10px;*/
-    width:30%;
+    width: 30%;
     color: #222;
     font-size: 14px !important;
 
    }
   #LabNav .nav-item:hover {
-    width:100px;
+    width: 100px;
     margin-left:-2px;
    }
+  #menuBtn {
+    margin-top: -6px;
+    /*background-color:#fff;*/
+    width:60%;
+   }
   #LabMenu {
-    width:50%;
+    width:60%;
     background-color: #fff;
-    margin-top:5px;
+    margin-top:1px;
    }
  }
 @media(max-width: 767px){
@@ -204,6 +212,18 @@ img.footer-map-img{
 
     padding-left:5px;
     padding-right: 5px;
+   }
+}
+
+@media(max-width: 400px){
+  .external-links>p, .external-links a{
+    font-size: 12px;
+   }
+  #menuBtn {
+    width:85%;
+   }
+  #LabMenu {
+    width:85%;
    }
 }
 
