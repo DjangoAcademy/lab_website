@@ -2,23 +2,25 @@
 {% load static %}
 {% block content %}
 
-<div class="container center-block">
-  <div class="row people-well">
-    <img class="img-fluid rounded mx-auto d-block"  id="joinus" src="{% static "images/grad-positions-crop.png" %}">
-    <div class="person">
-    <p id="joinus-text">The Ocean Remote Sensing Group at Old Dominion University is looking for new members!<br>
-     We have graduate student positions available, starting in Fall 2018.<br>
-     Candidates with a background in engineering, physics, applied mathematics, or oceanography are encouraged to apply.<br>
-     Please contact Dr. Ben Hamlington (bhamling@odu.edu) for further information.</p>
-     <!-- <div class="container">
-       <div class="row people-well" id="ben" style="margin-top:10px;">
-         <div class="person" >
-           <h6>Dr. Ben Hamlington</h6>
-           <p><img class="img rounded portraits" src="{% static "images/hamlington.png" %}" alt="Hamlington">
-            Ben Hamlington is an assistant professor in the Ocean, Earth, and Atmospheric Sciences Department at Old Dominion University. Prior to arriving at ODU, Ben obtained his BS and MS in Mechanical Engineering from Washington University in St. Louis, and his PhD in Aerospace Engineering Sciences from the University of Colorado at Boulder. His primary research interest is on past, present and future sea level rise, focusing on the use of satellite observations to improve our understanding of the ocean. Beyond studying sea level, Ben does research on a wide range of topics including ENSO/climate variability, tsunamis, wildfires, and land subsidence.</p>
-         </div> -->
-        </div>
-    <img class="img-fluid rounded mx-auto d-block"  id="gradcomic" src="{% static "images/grad_comic.jpg" %}">
-  </div>
-</div><!-- end container -->
+<div class="container">
+  <div class="row-fluid" id="grad-row">
+    <div class="col">
+    <img class="img rounded" id="grad-pos-img" src="{% static "images/grad-positions-crop.png" %}">
+  </div><!-- End Row -->
+ </div><!-- End Col -->
+  <div class="row joinus-row" >
+    <div class="col-md-6 col-lg-6 joinus">
+       <h4>We're looking for new members!</h4>
+       <p>We have graduate student positions available, starting in Fall 2018.<br>
+       Candidates with a background in engineering, physics, applied mathematics, or oceanography are encouraged to apply.<br>
+       Please contact Dr. Ben Hamlington (bhamling@odu.edu) for further information.<br>
+       <a href="{% url "People" %}">Learn about our current members</a> or <a href="{% url "Research" %}">what we do.</a>
+      </p>
+    </div><!-- End Join Us Text -->
+    <div class="col-md-5 col-lg-5 " style="background-color:#fff;" >
+      <img class="img rounded hidden-sm-down" id="grad-comic" src="{% static "images/grad_comic.jpg" %}">
+      <img class="img rounded mx-auto d-block hidden-md-up" id="grad-comic" src="{% static "images/grad_comic.jpg" %}">
+    </div><!-- End Image Cols -->
+  </div><!-- End Row -->
+</div><!-- End Container -->
 {% endblock content %}
