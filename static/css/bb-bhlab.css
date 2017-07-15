@@ -12,6 +12,8 @@ body {
 @media (max-width: 991px){
   .container {
     width:100%;
+    display:flex;
+    flex-direction:column;
    }
   }
 
@@ -380,6 +382,7 @@ h5.affiliate-panel{
  }
  #grad-comic {
   height:200px;
+  margin-bottom:165px;
  }
 
 /* smaller font size for publications on small screens */
