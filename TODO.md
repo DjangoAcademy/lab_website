@@ -24,6 +24,7 @@ HEADER
 BASE:
 	# put everything into better containers so that things stay centered
 	# Nav-bar
+	structure this to allow for a sticky footer
 HEADER:
 	make menu button stick next to image in chrome (works in sfari)	
 FOOTER:

@@ -1,0 +1,75 @@
+{% extends "__base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Skitter Carousel -->
+<div class="container">
+  <div class="row-fluid" style="margin-left: 15px;">
+    <div class="skitter skitter-large" style="margin-top:30px;">
+      <ul>
+        <li>
+          <a href="#OPPORTUNITIES"><img src="{% static "images/grad-positions-crop.png" %}" class="rounded skit"/></a>
+          <div class="label_text" >
+            <p style="text-align: right">Join Us</p>
+          </div>
+        </li>
+        <li>
+          <a href="#RESEARCH"><img src="{% static "images/earth_and_sun_space.jpg" %}" class="rounded skit"/></a>
+          <div class="label_text">
+            <p style="text-align: right">Sea Level Rise</p>
+          </div>
+        </li>
+        <li>
+          <a href="#TEACHING"> <img src="{% static "images/satellite.jpg" %}" class="rounded skit"/></a>
+          <div class="label_text">
+            <p style="text-align: right">Courses</p>
+          </div>
+        </li>
+        <li>
+          <a href="#PEOPLE"><img src="{% static "images/cliffbeach.jpg" %}" class="rounded skit"/></a>
+          <div class="label_text">
+            <p style="text-align: right">People</p>
+          </div>
+        </li>
+      </ul>
+    </div><!-- end skitter -->
+  </div><!-- End Row -->
+  <div class="row" style="margin-top: 50px; margin-bottom: 225px;">
+    <div class="col-lg-9">
+      <h3 style="white-space:nowrap;">Welcome to Ben Hamlington's Ocean Remote Sensing Group</h3>
+      <p>We are part of the Center for Coastal Physical Oceanography in the Ocean, Earth and Atmospheric Sciences Department at Old Dominion University. <br>
+         Our research focus is on past, present and future sea level rise, specializing in the use of satellite observations to improve the understanding of the ocean.<br>
+         On this page, we will provide updates on group activities, including recently published papers.
+         Please feel free to get in touch with any questions, or if you are interested in joining our group. </p>
+    </div>
+  </div><!-- End Row -->
+</div><!-- end container -->
+<!-- Skitter JS -->
+<script type="text/javascript">
+  $('.skitter-large').skitter({
+    theme        : "round",
+    interval     : 6000,
+    velocity     : 1.3,
+    navigation   : true,
+    numbers_align: "right",
+    // height: 200;
+    //progressbar: true"
+  });
+</script>
+
+<!-- Welcome Content -->
+<!-- <div class="container-fluid">
+  <div class="row">
+   <div class="col">
+   <div id="welcome-text">
+   <h3>Welcome to Ben Hamlington's Ocean Remote Sensing Group</h3>
+     <h6>We are part of the Center for Coastal Physical Oceanography in the Ocean, Earth and Atmospheric Sciences Department at Old Dominion University. </h6>
+     <h6>Our research focus is on past, present and future sea level rise, specializing in the use of satellite observations to improve the understanding of the ocean.</h6>
+     <h6>On this page, we will provide updates on group activities, including recently published papers.
+         Please feel free to get in touch with any questions, or if you are interested in joining our group. </h6>
+  </div>
+ </div>
+</div> -->
+
+
+{% endblock content %}
