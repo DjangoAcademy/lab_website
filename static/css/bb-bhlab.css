@@ -284,7 +284,7 @@ img.footer-map-img{
   line-height: 18px;
   /*padding-right: 5px;*/
  }
-.odu-list h6{
+.odu-list h5{
   /*font-size:24px;*/
   line-height:22px;
   padding: 5px;
@@ -301,7 +301,7 @@ img.footer-map-img{
   padding: 2px 5px 20px 15px;
   line-height: 25px;
  }
-.odu-list h2,h3,h6{
+.odu-list h2,h3,h5,h6{
   page-break-after:avoid
  }
 
@@ -329,7 +329,7 @@ img.footer-map-img{
   width:85%;
   margin-top:20px;
  }
-h2.affiliate-panel{
+h5.affiliate-panel{
   margin-bottom: 0px;
   background-color:#fff;
  }
@@ -408,7 +408,7 @@ h2.affiliate-panel{
   .affiliate-panel img{
     width:55%;
    }
-  .research-fonts h2{
+  .research-fonts h5{
     font-size: 19px;
    }
   .research-fonts p{
@@ -482,8 +482,8 @@ h2.affiliate-panel{
 
  /* bigger font for Affiliates header on large screens */
 @media (min-width: 1200px) {
- h2.affiliate-panel {
-    font-size:30px;
+ h5.affiliate-panel {
+    font-size:25px;
     line-height:30px;
    }
  }
@@ -611,7 +611,7 @@ h2.affiliate-panel{
   .course>p{
    font-size:16px;
   }
-
+ }
 @media (max-width: 480px) {
   .course-pic{
    width:135px;
@@ -625,4 +625,4 @@ h2.affiliate-panel{
   .course>p{
    font-size:13px;
   }
-}*/
+}
