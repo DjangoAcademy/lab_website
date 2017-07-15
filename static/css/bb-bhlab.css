@@ -250,7 +250,10 @@ img.footer-map-img{
   }
  }
 
-/* ****************************** HOMEPAGE ********************************** */
+
+/* ************************************************************************** */
+
+/* --- HOMEPAGE--- */
 .carousel-prev {
   left: -65px;
 }
@@ -264,25 +267,21 @@ img.footer-map-img{
     top: 150px;
     text-align:right;
 }
-#welcome-text {
-  margin-top: 75px;
-  text-align: left;
+.welcome-text {
+  text:nowrap;
  }
 
-#welcome-text>h3{
-  font-family: 'Enriqueta', arial, serif;
-  color:  #003057;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 23px;
+#homepage-carousel {
+  margin-top: 50px;
+  margin-bottom: 50px;
  }
 
-#welcome-text>h6 {
-  line-height:20px;
+.welcome-text {
+  line-height:30px;
+  margin-bottom:130px;
  }
 
-/* ************************ RESEARCH/PUBLICATIONS/JOIN ********************** */
-
+/* --- PUBLICATIONS --- */
 .odu-list {
   margin-top: 10px;
  }
@@ -331,6 +330,7 @@ img.footer-map-img{
   color:#003057;
  }
 
+/* --- RESEARCH --- */
 #affiliates {
   display:flex;
   flex-direction: column;
@@ -351,13 +351,15 @@ h5.affiliate-panel{
   margin-bottom: 0px;
   background-color:#fff;
  }
+
+/* --- JOIN US --- */
 #grad-row {
   margin-top: 25px;
   margin-bottom: 30px;
  }
 #grad-pos-img {
   width: 975px;
-  height: 125px;
+  /*height: 125px;*/
  }
 
 .joinus-row{
@@ -382,15 +384,18 @@ h5.affiliate-panel{
 
 /* smaller font size for publications on small screens */
 @media (max-width: 1199px){
+ .carousel-prev {
+  left: 0px;
+}
+
+.carousel-next {
+  right: 0px;
+}
 #grad-pos-img {
   width: 900px;
  }
  .joinus-row{
   width:97%;
-  /*justify-content:flex-end;*/
-  /*justify-content:space-between;*/
-  /*align-items: center;*/
-  /*background-color:#fff;*/
  }
  #grad-comic {
    height:250px;
@@ -420,6 +425,21 @@ h5.affiliate-panel{
 }
 
 @media (max-width: 767px) {
+  #homepage-carousel {
+    margin-top: 30px;
+    margin-bottom: 50px;
+   }
+
+  .welcome-text {
+    margin-bottom:100px;
+   }
+
+  .welcome-text h3{
+    font-size: 20px;
+   }
+  .welcome-text>p{
+    font-size: 15px;
+   }
   #affiliates{
     margin-right: 20px;
    }
@@ -450,6 +470,20 @@ h5.affiliate-panel{
     }
  }
 @media (max-width: 575px) {
+  #homepage-carousel {
+    margin-top: 20px;
+    margin-bottom: 40px;
+   }
+
+  .welcome-text {
+    margin-bottom:80px;
+   }
+
+  .welcome-text>p {
+    margin-top:15px;
+    line-height: 25px;
+   }
+
   .odu-list dl{
     margin-top: -10px;
   }
@@ -469,6 +503,31 @@ h5.affiliate-panel{
    }
  }
 @media (max-width: 450px) {
+
+  #homepage-carousel {
+    margin-top: 10px;
+    margin-bottom: 20px;
+   }
+
+  .welcome-text {
+    margin-bottom:40px;
+   }
+
+  .welcome-text>p {
+    margin-top:10px;
+    line-height: 22px;
+   }
+
+  .item-height img{
+    height:80px;
+   }
+  .welcome-text h3{
+    font-size: 18px;
+   }
+  .welcome-text>p{
+    font-size: 13px;
+   }
+
   .odu-list dl{
     margin-top: -12px;
   }
@@ -479,9 +538,7 @@ h5.affiliate-panel{
    font-size:12px;
   }
  #grad-pos-img {
-   /*width: 103.5%;*/
    height: 80px;
-   /*width:270px;*/
   }
   .joinus-row{
    width: 95%;
@@ -506,31 +563,6 @@ h5.affiliate-panel{
    }
  }
 
-/* ****************************** JOIN US *********************************** */
-
-
-/*.joinus {
-  background-color:#fff;
-  line-height:30px;
-  padding-top:10px;
-  margin-left:10px;
- }
-
-.joinus>p>a{
-  color:#003057;
-  text-decoration: underline;
- }
-
- @media (max-width: 575px) {
-   #gradcomic {
-     max-width: 70%;
-    }
-   #joinus-text {
-     font-size: 16px;
-     line-height:25px;
-    }
-
-  }*/
 
 /* ******************************* PEOPLE *********************************** */
 .portraits {
