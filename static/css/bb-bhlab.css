@@ -269,7 +269,7 @@ img.footer-map-img{
   line-height:20px;
  }
 
-/* ************************ RESEARCH/PUBLICATIONS*************************** */
+/* ************************ RESEARCH/PUBLICATIONS/JOIN ********************** */
 .odu-list {
   margin-top: 10px;
  }
@@ -284,7 +284,7 @@ img.footer-map-img{
   line-height: 18px;
   /*padding-right: 5px;*/
  }
-.odu-list h6{
+.odu-list h5{
   /*font-size:24px;*/
   line-height:22px;
   padding: 5px;
@@ -297,16 +297,11 @@ img.footer-map-img{
   padding: 2px 5px 10px 15px;
   font-size: 16px;
  }
-/*.odu-list dt{
-  font-size:12px;
-  font-weight:bold;
- }*/
-
 .odu-list p{
   padding: 2px 5px 20px 15px;
   line-height: 25px;
  }
-.odu-list h2,h3,h6{
+.odu-list h2,h3,h5,h6{
   page-break-after:avoid
  }
 
@@ -334,20 +329,75 @@ img.footer-map-img{
   width:85%;
   margin-top:20px;
  }
-h2.affiliate-panel{
+h5.affiliate-panel{
   margin-bottom: 0px;
   background-color:#fff;
  }
+#grad-row {
+  margin-top: 25px;
+  margin-bottom: 30px;
+ }
+#grad-pos-img {
+  width: 975px;
+  height: 125px;
+ }
+
+.joinus-row{
+  width:87%;
+  margin-left:15px;
+  margin-bottom:35px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background-color:#fff;
+  /*justify-content:flex-end;*/
+ }
+.joinus {
+  background-color:#fff;
+  line-height:30px;
+  padding-top:10px;
+  margin-left:10px;
+ }
+ #grad-comic {
+  height:200px;
+ }
 
 /* smaller font size for publications on small screens */
-@media (max-width: 991px){
+@media (max-width: 1199px){
+#grad-pos-img {
+  width: 900px;
+ }
+ .joinus-row{
+  width:97%;
+  /*justify-content:flex-end;*/
+  /*justify-content:space-between;*/
+  /*align-items: center;*/
+  /*background-color:#fff;*/
+ }
+ #grad-comic {
+   height:250px;
+  }
+}
 
+@media (max-width: 991px){
 .odu-list dl{
   line-height:18px;
  }
 .odu-list dd{
   font-size: 13.5px;
   margin-bottom: 0px;
+ }
+#grad-pos-img {
+  width: 103.5%;
+ }
+.joinus-row{
+ padding-left:0px;
+ width:100%;
+ justify-content: space-between;
+}
+#grad-comic{
+ margin-left: -40px;
+ height:200px;
  }
 }
 
@@ -358,7 +408,7 @@ h2.affiliate-panel{
   .affiliate-panel img{
     width:55%;
    }
-  .research-fonts h2{
+  .research-fonts h5{
     font-size: 19px;
    }
   .research-fonts p{
@@ -368,16 +418,37 @@ h2.affiliate-panel{
     font-size:13.5px;
     line-height:17px;
    }
+   .joinus-row{
+    width:98%;
+   }
+   .joinus>h3{
+     font-size: 22px;
+    }
+   .joinus>p{
+     font-size: 15px;
+    }
+   #grad-comic{
+    margin-left: 0px;
+    }
  }
 @media (max-width: 575px) {
   .odu-list dl{
     margin-top: -10px;
   }
   .odu-list dd {
-
     font-size:13.5px;
     line-height:17px
   }
+  #grad-row{
+    margin-top:10px;
+   }
+
+  .joinus>h4{
+    font-size: 18px;
+   }
+  .joinus>p{
+    font-size: 13px;
+   }
  }
 @media (max-width: 450px) {
   .odu-list dl{
@@ -389,24 +460,49 @@ h2.affiliate-panel{
   .odu-list dd{
    font-size:12px;
   }
+ #grad-pos-img {
+   /*width: 103.5%;*/
+   height: 80px;
+   /*width:270px;*/
+  }
+  .joinus-row{
+   width: 95%;
+  }
+  .joinus>h4{
+    font-size: 17px;
+   }
+  .joinus>p{
+    font-size: 12px;
+    line-height: 25px;
+   }
+   #grad-comic{
+     height:150px;
+    }
 }
 
  /* bigger font for Affiliates header on large screens */
 @media (min-width: 1200px) {
- h2.affiliate-panel {
-    font-size:30px;
+ h5.affiliate-panel {
+    font-size:25px;
     line-height:30px;
    }
  }
 
 /* ****************************** JOIN US *********************************** */
 
-#joinus-text {
-  padding: 20px;
+
+/*.joinus {
+  background-color:#fff;
   line-height:30px;
-  color:#222;
-  text-align: center;
+  padding-top:10px;
+  margin-left:10px;
  }
+
+.joinus>p>a{
+  color:#003057;
+  text-decoration: underline;
+ }
+
  @media (max-width: 575px) {
    #gradcomic {
      max-width: 70%;
@@ -415,7 +511,8 @@ h2.affiliate-panel{
      font-size: 16px;
      line-height:25px;
     }
-  }
+
+  }*/
 
 /* ******************************* PEOPLE *********************************** */
 .portraits {
@@ -514,7 +611,7 @@ h2.affiliate-panel{
   .course>p{
    font-size:16px;
   }
-
+ }
 @media (max-width: 480px) {
   .course-pic{
    width:135px;

@@ -22,9 +22,10 @@ HEADER
 # fix orange color to none
 
 BASE:
-	put everything into better containers so that things stay centered
-	Nav-bar
-	
+	# put everything into better containers so that things stay centered
+	# Nav-bar
+HEADER:
+	make menu button stick next to image in chrome (works in sfari)	
 FOOTER:
    Properly set up sticky bottom ; almost there
    Change copyright bar to an line list and get rid of the padding for the links
