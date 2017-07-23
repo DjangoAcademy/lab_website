@@ -12,8 +12,8 @@ body {
 @media (max-width: 991px){
   .container {
     width:100%;
-    display:flex;
-    flex-direction:column;
+    /*display:flex;*/
+    /*flex-direction:column;*/
    }
   }
 
@@ -55,6 +55,13 @@ body {
  }
 
 /* --- LAB NAVBAR (BOTTOM) --- */
+#LabNav .active {
+  background-color: #555555;
+  opacity: 0.6;
+  border-radius: 100%;
+  color: #fff;
+ }
+
 #LabNav {
   background-color:#fff;
   padding-left: 0px;
@@ -66,9 +73,10 @@ body {
   line-height:7px;
  }
 
-#LabNav .nav-item{
-  color: #222
+#LabNav .nav-item:not(.active){
+  color: #222;
  }
+
 
  /* do this on mouse-over: */
 #LabNav .nav-item:hover {
@@ -205,7 +213,7 @@ img.footer-map-img{
     background-color: #f3f3f0;
     width:50%;
    }
-  #LabNav .nav-item{
+  #LabNav .nav-item active{
     /*margin-top:10px;*/
     width: 30%;
     color: #222;
