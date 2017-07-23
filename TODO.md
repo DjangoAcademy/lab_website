@@ -51,3 +51,5 @@ PEOPLE:
 TEACHING:
 	Make white boxes line up with blue ends, probaly just margins of white boxes
 	do this for all pages
+JOIN: 
+	Make cartoon image better (bigger on big screens, centered vertically)
