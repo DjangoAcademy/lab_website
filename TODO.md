@@ -43,13 +43,13 @@ HOMEPAGE:
 			More and better images
 			Fix join us image
 PEOPLE:
-	Make text wrap below image
-	Seperate with Names
+	# Make text wrap below image
+	# Seperate with Names
 	Separate text by research interest hobbies etc...
-	Make a 'see more'
-	CVS
+	# Make a 'see more'
+	# CVS
 TEACHING:
-	Make white boxes line up with blue ends, probaly just margins of white boxes
-	do this for all pages
+	# Make white boxes line up with blue ends, probaly just margins of white boxes
+	# do this for all pages
 JOIN: 
-	Make cartoon image better (bigger on big screens, centered vertically)
+	#Make cartoon image better (bigger on big screens, centered vertically)

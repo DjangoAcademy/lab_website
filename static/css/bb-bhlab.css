@@ -6,14 +6,31 @@
 
 body {
   background-color: #f3f3f0;
+  margin:0;
+  padding:0;
+  height:100%;
  }
+
+/* following 3 classes for sticky footer */
+.wrapper {
+  min-height:100%;
+  position:relative;
+}
+.content {
+  padding-bottom:205px; /* Height of the footer element */
+}
+.footer {
+  width:100%;
+  height:205px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
 
 /* make full width for small screens; centered for large */
 @media (max-width: 991px){
   .container {
     width:100%;
-    /*display:flex;*/
-    /*flex-direction:column;*/
    }
   }
 
@@ -288,7 +305,7 @@ img.footer-map-img{
 
 .welcome-text {
   line-height:30px;
-  margin-bottom:130px;
+  /*margin-bottom:130px;*/
  }
 
 /* --- PUBLICATIONS --- */
@@ -389,8 +406,7 @@ h5.affiliate-panel{
   margin-left:10px;
  }
  #grad-comic {
-  height:200px;
-  margin-bottom:165px;
+  height:250px;
  }
 
 /* smaller font size for publications on small screens */
