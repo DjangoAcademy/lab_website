@@ -1,1 +1,1 @@
-Development Dir of Ben Hamlington Lab Website
+Ben Hamlington Lab Website
