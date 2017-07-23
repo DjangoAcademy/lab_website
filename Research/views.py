@@ -2,5 +2,5 @@ from django.http import Http404, HttpResponse, HttpResponseRedirect, HttpRespons
 from django.shortcuts import render
 
 def Research(request):
-    return render(request, 'research.html')
-
+    context = {'slr' : 'this is dummy text in research.views'}
+    return render(request, 'research.html', context)
