@@ -5,7 +5,7 @@
 <!-- Carousel -->
 <div class="container">
   <div class="row-fluid" style=margin-left:15px;>
-    <div class="carousel slide " id="homepage-carousel" date-ride="carousel">
+    <div class="carousel slide" id="homepage-carousel" date-ride="carousel">
      <ol class="carousel-indicators" style="top: 95%">
        {% for carousel_image in carousel_image_list %}
            <li data-target="#homepage-carousel" data-slide-to="{{ forloop.counter0 }}" class="{% if carousel_image == 'grad-positions-crop.png' %} active {% endif %}"</li>
